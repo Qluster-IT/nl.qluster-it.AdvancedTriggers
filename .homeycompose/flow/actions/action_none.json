@@ -1,5 +1,6 @@
 {
     "id": "action_none",
+    "deprecated" : true,
     "title": {
         "en": "Start Flowcard",
         "nl": "Start Flowkaart"

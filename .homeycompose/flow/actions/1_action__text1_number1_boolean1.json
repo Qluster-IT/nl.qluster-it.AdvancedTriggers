@@ -1,0 +1,48 @@
+{
+    "id": "action__text1_number1_boolean1",
+    "title": {
+        "en": "Start Flowcard",
+        "nl": "Start Flowkaart"
+    },
+    "titleFormatted": {
+        "en": "Start [[name]] with ([[text1]], [[number1]], [[boolean1]])",
+        "nl": "Start [[name]] met ([[text1]], [[number1]], [[boolean1]])"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "placeholder": {
+                "en": "Trigger",
+                "nl": "Trigger"
+            }
+        },
+        {
+            "type": "text",
+            "name": "text1",
+            "placeholder": {
+                "en": "Text 1",
+                "nl": "Tekst 1"
+            },
+            "required":false
+        },
+        {
+            "type": "number",
+            "name": "number1",
+            "placeholder": {
+                "en": "Number 1",
+                "nl": "Nummer 1"
+            },
+            "required":false
+        },        
+        {
+            "type": "checkbox",
+            "name": "boolean1",
+            "placeholder": {
+                "en": "Yes/No 1",
+                "nl": "Ja/Nee 1"
+            },
+            "required":false
+        }
+    ]
+}

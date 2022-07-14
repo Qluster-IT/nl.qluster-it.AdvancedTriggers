@@ -1,0 +1,47 @@
+{
+    "id": "trigger__text1_number1_boolean1",
+    "title": {
+        "en": "This Flowcard started",
+        "nl": "Deze Flowkaart is gestart"
+    },
+    "titleFormatted": {
+        "en": "[[name]] started (1 text, 1 number, 1 yes/no)",
+        "nl": "[[name]] is gestart (1 tekst, 1 nummer, 1 ja/nee)"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "placeholder": {
+                "en": "Type in a trigger name",
+                "nl": "Voer een trigger naam in"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "type": "string",
+            "name": "text1",
+            "title": {
+                "en": "Text 1",                
+                "nl": "Tekst 1"
+            }
+        },    
+        {
+            "type": "number",
+            "name": "number1",
+            "title": {
+                "en": "Number 1",                
+                "nl": "Nummer 1"
+            }
+        },
+        {
+            "type": "boolean",
+            "name": "boolean1",
+            "title": {
+                "en": "Yes/No 1",                
+                "nl": "Ja/Nee 1"
+            }
+        }
+    ] 
+}
