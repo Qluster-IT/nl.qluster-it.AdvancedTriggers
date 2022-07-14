@@ -5,8 +5,8 @@
         "nl": "Deze Flowkaart is gestart"
     },
     "titleFormatted": {
-        "en": "[[name]] started (3 texts, 3 numbers, 3 yes/no's)",
-        "nl": "[[name]] is gestart (3 teksten, 3 nummers, 3 ja/nee's)"
+        "en": "[[name]] started (3 texts, 3 numbers, 3 yes/no's), [[overloadable]]",
+        "nl": "[[name]] is gestart (3 teksten, 3 nummers, 3 ja/nee's), [[overloadable]]"
     },
     "args": [
         {
@@ -20,6 +20,35 @@
                 "en": "Triggername",
                 "nl": "Triggernaam"
             }
+        },
+        {
+            "type": "dropdown",
+            "name": "overloadable",
+            "required": false,
+            "placeholder": {
+                "en": "Overloading",
+                "nl": "Overloading"
+            },
+            "title": {
+                "en": "Overloadable",
+                "nl": "Overloadable"
+            },
+            "values": [
+                {
+                    "id": "false",
+                    "label": {
+                        "en": "Don't use overloading",                        
+                        "nl": "Gebruik geen overloading"
+                    }
+                },
+                {
+                    "id": "true",
+                    "label": {
+                        "en": "Use overloading",                        
+                        "nl": "Gebruik overloading"
+                    }
+                }
+            ]
         }
     ],
     "tokens": [

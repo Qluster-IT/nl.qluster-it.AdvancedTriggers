@@ -10,5 +10,8 @@
   },
   "1.1.2": {
     "en": "Bugfixed."
+  },
+  "1.2.1": {
+    "en": "Added Overloadable to Triggers (When)"
   }
 }

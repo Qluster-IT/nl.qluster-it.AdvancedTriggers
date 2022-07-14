@@ -27,15 +27,15 @@
             "type": "string",
             "name": "text1",
             "title": {
-                "en": "Text 1",                
+                "en": "Text 1",
                 "nl": "Tekst 1"
             }
-        },    
+        },
         {
             "type": "number",
             "name": "number1",
             "title": {
-                "en": "Number 1",                
+                "en": "Number 1",
                 "nl": "Nummer 1"
             }
         },
@@ -43,9 +43,9 @@
             "type": "boolean",
             "name": "boolean1",
             "title": {
-                "en": "Yes/No 1",                
+                "en": "Yes/No 1",
                 "nl": "Ja/Nee 1"
             }
         }
-    ] 
+    ]
 }
