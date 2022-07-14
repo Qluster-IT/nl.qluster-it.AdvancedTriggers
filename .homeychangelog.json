@@ -7,5 +7,8 @@
   },
   "1.1.1": {
     "en": "Triggername can be defined from Triggercard or Actioncard."
+  },
+  "1.1.2": {
+    "en": "Bugfixed."
   }
 }
