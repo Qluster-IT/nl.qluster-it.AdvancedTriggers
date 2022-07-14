@@ -13,8 +13,12 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-                "en": "Trigger",
-                "nl": "Trigger"
+                "en": "Type or select a trigger name",
+                "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+                "en": "Triggername",
+                "nl": "Triggernaam"
             }
         },
         {

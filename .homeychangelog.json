@@ -1,8 +1,11 @@
 {
   "1.0.1": {
-    "en": "First release"
+    "en": "First release."
   },
   "1.1.0": {
-    "en": "Added cards with multiple arguments"
+    "en": "Added cards with multiple arguments."
+  },
+  "1.1.1": {
+    "en": "Triggername can be defined from Triggercard or Actioncard."
   }
 }

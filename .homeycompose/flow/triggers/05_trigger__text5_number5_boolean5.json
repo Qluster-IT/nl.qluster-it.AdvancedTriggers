@@ -1,20 +1,24 @@
 {
-    "id": "trigger__text10_number10_boolean10",
+    "id": "trigger__text5_number5_boolean5",
     "title": {
         "en": "This Flowcard started",
         "nl": "Deze Flowkaart is gestart"
     },
     "titleFormatted": {
-        "en": "[[name]] started (10 texts, 10 numbers, 10 yes/no's)",
-        "nl": "[[name]] is gestart (10 teksten, 10 nummers, 10 ja/nee's)"
+        "en": "[[name]] started (5 texts, 5 numbers, 5 yes/no's)",
+        "nl": "[[name]] is gestart (5 teksten, 5 nummers, 5 ja/nee's)"
     },
     "args": [
         {
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-                "en": "Type in a trigger name",
-                "nl": "Voer een trigger naam in"
+                "en": "Type or select a trigger name",
+                "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+                "en": "Triggername",
+                "nl": "Triggernaam"
             }
         }
     ],
@@ -54,42 +58,7 @@
                 "en": "Text 5",                
                 "nl": "Tekst 5"
             }
-        },{
-            "type": "string",
-            "name": "text6",
-            "title": {
-                "en": "Text 6",                
-                "nl": "Tekst 6"
-            }
-        },{
-            "type": "string",
-            "name": "text7",
-            "title": {
-                "en": "Text 7",                
-                "nl": "Tekst 7"
-            }
-        },{
-            "type": "string",
-            "name": "text8",
-            "title": {
-                "en": "Text 8",                
-                "nl": "Tekst 8"
-            }
-        },{
-            "type": "string",
-            "name": "text9",
-            "title": {
-                "en": "Text 9",                
-                "nl": "Tekst 9"
-            }
-        },{
-            "type": "string",
-            "name": "text10",
-            "title": {
-                "en": "Text 10",                
-                "nl": "Tekst 10"
-            }
-        },        
+        },       
         {
             "type": "number",
             "name": "number1",
@@ -124,41 +93,6 @@
             "title": {
                 "en": "Number 5",                
                 "nl": "Nummer 5"
-            }
-        },{
-            "type": "number",
-            "name": "number6",
-            "title": {
-                "en": "Number 6",                
-                "nl": "Nummer 6"
-            }
-        },{
-            "type": "number",
-            "name": "number7",
-            "title": {
-                "en": "Number 7",                
-                "nl": "Nummer 7"
-            }
-        },{
-            "type": "number",
-            "name": "number8",
-            "title": {
-                "en": "Number 8",                
-                "nl": "Nummer 8"
-            }
-        },{
-            "type": "number",
-            "name": "number9",
-            "title": {
-                "en": "Number 9",                
-                "nl": "Nummer 9"
-            }
-        },{
-            "type": "number",
-            "name": "number10",
-            "title": {
-                "en": "Number 10",                
-                "nl": "Nummer 10"
             }
         },
         {
@@ -195,41 +129,6 @@
             "title": {
                 "en": "Yes/No 5",                
                 "nl": "Ja/Nee 5"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean6",
-            "title": {
-                "en": "Yes/No 6",                
-                "nl": "Ja/Nee 6"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean7",
-            "title": {
-                "en": "Yes/No 7",                
-                "nl": "Ja/Nee 7"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean8",
-            "title": {
-                "en": "Yes/No 8",                
-                "nl": "Ja/Nee 8"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean9",
-            "title": {
-                "en": "Yes/No 9",                
-                "nl": "Ja/Nee 9"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean10",
-            "title": {
-                "en": "Yes/No 10",                
-                "nl": "Ja/Nee 10"
             }
         }
     ] 

@@ -24,6 +24,7 @@ class MyApp extends Homey.App {
     var triggers = [
       { id: 'trigger_none' },
       { id: 'trigger__text1_number1_boolean1' },
+      { id: 'trigger__text3_number3_boolean3' },
       { id: 'trigger__text5_number5_boolean5' },
       { id: 'trigger__text10_number10_boolean10' }
     ];
@@ -40,7 +41,8 @@ class MyApp extends Homey.App {
       triggerCard.getArgument('name').registerAutocompleteListener(async (query, args) => {
         try {
           trigger.lastName = query;
-          return [{ name: query }];
+          //return query && query!='' ? [{ name: query }] : [];
+          return await this.getEventNames({targetCard:trigger.actionCard, query:query});
 
         } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
       });
@@ -51,6 +53,7 @@ class MyApp extends Homey.App {
       { id: 'action_none' },
       { id: 'action__text1_number1_boolean1' },
       { id: 'action__text5_number5_boolean5' },
+      { id: 'action__text3_number3_boolean3' },
       { id: 'action__text10_number10_boolean10' }
     ];
     for (let i = 0; i < actions.length; i++) {
@@ -59,6 +62,7 @@ class MyApp extends Homey.App {
       action.card = actionCard;
       var triggername = action.id.replace('action_', 'trigger_');
       action.triggerCard = _.find(triggers, x=>{return x.id==triggername; });
+      action.triggerCard.actionCard = action;
       actionCard.registerRunListener(((args, state, more) => { //async
         var defer = new Defer();
         try {
@@ -98,19 +102,31 @@ class MyApp extends Homey.App {
 
       actionCard.getArgument('name').registerAutocompleteListener(async (query, args) => {
         try {
-          var _return = [];          
-          if (action.triggerCard.lastName) _return.push({ name: action.triggerCard.lastName });
-          var a = await action.triggerCard.card.getArgumentValues();
-          for (let i = 0; i < a.length; i++) {
-            const element = a[i];
-            if (!query || query == '' || element.name.name.indexOf(query) > -1) _return.push({ name: element.name.name });
-          }
-          return _return;
+          action.lastName = query;
+          return await this.getEventNames({targetCard:action.triggerCard, query:query});
+          // var _return = [];          
+          // if (action.triggerCard.lastName) _return.push({ name: action.triggerCard.lastName });
+          // var a = await action.triggerCard.card.getArgumentValues();
+          // for (let i = 0; i < a.length; i++) {
+          //   const element = a[i];
+          //   if (!query || query == '' || element.name.name.indexOf(query) > -1) _return.push({ name: element.name.name });
+          // }
+          // return _return;
         } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
       });
     }
   }
 
+  async getEventNames({targetCard, query} = {}) {
+    var _return = query && query!='' && query.trim()!='' ? [{ name: query }] : [];
+    if (targetCard.lastName && targetCard.lastName!=query) _return.push({ name: targetCard.lastName });
+    var a = await targetCard.card.getArgumentValues();
+    for (let i = 0; i < a.length; i++) {
+      const element = a[i];
+      if ((!query || query == '' || (element.name.name.indexOf(query) > -1) && element.name.name!=query && (!targetCard.lastName || element.name.name!=targetCard.lastName))) _return.push({ name: element.name.name });
+    }
+    return _return;
+  }
 }
 
 module.exports = MyApp;

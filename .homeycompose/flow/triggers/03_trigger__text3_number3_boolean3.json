@@ -1,20 +1,24 @@
 {
-    "id": "trigger__text5_number5_boolean5",
+    "id": "trigger__text3_number3_boolean3",
     "title": {
         "en": "This Flowcard started",
         "nl": "Deze Flowkaart is gestart"
     },
     "titleFormatted": {
-        "en": "[[name]] started (5 texts, 5 numbers, 5 yes/no's)",
-        "nl": "[[name]] is gestart (5 teksten, 5 nummers, 5 ja/nee's)"
+        "en": "[[name]] started (3 texts, 3 numbers, 3 yes/no's)",
+        "nl": "[[name]] is gestart (3 teksten, 3 nummers, 3 ja/nee's)"
     },
     "args": [
         {
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-                "en": "Type in a trigger name",
-                "nl": "Voer een trigger naam in"
+                "en": "Type or select a trigger name",
+                "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+                "en": "Triggername",
+                "nl": "Triggernaam"
             }
         }
     ],
@@ -40,20 +44,6 @@
                 "en": "Text 3",                
                 "nl": "Tekst 3"
             }
-        },{
-            "type": "string",
-            "name": "text4",
-            "title": {
-                "en": "Text 4",                
-                "nl": "Tekst 4"
-            }
-        },{
-            "type": "string",
-            "name": "text5",
-            "title": {
-                "en": "Text 5",                
-                "nl": "Tekst 5"
-            }
         },       
         {
             "type": "number",
@@ -76,20 +66,6 @@
                 "en": "Number 3",                
                 "nl": "Nummer 3"
             }
-        },{
-            "type": "number",
-            "name": "number4",
-            "title": {
-                "en": "Number 4",                
-                "nl": "Nummer 4"
-            }
-        },{
-            "type": "number",
-            "name": "number5",
-            "title": {
-                "en": "Number 5",                
-                "nl": "Nummer 5"
-            }
         },
         {
             "type": "boolean",
@@ -111,20 +87,6 @@
             "title": {
                 "en": "Yes/No 3",                
                 "nl": "Ja/Nee 3"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean4",
-            "title": {
-                "en": "Yes/No 4",                
-                "nl": "Ja/Nee 4"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean5",
-            "title": {
-                "en": "Yes/No 5",                
-                "nl": "Ja/Nee 5"
             }
         }
     ] 

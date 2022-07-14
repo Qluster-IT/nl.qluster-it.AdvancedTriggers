@@ -1,20 +1,24 @@
 {
-    "id": "action__text5_number5_boolean5",
+    "id": "action__text3_number3_boolean3",
     "title": {
         "en": "Start Flowcard",
         "nl": "Start Flowkaart"
     },
     "titleFormatted": {
-        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]])",
-        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]])"
+        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])",
+        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])"
     },
     "args": [
         {
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-                "en": "Trigger",
-                "nl": "Trigger"
+                "en": "Type or select a trigger name",
+                "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+                "en": "Triggername",
+                "nl": "Triggernaam"
             }
         },
         {
@@ -39,22 +43,6 @@
             "placeholder": {
                 "en": "Text 3",
                 "nl": "Tekst 3"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text4",
-            "placeholder": {
-                "en": "Text 4",
-                "nl": "Tekst 4"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text5",
-            "placeholder": {
-                "en": "Text 5",
-                "nl": "Tekst 5"
             },
             "required":false
         },
@@ -82,22 +70,6 @@
                 "nl": "Nummer 3"
             },
             "required":false
-        },{
-            "type": "number",
-            "name": "number4",
-            "placeholder": {
-                "en": "Number 4",
-                "nl": "Nummer 4"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number5",
-            "placeholder": {
-                "en": "Number 5",
-                "nl": "Nummer 5"
-            },
-            "required":false
         },
         {
             "type": "checkbox",
@@ -121,22 +93,6 @@
             "placeholder": {
                 "en": "Yes/No 3",
                 "nl": "Ja/Nee 3"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean4",
-            "placeholder": {
-                "en": "Yes/No 4",
-                "nl": "Ja/Nee 4"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean5",
-            "placeholder": {
-                "en": "Yes/No 5",
-                "nl": "Ja/Nee 5"
             },
             "required":false
         }
