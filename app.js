@@ -123,7 +123,10 @@ class MyApp extends Homey.App {
     var a = await targetCard.card.getArgumentValues();
     for (let i = 0; i < a.length; i++) {
       const element = a[i];
-      if ((!query || query == '' || element.name.name.indexOf(query) > -1) && element.name.name!=query && (!targetCard.lastName || element.name.name!=targetCard.lastName) && !_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name });
+      if(query && query!='') {
+        if(element.name.name.indexOf(query) > -1 && !_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name });
+      } else if(!_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name });
+      //if ((!query || query == '' || element.name.name.indexOf(query) > -1) && element.name.name!=query && (!targetCard.lastName || element.name.name!=targetCard.lastName) && !_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name });
     }
     return _return;//_.uniqBy(_return,'name');
   }
