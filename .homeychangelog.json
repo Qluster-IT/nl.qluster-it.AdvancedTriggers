@@ -1,5 +1,8 @@
 {
   "1.0.1": {
     "en": "First release"
+  },
+  "1.1.0": {
+    "en": "Added cards with multiple arguments"
   }
 }

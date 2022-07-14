@@ -1,5 +1,6 @@
 {
     "id": "trigger_none",
+    "deprecated" : true,
     "title": {
         "en": "This Flowcard started",
         "nl": "Deze Flowkaart is gestart"
@@ -13,8 +14,8 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-                "en": "Type in a trigger name",
-                "nl": "Voer een trigger naam in"
+                "en": "Trigger name",
+                "nl": "Trigger naam"
             }
         }
     ],
