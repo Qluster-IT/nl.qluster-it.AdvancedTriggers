@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -55,8 +55,12 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-              "en": "Type in a trigger name",
-              "nl": "Voer een trigger naam in"
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
             }
           }
         ],
@@ -88,23 +92,184 @@
         ]
       },
       {
-        "id": "trigger__text5_number5_boolean5",
+        "id": "trigger__text3_number3_boolean3",
         "title": {
           "en": "This Flowcard started",
           "nl": "Deze Flowkaart is gestart"
         },
         "titleFormatted": {
-          "en": "[[name]] started (5 texts, 5 numbers, 5 yes/no's)",
-          "nl": "[[name]] is gestart (5 teksten, 5 nummers, 5 ja/nee's)"
+          "en": "[[name]] started (3 texts, 3 numbers, 3 yes/no's), [[overloadable]]",
+          "nl": "[[name]] is gestart (3 teksten, 3 nummers, 3 ja/nee's), [[overloadable]]"
         },
         "args": [
           {
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-              "en": "Type in a trigger name",
-              "nl": "Voer een trigger naam in"
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
             }
+          },
+          {
+            "type": "dropdown",
+            "name": "overloadable",
+            "required": false,
+            "placeholder": {
+              "en": "Overloading",
+              "nl": "Overloading"
+            },
+            "title": {
+              "en": "Overloadable",
+              "nl": "Overloadable"
+            },
+            "values": [
+              {
+                "id": "false",
+                "label": {
+                  "en": "Don't use overloading",
+                  "nl": "Gebruik geen overloading"
+                }
+              },
+              {
+                "id": "true",
+                "label": {
+                  "en": "Use overloading",
+                  "nl": "Gebruik overloading"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "text1",
+            "title": {
+              "en": "Text 1",
+              "nl": "Tekst 1"
+            }
+          },
+          {
+            "type": "string",
+            "name": "text2",
+            "title": {
+              "en": "Text 2",
+              "nl": "Tekst 2"
+            }
+          },
+          {
+            "type": "string",
+            "name": "text3",
+            "title": {
+              "en": "Text 3",
+              "nl": "Tekst 3"
+            }
+          },
+          {
+            "type": "number",
+            "name": "number1",
+            "title": {
+              "en": "Number 1",
+              "nl": "Nummer 1"
+            }
+          },
+          {
+            "type": "number",
+            "name": "number2",
+            "title": {
+              "en": "Number 2",
+              "nl": "Nummer 2"
+            }
+          },
+          {
+            "type": "number",
+            "name": "number3",
+            "title": {
+              "en": "Number 3",
+              "nl": "Nummer 3"
+            }
+          },
+          {
+            "type": "boolean",
+            "name": "boolean1",
+            "title": {
+              "en": "Yes/No 1",
+              "nl": "Ja/Nee 1"
+            }
+          },
+          {
+            "type": "boolean",
+            "name": "boolean2",
+            "title": {
+              "en": "Yes/No 2",
+              "nl": "Ja/Nee 2"
+            }
+          },
+          {
+            "type": "boolean",
+            "name": "boolean3",
+            "title": {
+              "en": "Yes/No 3",
+              "nl": "Ja/Nee 3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "trigger__text5_number5_boolean5",
+        "title": {
+          "en": "This Flowcard started",
+          "nl": "Deze Flowkaart is gestart"
+        },
+        "titleFormatted": {
+          "en": "[[name]] started (5 texts, 5 numbers, 5 yes/no's), [[overloadable]]",
+          "nl": "[[name]] is gestart (5 teksten, 5 nummers, 5 ja/nee's), [[overloadable]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "placeholder": {
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "overloadable",
+            "required": false,
+            "placeholder": {
+              "en": "Overloading",
+              "nl": "Overloading"
+            },
+            "title": {
+              "en": "Overloadable",
+              "nl": "Overloadable"
+            },
+            "values": [
+              {
+                "id": "false",
+                "label": {
+                  "en": "Don't use overloading",
+                  "nl": "Gebruik geen overloading"
+                }
+              },
+              {
+                "id": "true",
+                "label": {
+                  "en": "Use overloading",
+                  "nl": "Gebruik overloading"
+                }
+              }
+            ]
           }
         ],
         "tokens": [
@@ -237,17 +402,50 @@
           "nl": "Deze Flowkaart is gestart"
         },
         "titleFormatted": {
-          "en": "[[name]] started (10 texts, 10 numbers, 10 yes/no's)",
-          "nl": "[[name]] is gestart (10 teksten, 10 nummers, 10 ja/nee's)"
+          "en": "[[name]] started (10 texts, 10 numbers, 10 yes/no's), [[overloadable]]",
+          "nl": "[[name]] is gestart (10 teksten, 10 nummers, 10 ja/nee's), [[overloadable]]"
         },
         "args": [
           {
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-              "en": "Type in a trigger name",
-              "nl": "Voer een trigger naam in"
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
             }
+          },
+          {
+            "type": "dropdown",
+            "name": "overloadable",
+            "required": false,
+            "placeholder": {
+              "en": "Overloading",
+              "nl": "Overloading"
+            },
+            "title": {
+              "en": "Overloadable",
+              "nl": "Overloadable"
+            },
+            "values": [
+              {
+                "id": "false",
+                "label": {
+                  "en": "Don't use overloading",
+                  "nl": "Gebruik geen overloading"
+                }
+              },
+              {
+                "id": "true",
+                "label": {
+                  "en": "Use overloading",
+                  "nl": "Gebruik overloading"
+                }
+              }
+            ]
           }
         ],
         "tokens": [
@@ -558,8 +756,12 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-              "en": "Trigger",
-              "nl": "Trigger"
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
             }
           },
           {
@@ -592,6 +794,112 @@
         ]
       },
       {
+        "id": "action__text3_number3_boolean3",
+        "title": {
+          "en": "Start Flowcard",
+          "nl": "Start Flowkaart"
+        },
+        "titleFormatted": {
+          "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])",
+          "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "placeholder": {
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
+            }
+          },
+          {
+            "type": "text",
+            "name": "text1",
+            "placeholder": {
+              "en": "Text 1",
+              "nl": "Tekst 1"
+            },
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text2",
+            "placeholder": {
+              "en": "Text 2",
+              "nl": "Tekst 2"
+            },
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text3",
+            "placeholder": {
+              "en": "Text 3",
+              "nl": "Tekst 3"
+            },
+            "required": false
+          },
+          {
+            "type": "number",
+            "name": "number1",
+            "placeholder": {
+              "en": "Number 1",
+              "nl": "Nummer 1"
+            },
+            "required": false
+          },
+          {
+            "type": "number",
+            "name": "number2",
+            "placeholder": {
+              "en": "Number 2",
+              "nl": "Nummer 2"
+            },
+            "required": false
+          },
+          {
+            "type": "number",
+            "name": "number3",
+            "placeholder": {
+              "en": "Number 3",
+              "nl": "Nummer 3"
+            },
+            "required": false
+          },
+          {
+            "type": "checkbox",
+            "name": "boolean1",
+            "placeholder": {
+              "en": "Yes/No 1",
+              "nl": "Ja/Nee 1"
+            },
+            "required": false
+          },
+          {
+            "type": "checkbox",
+            "name": "boolean2",
+            "placeholder": {
+              "en": "Yes/No 2",
+              "nl": "Ja/Nee 2"
+            },
+            "required": false
+          },
+          {
+            "type": "checkbox",
+            "name": "boolean3",
+            "placeholder": {
+              "en": "Yes/No 3",
+              "nl": "Ja/Nee 3"
+            },
+            "required": false
+          }
+        ]
+      },
+      {
         "id": "action__text5_number5_boolean5",
         "title": {
           "en": "Start Flowcard",
@@ -606,8 +914,12 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-              "en": "Trigger",
-              "nl": "Trigger"
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
             }
           },
           {
@@ -762,8 +1074,12 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-              "en": "Trigger",
-              "nl": "Trigger"
+              "en": "Type or select a trigger name",
+              "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+              "en": "Triggername",
+              "nl": "Triggernaam"
             }
           },
           {

@@ -13,8 +13,12 @@
             "type": "autocomplete",
             "name": "name",
             "placeholder": {
-                "en": "Type in a trigger name",
-                "nl": "Voer een trigger naam in"
+                "en": "Type or select a trigger name",
+                "nl": "Type of kies een trigger naam"
+            },
+            "title": {
+                "en": "Triggername",
+                "nl": "Triggernaam"
             }
         }
     ],
@@ -23,15 +27,15 @@
             "type": "string",
             "name": "text1",
             "title": {
-                "en": "Text 1",                
+                "en": "Text 1",
                 "nl": "Tekst 1"
             }
-        },    
+        },
         {
             "type": "number",
             "name": "number1",
             "title": {
-                "en": "Number 1",                
+                "en": "Number 1",
                 "nl": "Nummer 1"
             }
         },
@@ -39,9 +43,9 @@
             "type": "boolean",
             "name": "boolean1",
             "title": {
-                "en": "Yes/No 1",                
+                "en": "Yes/No 1",
                 "nl": "Ja/Nee 1"
             }
         }
-    ] 
+    ]
 }
