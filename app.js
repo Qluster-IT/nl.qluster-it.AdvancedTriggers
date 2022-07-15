@@ -134,7 +134,7 @@ class MyApp extends Homey.App {
     else cards.push(targetCard);
     for (let iCards = 0; iCards < cards.length; iCards++) {
       const card = cards[iCards];      
-      if (card.lastName) {
+      if (card.lastName && (!isAction || card==targetCard)) {
         var o = null;
         if(!(o=_.find(_return, x=>{return x.name==card.lastName;}))) _return.push({ name: card.lastName, description:this.homey.__("return_description_select") });
         else o.description = this.homey.__("return_description_select");
@@ -145,7 +145,8 @@ class MyApp extends Homey.App {
       var a = await card.card.getArgumentValues();
       for (let i = 0; i < a.length; i++) {
         const element = a[i];
-        if((card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
+        if(isAction && (card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
+        else if(!isAction && (card.textCount<targetCard.textCount || card.numberCount<targetCard.numberCount || card.booleanCount<targetCard.booleanCount) && (!args || args.overloadable!='true')) continue;
         if(query && query!='') {
           if(element.name.name.indexOf(query) > -1) {
             var o = null;          
