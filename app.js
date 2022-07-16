@@ -127,20 +127,41 @@ class MyApp extends Homey.App {
   }
 
   async getEventNames({targetCard, query, args, isAction=false} = {}) {
-    var _return = query && query!='' && query.trim()!='' ? [{ name: query }] : [];
-    if (targetCard.lastName && targetCard.lastName!=query) _return.push({ name: targetCard.lastName });
+    var _return = query && query!='' && query.trim()!='' ? [{ name: query, description:this.homey.__("return_description_create") }] : [];
     var cards = [];
     if(isAction)cards = _.filter(this.triggers, x=>{return !x.deprecated && x.textCount>=targetCard.textCount && x.numberCount>=targetCard.numberCount && x.booleanCount>=targetCard.booleanCount;});
+    else if(!isAction && args.overloadable=='true') cards = _.filter(this.actions, x=>{return !x.deprecated && x.textCount<=targetCard.textCount && x.numberCount<=targetCard.numberCount && x.booleanCount<=targetCard.booleanCount;});
     else cards.push(targetCard);
+    for (let iCards = 0; iCards < cards.length; iCards++) {
+      const card = cards[iCards];      
+      if (card.lastName && (!isAction || card==targetCard)) {
+        var o = null;
+        if(!(o=_.find(_return, x=>{return x.name==card.lastName;}))) _return.push({ name: card.lastName, description:this.homey.__("return_description_select") });
+        else o.description = this.homey.__("return_description_select");
+      }
+    }
     for (let iCards = 0; iCards < cards.length; iCards++) {
       const card = cards[iCards];      
       var a = await card.card.getArgumentValues();
       for (let i = 0; i < a.length; i++) {
         const element = a[i];
-        if((card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
+        if(isAction && (card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
+        else if(!isAction && (card.textCount<targetCard.textCount || card.numberCount<targetCard.numberCount || card.booleanCount<targetCard.booleanCount) && (!args || args.overloadable!='true')) continue;
         if(query && query!='') {
-          if(element.name.name.indexOf(query) > -1 && !_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name });
-        } else if(!_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name });
+          if(element.name.name.indexOf(query) > -1) {
+            var o = null;          
+            if(!(o =_.find(_return, x=>{return x.name==element.name.name;})))
+              _return.push({ name: element.name.name, description:this.homey.__("return_description_select") });
+            else o.description = this.homey.__("return_description_select");
+          }
+        } 
+        else {
+          var o = null;          
+          if(!(o =_.find(_return, x=>{return x.name==element.name.name;})))
+              _return.push({ name: element.name.name, description:this.homey.__("return_description_select") });
+            else o.description = this.homey.__("return_description_select");
+          //if(!_.find(_return, x=>{return x.name==element.name.name;})) _return.push({ name: element.name.name, description:this.homey.__("return_description_select") });
+        }
       }
     }
     return _return;
