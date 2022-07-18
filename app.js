@@ -21,6 +21,7 @@ class MyApp extends Homey.App {
 
     }
 
+    //#region Triggercards
     var triggers = this.triggers = [
       { id: 'trigger_none', deprecated:true },
       { id: 'trigger__text1_number1_boolean1' },
@@ -47,9 +48,14 @@ class MyApp extends Homey.App {
 
         } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
       });
+
+      triggerCard.on("update", async () => {
+        trigger.ArgumentValues = await triggerCard.getArgumentValues();
+      });
     }
+    //#endregion
 
-
+    //#region Actioncards
     var actions = this.actions = [
       { id: 'action_none', deprecated:true },
       { id: 'action__text1_number1_boolean1' },
@@ -112,7 +118,12 @@ class MyApp extends Homey.App {
           return await this.getEventNames({targetCard:action.triggerCard, query:query, args:args, isAction:true});
         } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
       });
+      actionCard.on("update", async () => {
+        action.ArgumentValues = await actionCard.getArgumentValues();
+      });
     }
+
+    //#endregion
   }
 
   setCounts(card) {
@@ -142,7 +153,7 @@ class MyApp extends Homey.App {
     }
     for (let iCards = 0; iCards < cards.length; iCards++) {
       const card = cards[iCards];      
-      var a = await card.card.getArgumentValues();
+      var a = card.ArgumentValues();
       for (let i = 0; i < a.length; i++) {
         const element = a[i];
         if(isAction && (card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
