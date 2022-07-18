@@ -96,6 +96,7 @@
         {
             "type": "number",
             "name": "debounce_ms",
+            "required": false,
             "placeholder": {
                 "en": "Debounce (milliseconds)",
                 "nl": "Debounce (Milliseconden)"

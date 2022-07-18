@@ -76,7 +76,7 @@ class MyApp extends Homey.App {
                   }, debounceMs);//timeoutMs);
                 };
                 setTimeFuntion();    
-                              
+
                 if(args.debounce.startsWith('executestart')) {
                   debouncers[0].resolve(true);
                   for (let i = 1; i < debouncers.length; i++) debouncers[i].resolve(false);
@@ -89,7 +89,7 @@ class MyApp extends Homey.App {
                 }
               }
             }
-          } else Promise.resolve(r);// defer.resolve(r);
+          } else return Promise.resolve(r);// defer.resolve(r);
           //return r;
           //return Promise.resolve(r);//defer.promise;
 
