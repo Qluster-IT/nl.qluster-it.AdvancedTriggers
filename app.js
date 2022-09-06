@@ -13,6 +13,7 @@ class MyApp extends Homey.App {
   async onInit() {
     this.log('AdvancedTriggers has been initialized');
     this.lastName = null;
+    this.uniqueId = 0;
 
 
     try {
@@ -21,6 +22,7 @@ class MyApp extends Homey.App {
 
     }
 
+    //#region Triggercards
     var triggers = this.triggers = [
       { id: 'trigger_none', deprecated:true },
       { id: 'trigger__text1_number1_boolean1' },
@@ -34,22 +36,85 @@ class MyApp extends Homey.App {
       trigger.card = triggerCard;
       this.setCounts(trigger);
       
-      triggerCard.registerRunListener(async (args, state, more) => { //async
-        return state.name.name == args.name.name && 
+      triggerCard.registerRunListener((args, state, more) => { //async
+        var defer = new Defer();
+        var debounceMs = args.debounce_ms || 1000;
+        var r= state.name.name == args.name.name && 
           (trigger.id.startsWith('trigger__text' + state.textCount + '_number' + state.numberCount + '_boolean' + state.booleanCount) || args.overloadable=='true');
+          if(!r) return Promise.resolve(r);
+
+          if(args.debounce && args.debounce!='none') {
+            var event = trigger.events[args.name.name];
+            if(event) {              
+              //this.log('event.timer', event.timer);
+              if(!event.debouncers) event.debouncers = [];
+              var debouncers = event.debouncers;
+              debouncers.push(defer);
+
+              if(!event['debouncer_' + state.uniqueId]) event['debouncer_' + state.uniqueId] = [];
+              event['debouncer_' + state.uniqueId].push(0);
+              
+              if(!event.timer && event['debouncer_' + state.uniqueId].length==event.arguments.length) {
+                delete event['debouncer_' + state.uniqueId];
+
+                var setTimeFuntion = ()=> {
+                  event.timer = setTimeout(x=> {
+                    this.log('Debounce Timer finished');
+                    if(debouncers.length==0) {                        
+                      event.timer = null;
+                      return;
+                    }
+                    if(args.debounce.endsWith('finish')) {                      
+                      debouncers[debouncers.length-1].resolve(true);
+                      for (let i = 0; i < debouncers.length-1; i++) debouncers[i].resolve(false);
+                      debouncers.length=0;
+                    } else  {
+                      for (let i = 0; i < debouncers.length; i++) debouncers[i].resolve(false);
+                      debouncers.length=0;
+                    }
+                    setTimeFuntion();
+                  }, debounceMs);//timeoutMs);
+                };
+                setTimeFuntion();    
+
+                if(args.debounce.startsWith('executestart')) {
+                  debouncers[0].resolve(true);
+                  for (let i = 1; i < debouncers.length; i++) debouncers[i].resolve(false);
+                  debouncers.length=0;
+                }
+              } else {
+                if (args.debounce.endsWith('finish')) {
+                  for (let i = 0; i < debouncers.length-1; i++) debouncers[i].resolve(false);
+                  debouncers.splice(0,debouncers.length-1);
+                }
+              }
+            }
+          } else return Promise.resolve(r);// defer.resolve(r);
+          //return r;
+          //return Promise.resolve(r);//defer.promise;
+
+          return defer.promise;
       });
 
 
       triggerCard.getArgument('name').registerAutocompleteListener(async (query, args) => {
+        
         try {
           trigger.lastName = query;
           return await this.getEventNames({targetCard:trigger.actionCard, query:query, args:args});
 
         } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
       });
+
+      triggerCard.on("update", async () => {
+        await this.setTrigger(trigger);
+      });      
+      
+      await this.setTrigger(trigger);
     }
+    //#endregion
 
-
+    //#region Actioncards
     var actions = this.actions = [
       { id: 'action_none', deprecated:true },
       { id: 'action__text1_number1_boolean1' },
@@ -93,15 +158,17 @@ class MyApp extends Homey.App {
               for (let j = 1; j <= triggerCard.booleanCount; j++) if (args['boolean'+j.toString()] === undefined) args['boolean'+j.toString()] = false;
               // if((action.textCount>triggerCard.textCount || action.numberCount>triggerCard.numberCount || action.booleanCount>triggerCard.booleanCount) && args.overloadable!='true') ;
               //   else 
-                promises.push(triggerCard.card.trigger(args, {name:newArgs.name, textCount:action.textCount, numberCount:action.numberCount, booleanCount:action.booleanCount}));
+              promises.push(triggerCard.card.trigger(args, {name:newArgs.name, textCount:action.textCount, numberCount:action.numberCount, booleanCount:action.booleanCount, uniqueId:this.uniqueId++}));
             }
-            Promise.all(promises)
+            if(args.waittofinish===false) defer.resolve(true);
+            else Promise.all(promises)
               .then(x=> {defer.resolve(true);})
               .catch(err=> { defer.reject(err);});
           }
           
         } catch (error) {
           console.log('Error: ' + error);
+          defer.reject(error);
         }
         return defer.promise;
       }).bind(this));
@@ -112,6 +179,36 @@ class MyApp extends Homey.App {
           return await this.getEventNames({targetCard:action.triggerCard, query:query, args:args, isAction:true});
         } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
       });
+      
+      actionCard.on("update", async () => {
+        this.setArgumentValues(action, actionCard);
+      });
+      this.setArgumentValues(action, actionCard);
+    }
+
+    //#endregion
+  }
+
+  async setArgumentValues(cardObject, cardCard) {
+    cardObject.argumentValues = await cardCard.getArgumentValues(); 
+  }
+
+  async setTrigger(trigger) {
+    await this.setArgumentValues(trigger, trigger.card);
+    if(!trigger.events) trigger.events = {};
+    trigger.events = {};
+      
+    for (let i = 0; i < trigger.argumentValues.length; i++) {
+      const argumentValue = trigger.argumentValues[i];
+      if(!trigger.events[argumentValue.name.name]) trigger.events[argumentValue.name.name] = {name : argumentValue.name.name, arguments : [argumentValue]};
+      else {
+        var event = trigger.events[argumentValue.name.name];
+        if(argumentValue.debounce && argumentValue.debounce!='none') {
+          if(event.debounce) ; //ALERT that this will not work correctly.
+          event.debounce = argumentValue.debounce;
+        } 
+        event.arguments.push(argumentValue);
+      }
     }
   }
 
@@ -142,9 +239,8 @@ class MyApp extends Homey.App {
     }
     for (let iCards = 0; iCards < cards.length; iCards++) {
       const card = cards[iCards];      
-      var a = await card.card.getArgumentValues();
-      for (let i = 0; i < a.length; i++) {
-        const element = a[i];
+      for (let i = 0; i < card.argumentValues.length; i++) {
+        const element = card.argumentValues[i];
         if(isAction && (card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
         else if(!isAction && (card.textCount<targetCard.textCount || card.numberCount<targetCard.numberCount || card.booleanCount<targetCard.booleanCount) && (!args || args.overloadable!='true')) continue;
         if(query && query!='') {

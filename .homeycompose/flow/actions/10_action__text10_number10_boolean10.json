@@ -5,8 +5,8 @@
         "nl": "Start Flowkaart"
     },
     "titleFormatted": {
-        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]])",
-        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]])"
+        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]) and Set Wait to Finish to [[waittofinish]]",
+        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]) en zet wacht op gereed op [[waittofinish]]"
     },
     "args": [
         {
@@ -261,6 +261,15 @@
             "placeholder": {
                 "en": "Yes/No 10",
                 "nl": "Ja/Nee 10"
+            },
+            "required":false
+        },        
+        {
+            "type": "checkbox",
+            "name": "waittofinish",
+            "placeholder": {
+                "en": "Wait to finish",
+                "nl": "Wacht op gereed"
             },
             "required":false
         }

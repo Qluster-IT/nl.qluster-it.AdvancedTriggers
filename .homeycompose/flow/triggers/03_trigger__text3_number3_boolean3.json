@@ -5,8 +5,8 @@
         "nl": "Deze Flowkaart is gestart"
     },
     "titleFormatted": {
-        "en": "[[name]] started (3 texts, 3 numbers, 3 yes/no's), [[overloadable]]",
-        "nl": "[[name]] is gestart (3 teksten, 3 nummers, 3 ja/nee's), [[overloadable]]"
+        "en": "[[name]] started (3 texts, 3 numbers, 3 yes/no's), [[overloadable]], [[debounce]] [[debounce_ms]]",
+        "nl": "[[name]] is gestart (3 teksten, 3 nummers, 3 ja/nee's), [[overloadable]], [[debounce]] [[debounce_ms]]"
     },
     "args": [
         {
@@ -49,6 +49,62 @@
                     }
                 }
             ]
+        },
+        {
+            "type": "dropdown",
+            "name": "debounce",
+            "required": false,
+            "placeholder": {
+                "en": "Debounce",
+                "nl": "Debounce"
+            },
+            "title": {
+                "en": "Debounce",
+                "nl": "Debounce"
+            },
+            "values": [
+                {
+                    "id": "none",
+                    "label": {
+                        "en": "Don't use debounce",
+                        "nl": "Gebruik geen debounce"
+                    }
+                },
+                {
+                    "id": "finish",
+                    "label": {
+                        "en": "Use debounce (execute last one waiting after each [number of] ms)",
+                        "nl": "Gebruik debounce (eindig met laatste wachtend na elke [aantal] ms)"
+                    }
+                },
+                {
+                    "id": "executestart",
+                    "label": {
+                        "en": "Use debounce (execute at start, then allow execution after each [number of] ms)",
+                        "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms)"
+                    }
+                },
+                {
+                    "id": "executestart_finish",
+                    "label": {
+                        "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
+                        "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "number",
+            "name": "debounce_ms",
+            "required": false,
+            "placeholder": {
+                "en": "Debounce (milliseconds)",
+                "nl": "Debounce (Milliseconden)"
+            },
+            "title": {
+                "en": "Debounce (ms)",
+                "nl": "Debounce (ms)"
+            }
         }
     ],
     "tokens": [

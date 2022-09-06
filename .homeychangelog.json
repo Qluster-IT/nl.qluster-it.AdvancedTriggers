@@ -15,9 +15,18 @@
     "en": "Added Overloadable to Triggers (When)"
   },
   "1.2.2": {
-    "en": "Improved selectability"
+    "en": "Improved selectability."
   },
   "1.2.3": {
     "en": "Bugfixed."
+  },
+  "1.3.1": {
+    "en": "Added debounce functionality to triggers and improved search speed."
+  },
+  "1.3.2": {
+    "en": "Improved Store tags"
+  },
+  "1.3.3": {
+    "en": "Added a Wait to Finish argument to actioncards."
   }
 }
