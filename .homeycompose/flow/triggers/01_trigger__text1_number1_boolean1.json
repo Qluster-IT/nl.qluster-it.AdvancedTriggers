@@ -80,6 +80,14 @@
     ],
     "tokens": [
         {
+            "type": "number",
+            "name": "flowexecutionid",
+            "title": {
+                "en": "Flow Execution ID",
+                "nl": "Flow Executie ID"
+            }
+        },
+        {
             "type": "string",
             "name": "text1",
             "title": {

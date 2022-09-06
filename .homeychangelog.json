@@ -28,5 +28,8 @@
   },
   "1.3.3": {
     "en": "Added a Wait to Finish argument to actioncards."
+  },
+  "1.4.1": {
+    "en": "Added: Return actioncards."
   }
 }
