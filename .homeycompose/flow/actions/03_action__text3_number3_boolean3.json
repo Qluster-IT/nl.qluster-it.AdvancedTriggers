@@ -5,8 +5,8 @@
         "nl": "Start Flowkaart"
     },
     "titleFormatted": {
-        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])",
-        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])"
+        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]) and Set Wait to Finish to [[waittofinish]]",
+        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]) en zet wacht op gereed op [[waittofinish]]"
     },
     "args": [
         {
@@ -93,6 +93,15 @@
             "placeholder": {
                 "en": "Yes/No 3",
                 "nl": "Ja/Nee 3"
+            },
+            "required":false
+        },        
+        {
+            "type": "checkbox",
+            "name": "waittofinish",
+            "placeholder": {
+                "en": "Wait to finish",
+                "nl": "Wacht op gereed"
             },
             "required":false
         }

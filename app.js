@@ -98,6 +98,7 @@ class MyApp extends Homey.App {
 
 
       triggerCard.getArgument('name').registerAutocompleteListener(async (query, args) => {
+        
         try {
           trigger.lastName = query;
           return await this.getEventNames({targetCard:trigger.actionCard, query:query, args:args});
@@ -159,13 +160,15 @@ class MyApp extends Homey.App {
               //   else 
               promises.push(triggerCard.card.trigger(args, {name:newArgs.name, textCount:action.textCount, numberCount:action.numberCount, booleanCount:action.booleanCount, uniqueId:this.uniqueId++}));
             }
-            Promise.all(promises)
+            if(args.waittofinish===false) defer.resolve(true);
+            else Promise.all(promises)
               .then(x=> {defer.resolve(true);})
               .catch(err=> { defer.reject(err);});
           }
           
         } catch (error) {
           console.log('Error: ' + error);
+          defer.reject(error);
         }
         return defer.promise;
       }).bind(this));
