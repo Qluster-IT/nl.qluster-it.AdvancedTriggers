@@ -135,7 +135,7 @@ class MyApp extends Homey.App {
         try {
           console.log(action.id + '.registerRunListener args: ');
           console.log(args);
-          let newArgs = { name: args.name };
+          let newArgs = { name: args.name || {name: args.namebytag } };
           delete args.name;
           
           if(action.id=='action_none') {
