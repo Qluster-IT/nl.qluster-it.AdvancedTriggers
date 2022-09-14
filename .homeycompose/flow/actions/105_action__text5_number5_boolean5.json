@@ -27,8 +27,8 @@
             "required":false,
             "name": "namebytag",
             "placeholder": {
-                "en": "Tag",
-                "nl": "Tag"
+                "en": "Or use a Tag or text as name",
+                "nl": "Of gebruik een Tag of tekst als naam"
             },
             "title": {
                 "en": "Tag",
