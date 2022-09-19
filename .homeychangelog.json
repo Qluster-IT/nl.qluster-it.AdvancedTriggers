@@ -34,5 +34,8 @@
   },
   "1.4.3": {
     "en": "Added: Possibility to enter a Eventname Dynamic by Tag (or text)."
+  },
+  "1.4.4": {
+    "en": "Bugfixed."
   }
 }

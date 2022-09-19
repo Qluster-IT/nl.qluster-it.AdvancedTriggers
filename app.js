@@ -316,6 +316,7 @@ class MyApp extends Homey.App {
       const card = cards[iCards];      
       for (let i = 0; i < card.argumentValues.length; i++) {
         const element = card.argumentValues[i];
+        if(!element.name) continue;
         if(isAction && (card.textCount>targetCard.textCount || card.numberCount>targetCard.numberCount || card.booleanCount>targetCard.booleanCount) && element.overloadable!='true') continue;
         else if(!isAction && (card.textCount<targetCard.textCount || card.numberCount<targetCard.numberCount || card.booleanCount<targetCard.booleanCount) && (!args || args.overloadable!='true')) continue;
         if(query && query!='') {
