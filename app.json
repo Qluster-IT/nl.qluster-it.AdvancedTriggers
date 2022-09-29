@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -239,19 +239,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -273,6 +273,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]
@@ -431,19 +438,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -465,6 +472,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]
@@ -671,19 +685,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -705,6 +719,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]

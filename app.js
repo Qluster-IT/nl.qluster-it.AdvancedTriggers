@@ -37,32 +37,38 @@ class MyApp extends Homey.App {
       this.setCounts(trigger);
 
       triggerCard.registerRunListener((args, state, more) => { //async
-        var defer = new Defer();
-        var debounceMs = args.debounce_ms || 1000;
-        var r = state.name.name == args.name.name &&
+        const defer = new Defer();
+        const debounceMs = args.debounce_ms || 1000;
+        const r = state.name.name == args.name.name &&
           (trigger.id.startsWith('trigger__text' + state.textCount + '_number' + state.numberCount + '_boolean' + state.booleanCount) || args.overloadable == 'true');
         if (!r) return Promise.resolve(r);
 
         if (args.debounce && args.debounce != 'none') {
-          //this.log('Text:', args.text1);
-          var event = trigger.events[args.name.name];
+          const event = trigger.events[args.name.name];
           if (event) {
-            //this.log('event.timer', event.timer);
             if (!event.debouncers) event.debouncers = [];
-            var debouncers = event.debouncers;
-            debouncers.push(defer);
-            if (args.debounce === 'sequential') {
-              if(debouncers.length>2) {
-                debouncers[debouncers.length-2].then(()=> {
-                  debouncers.shift();
-                  defer.resolve(true);
-                }).catch(()=> { 
-                  debouncers.shift();
-                  defer.resolve(true);
-                });
-              } else defer.resolve(true);
-              var aaaa = 0 ;
+            if (args.debounce === 'sequential' && event.promises && event.promises[trigger.id]) {
+              if(event.promises[trigger.id].length>1) {
+              //  if(event.promises[trigger.id].length) {
+                  let debouncerIndex = _.findIndex(event.promises[trigger.id], d=>d!==null);
+                  let promise = event.promises[trigger.id][debouncerIndex];
+                  event.promises[trigger.id][debouncerIndex] = null;
+                  promise.then(()=> {
+                    //debouncers.shift();
+                    defer.resolve(true);
+                  }).catch(()=> { 
+                    //debouncers.shift();
+                    defer.resolve(true);
+                  });
+              //  }
+              } else {
+                //event.promises[trigger.id][0] = null;
+                defer.resolve(true);
+              }
+
             } else {
+              const debouncers = event.debouncers;
+              debouncers.push(defer);
               if (!event['debouncer_' + state.uniqueId]) event['debouncer_' + state.uniqueId] = [];
               event['debouncer_' + state.uniqueId].push(0);
 
@@ -184,6 +190,10 @@ class MyApp extends Homey.App {
               this.returns[newArgs.name.name].list[this.returns[newArgs.name.name].count].then(x => { if (recievedTokens === undefined) recievedTokens = x; });
 
             }
+            const event = action.triggerCard.events[newArgs.name.name];
+            if (event && event.debounce==='sequential') {
+              if (!event.promises) event.promises = [];
+            }
             var promises = [];
             var triggerCards = _.filter(this.triggers, x => { return !x.deprecated && x.textCount >= action.triggerCard.textCount && x.numberCount >= action.triggerCard.numberCount && x.booleanCount >= action.triggerCard.booleanCount; });
             for (let i = 0; i < triggerCards.length; i++) {
@@ -191,8 +201,13 @@ class MyApp extends Homey.App {
               for (let j = 1; j <= triggerCard.textCount; j++) if (args['text' + j.toString()] === undefined) args['text' + j.toString()] = "";
               for (let j = 1; j <= triggerCard.numberCount; j++) if (args['number' + j.toString()] === undefined) args['number' + j.toString()] = 0;
               for (let j = 1; j <= triggerCard.booleanCount; j++) if (args['boolean' + j.toString()] === undefined) args['boolean' + j.toString()] = false;
-
-              promises.push(triggerCard.card.trigger(args, { name: newArgs.name, textCount: action.textCount, numberCount: action.numberCount, booleanCount: action.booleanCount, uniqueId: this.uniqueId++ }));
+              const p = triggerCard.card.trigger(args, { name: newArgs.name, textCount: action.textCount, numberCount: action.numberCount, booleanCount: action.booleanCount, uniqueId: this.uniqueId++ });
+              promises.push(p);
+              if (event && event.promises) {
+                if(!event.promises[triggerCard.id]) event.promises[triggerCard.id] = [];
+                event.promises[triggerCard.id].push(p);
+                p.then(()=> {event.promises[triggerCard.id].shift(); }).catch(()=> { event.promises[triggerCard.id].shift();} );              
+              }
             }
             let tokens = {};
             for (let j = 1; j <= 10; j++) if (tokens['text' + j.toString()] === undefined) tokens['text' + j.toString()] = "";
@@ -303,7 +318,7 @@ class MyApp extends Homey.App {
 
     for (let i = 0; i < trigger.argumentValues.length; i++) {
       const argumentValue = trigger.argumentValues[i];
-      if (!trigger.events[argumentValue.name.name]) trigger.events[argumentValue.name.name] = { name: argumentValue.name.name, arguments: [argumentValue] };
+      if (!trigger.events[argumentValue.name.name]) trigger.events[argumentValue.name.name] = { name: argumentValue.name.name, arguments: [argumentValue], debounce: argumentValue.debounce};
       else {
         var event = trigger.events[argumentValue.name.name];
         if (argumentValue.debounce && argumentValue.debounce != 'none') {
