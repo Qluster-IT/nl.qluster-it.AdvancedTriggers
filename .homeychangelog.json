@@ -41,7 +41,7 @@
   "1.4.5": {
     "en": "Bugfixed: Debounce fixed."
   },
-  "1.4.6": {
+  "1.4.7": {
     "en": "Added: (Automatic) Sequential execution of triggers."
   }
 }
