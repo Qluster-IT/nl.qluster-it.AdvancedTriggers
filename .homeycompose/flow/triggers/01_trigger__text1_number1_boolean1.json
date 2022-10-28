@@ -90,8 +90,8 @@
             "type": "number",
             "name": "flowexecutionid",
             "title": {
-                "en": "Flow Execution ID",
-                "nl": "Flow Executie ID"
+                "en": "Return ID",
+                "nl": "Return ID"
             }
         },
         {

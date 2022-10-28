@@ -48,19 +48,19 @@ class MyApp extends Homey.App {
           if (event) {
             if (!event.debouncers) event.debouncers = [];
             if (args.debounce === 'sequential' && event.promises && event.promises[trigger.id]) {
-              if(event.promises[trigger.id].length>1) {
-              //  if(event.promises[trigger.id].length) {
-                  let debouncerIndex = _.findIndex(event.promises[trigger.id], d=>d!==null);
-                  let promise = event.promises[trigger.id][debouncerIndex];
-                  event.promises[trigger.id][debouncerIndex] = null;
-                  promise.then(()=> {
-                    //debouncers.shift();
-                    defer.resolve(true);
-                  }).catch(()=> { 
-                    //debouncers.shift();
-                    defer.resolve(true);
-                  });
-              //  }
+              if (event.promises[trigger.id].length > 1) {
+                //  if(event.promises[trigger.id].length) {
+                let debouncerIndex = _.findIndex(event.promises[trigger.id], d => d !== null);
+                let promise = event.promises[trigger.id][debouncerIndex];
+                event.promises[trigger.id][debouncerIndex] = null;
+                promise.then(() => {
+                  //debouncers.shift();
+                  defer.resolve(true);
+                }).catch(() => {
+                  //debouncers.shift();
+                  defer.resolve(true);
+                });
+                //  }
               } else {
                 //event.promises[trigger.id][0] = null;
                 defer.resolve(true);
@@ -148,6 +148,7 @@ class MyApp extends Homey.App {
     }
     //#endregion
 
+    let flowexecutionid = 0;
     //#region Actioncards
     var actions = this.actions = [
       { id: 'action_none', deprecated: true },
@@ -183,15 +184,15 @@ class MyApp extends Homey.App {
           } else if (action.id.startsWith('action__')) {
             if (!this.returns) this.returns = {};
             if (!this.returns[newArgs.name.name]) this.returns[newArgs.name.name] = { count: 0, list: {} };
-            args.flowexecutionid = this.returns[newArgs.name.name].count += 1;
+            args.flowexecutionid = flowexecutionid +=1; //this.returns[newArgs.name.name].count += 1;
             let recievedTokens;
             if (args.waittofinish !== false) {
-              this.returns[newArgs.name.name].list[this.returns[newArgs.name.name].count] = new Defer();
-              this.returns[newArgs.name.name].list[this.returns[newArgs.name.name].count].then(x => { if (recievedTokens === undefined) recievedTokens = x; });
+              this.returns[newArgs.name.name].list[flowexecutionid] = new Defer();
+              this.returns[newArgs.name.name].list[flowexecutionid].then(x => { if (recievedTokens === undefined) recievedTokens = x; });
 
             }
             const event = action.triggerCard.events[newArgs.name.name];
-            if (event && event.debounce==='sequential') {
+            if (event && event.debounce === 'sequential') {
               if (!event.promises) event.promises = [];
             }
             var promises = [];
@@ -204,9 +205,9 @@ class MyApp extends Homey.App {
               const p = triggerCard.card.trigger(args, { name: newArgs.name, textCount: action.textCount, numberCount: action.numberCount, booleanCount: action.booleanCount, uniqueId: this.uniqueId++ });
               promises.push(p);
               if (event && event.promises) {
-                if(!event.promises[triggerCard.id]) event.promises[triggerCard.id] = [];
+                if (!event.promises[triggerCard.id]) event.promises[triggerCard.id] = [];
                 event.promises[triggerCard.id].push(p);
-                p.then(()=> {event.promises[triggerCard.id].shift(); }).catch(()=> { event.promises[triggerCard.id].shift();} );              
+                p.then(() => { event.promises[triggerCard.id].shift(); }).catch(() => { event.promises[triggerCard.id].shift(); });
               }
             }
             let tokens = {};
@@ -216,7 +217,7 @@ class MyApp extends Homey.App {
 
             if (args.waittofinish === false) {
               defer.resolve(tokens);
-              delete this.returns[newArgs.name.name].list[this.returns[newArgs.name.name].count];
+              delete this.returns[newArgs.name.name].list[flowexecutionid];
             }
             else {
 
@@ -224,11 +225,11 @@ class MyApp extends Homey.App {
                 .then(x => {
                   let a = recievedTokens;
                   defer.resolve(recievedTokens || tokens);
-                  delete this.returns[newArgs.name.name].list[this.returns[newArgs.name.name].count];
+                  delete this.returns[newArgs.name.name].list[flowexecutionid];
                 })
                 .catch(err => {
                   defer.reject(err);
-                  delete this.returns[newArgs.name.name].list[this.returns[newArgs.name.name].count];
+                  delete this.returns[newArgs.name.name].list[flowexecutionid];
                 });
             }
           }
@@ -281,8 +282,11 @@ class MyApp extends Homey.App {
           for (let j = 1; j <= 10; j++) if (tokens['text' + j.toString()] === undefined) tokens['text' + j.toString()] = "";
           for (let j = 1; j <= 10; j++) if (tokens['number' + j.toString()] === undefined) tokens['number' + j.toString()] = 0;
           for (let j = 1; j <= 10; j++) if (tokens['boolean' + j.toString()] === undefined) tokens['boolean' + j.toString()] = false;
-          if (args.flowexecutionid && this.returns[args.name.name] && this.returns[args.name.name].list[args.flowexecutionid]) this.returns[args.name.name].list[args.flowexecutionid].resolve(tokens);
+          let ret;
+          //if (args.flowexecutionid && this.returns[args.name.name] && this.returns[args.name.name].list[args.flowexecutionid]) this.returns[args.name.name].list[args.flowexecutionid].resolve(tokens);
+          if (args.flowexecutionid && (ret=_.find(this.returns, r=> Object.keys(r.list).indexOf(args.flowexecutionid.toString())>-1)) &&(ret=ret.list)) ret[args.flowexecutionid.toString()].resolve(tokens);
           defer.resolve(tokens);
+          
 
         } catch (error) {
           console.log('Error: ' + error);
@@ -291,17 +295,17 @@ class MyApp extends Homey.App {
         return defer.promise;
       }).bind(this));
 
-      returnCard.getArgument('name').registerAutocompleteListener(async (query, args) => {
-        try {
-          _return.lastName = query;
-          return await this.getEventNames({ targetCard: _return.triggerCard, query: query, args: args, isAction: true });
-        } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
-      });
+      // returnCard.getArgument('name').registerAutocompleteListener(async (query, args) => {
+      //   try {
+      //     _return.lastName = query;
+      //     return await this.getEventNames({ targetCard: _return.triggerCard, query: query, args: args, isAction: true });
+      //   } catch (error) { this.error('trigger.name.registerAutocompleteListener.error :', error); throw error; }
+      // });
 
-      returnCard.on("update", async () => {
-        this.setArgumentValues(_return, returnCard);
-      });
-      this.setArgumentValues(_return, returnCard);
+      // returnCard.on("update", async () => {
+      //   this.setArgumentValues(_return, returnCard);
+      // });
+      // this.setArgumentValues(_return, returnCard);
     }
 
     //#endregion
@@ -318,7 +322,7 @@ class MyApp extends Homey.App {
 
     for (let i = 0; i < trigger.argumentValues.length; i++) {
       const argumentValue = trigger.argumentValues[i];
-      if (!trigger.events[argumentValue.name.name]) trigger.events[argumentValue.name.name] = { name: argumentValue.name.name, arguments: [argumentValue], debounce: argumentValue.debounce};
+      if (!trigger.events[argumentValue.name.name]) trigger.events[argumentValue.name.name] = { name: argumentValue.name.name, arguments: [argumentValue], debounce: argumentValue.debounce };
       else {
         var event = trigger.events[argumentValue.name.name];
         if (argumentValue.debounce && argumentValue.debounce != 'none') {
