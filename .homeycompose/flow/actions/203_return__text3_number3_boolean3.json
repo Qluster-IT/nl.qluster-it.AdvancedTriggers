@@ -5,28 +5,16 @@
         "nl": "Start Flowkaart"
     },
     "titleFormatted": {
-        "en": "Return [[name]]([[flowexecutionid]]) with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])",
-        "nl": "Return [[name]]([[flowexecutionid]]) met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])"
+        "en": "Return to [[flowexecutionid]] the values [[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]",
+        "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]"
     },
     "args": [
-        {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-                "en": "Type or select a trigger name",
-                "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-                "en": "Triggername",
-                "nl": "Triggernaam"
-            }
-        },
         {
             "type": "number",
             "name": "flowexecutionid",
             "placeholder": {
-                "en": "Flow Execution ID",
-                "nl": "Flow Executie ID"
+                "en": "Return ID",
+                "nl": "Return ID"
             },
             "required":true
         },

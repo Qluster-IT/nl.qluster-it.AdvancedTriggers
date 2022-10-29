@@ -5,12 +5,13 @@
         "nl": "Start Flowkaart"
     },
     "titleFormatted": {
-        "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) and Set Wait to Finish to [[waittofinish]]",
-        "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) en zet wacht op gereed op [[waittofinish]]"
+        "en": "Start [[name]]/[[namebytag]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) and Set Wait to Finish to [[waittofinish]]",
+        "nl": "Start [[name]]/[[namebytag]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) en zet wacht op gereed op [[waittofinish]]"
     },
     "args": [
         {
             "type": "autocomplete",
+            "required":false,
             "name": "name",
             "placeholder": {
                 "en": "Type or select a trigger name",
@@ -19,6 +20,19 @@
             "title": {
                 "en": "Triggername",
                 "nl": "Triggernaam"
+            }
+        },
+        {
+            "type": "text",
+            "required":false,
+            "name": "namebytag",
+            "placeholder": {
+                "en": "Or use a Tag or text as name",
+                "nl": "Of gebruik een Tag of tekst als naam"
+            },
+            "title": {
+                "en": "Tag",
+                "nl": "Tag"
             }
         },
         {

@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -88,19 +88,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -122,6 +122,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]
@@ -145,8 +152,8 @@
             "type": "number",
             "name": "flowexecutionid",
             "title": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             }
           },
           {
@@ -232,19 +239,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -266,6 +273,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]
@@ -289,8 +303,8 @@
             "type": "number",
             "name": "flowexecutionid",
             "title": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             }
           },
           {
@@ -424,19 +438,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -458,6 +472,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]
@@ -481,8 +502,8 @@
             "type": "number",
             "name": "flowexecutionid",
             "title": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             }
           },
           {
@@ -664,19 +685,19 @@
             "name": "debounce",
             "required": false,
             "placeholder": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Default execution",
+              "nl": "Standaard uitvoering"
             },
             "title": {
-              "en": "Debounce",
-              "nl": "Debounce"
+              "en": "Execution",
+              "nl": "Uitvoering"
             },
             "values": [
               {
                 "id": "none",
                 "label": {
-                  "en": "Don't use debounce",
-                  "nl": "Gebruik geen debounce"
+                  "en": "Default execution",
+                  "nl": "Standaard uitvoering"
                 }
               },
               {
@@ -698,6 +719,13 @@
                 "label": {
                   "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
                   "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
+                }
+              },
+              {
+                "id": "sequential",
+                "label": {
+                  "en": "Sequential (execute each one, after the previous one has finished)",
+                  "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
                 }
               }
             ]
@@ -721,8 +749,8 @@
             "type": "number",
             "name": "flowexecutionid",
             "title": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             }
           },
           {
@@ -1024,12 +1052,13 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Start [[name]] with ([[text1]], [[number1]], [[boolean1]]) and Set Wait to Finish to [[waittofinish]]",
-          "nl": "Start [[name]] met ([[text1]], [[number1]], [[boolean1]]) en zet wacht op gereed op [[waittofinish]]"
+          "en": "Start [[name]]/[[namebytag]] with ([[text1]], [[number1]], [[boolean1]]) and Set Wait to Finish to [[waittofinish]]",
+          "nl": "Start [[name]]/[[namebytag]] met ([[text1]], [[number1]], [[boolean1]]) en zet wacht op gereed op [[waittofinish]]"
         },
         "args": [
           {
             "type": "autocomplete",
+            "required": false,
             "name": "name",
             "placeholder": {
               "en": "Type or select a trigger name",
@@ -1038,6 +1067,19 @@
             "title": {
               "en": "Triggername",
               "nl": "Triggernaam"
+            }
+          },
+          {
+            "type": "text",
+            "required": false,
+            "name": "namebytag",
+            "placeholder": {
+              "en": "Or use a Tag or text as name",
+              "nl": "Of gebruik een Tag of tekst als naam"
+            },
+            "title": {
+              "en": "Tag",
+              "nl": "Tag"
             }
           },
           {
@@ -1327,12 +1369,13 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]) and Set Wait to Finish to [[waittofinish]]",
-          "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]) en zet wacht op gereed op [[waittofinish]]"
+          "en": "Start [[name]]/[[namebytag]] with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]) and Set Wait to Finish to [[waittofinish]]",
+          "nl": "Start [[name]]/[[namebytag]] met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]) en zet wacht op gereed op [[waittofinish]]"
         },
         "args": [
           {
             "type": "autocomplete",
+            "required": false,
             "name": "name",
             "placeholder": {
               "en": "Type or select a trigger name",
@@ -1341,6 +1384,19 @@
             "title": {
               "en": "Triggername",
               "nl": "Triggernaam"
+            }
+          },
+          {
+            "type": "text",
+            "required": false,
+            "name": "namebytag",
+            "placeholder": {
+              "en": "Or use a Tag or text as name",
+              "nl": "Of gebruik een Tag of tekst als naam"
+            },
+            "title": {
+              "en": "Tag",
+              "nl": "Tag"
             }
           },
           {
@@ -1684,12 +1740,13 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) and Set Wait to Finish to [[waittofinish]]",
-          "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) en zet wacht op gereed op [[waittofinish]]"
+          "en": "Start [[name]]/[[namebytag]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) and Set Wait to Finish to [[waittofinish]]",
+          "nl": "Start [[name]]/[[namebytag]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]) en zet wacht op gereed op [[waittofinish]]"
         },
         "args": [
           {
             "type": "autocomplete",
+            "required": false,
             "name": "name",
             "placeholder": {
               "en": "Type or select a trigger name",
@@ -1698,6 +1755,19 @@
             "title": {
               "en": "Triggername",
               "nl": "Triggernaam"
+            }
+          },
+          {
+            "type": "text",
+            "required": false,
+            "name": "namebytag",
+            "placeholder": {
+              "en": "Or use a Tag or text as name",
+              "nl": "Of gebruik een Tag of tekst als naam"
+            },
+            "title": {
+              "en": "Tag",
+              "nl": "Tag"
             }
           },
           {
@@ -2095,12 +2165,13 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Start [[name]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]) and Set Wait to Finish to [[waittofinish]]",
-          "nl": "Start [[name]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]) en zet wacht op gereed op [[waittofinish]]"
+          "en": "Start [[name]]/[[namebytag]] with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]) and Set Wait to Finish to [[waittofinish]]",
+          "nl": "Start [[name]]/[[namebytag]] met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]) en zet wacht op gereed op [[waittofinish]]"
         },
         "args": [
           {
             "type": "autocomplete",
+            "required": false,
             "name": "name",
             "placeholder": {
               "en": "Type or select a trigger name",
@@ -2109,6 +2180,19 @@
             "title": {
               "en": "Triggername",
               "nl": "Triggernaam"
+            }
+          },
+          {
+            "type": "text",
+            "required": false,
+            "name": "namebytag",
+            "placeholder": {
+              "en": "Or use a Tag or text as name",
+              "nl": "Of gebruik een Tag of tekst als naam"
+            },
+            "title": {
+              "en": "Tag",
+              "nl": "Tag"
             }
           },
           {
@@ -2641,28 +2725,16 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Return [[name]]([[flowexecutionid]]) with ([[text1]], [[number1]], [[boolean1]])",
-          "nl": "Return [[name]]([[flowexecutionid]]) met ([[text1]], [[number1]], [[boolean1]])"
+          "en": "Return to [[flowexecutionid]] the values [[text1]], [[number1]], [[boolean1]]",
+          "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[number1]], [[boolean1]]"
         },
         "args": [
-          {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-              "en": "Type or select a trigger name",
-              "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-              "en": "Triggername",
-              "nl": "Triggernaam"
-            }
-          },
           {
             "type": "number",
             "name": "flowexecutionid",
             "placeholder": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             },
             "required": true
           },
@@ -2702,28 +2774,16 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Return [[name]]([[flowexecutionid]]) with ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])",
-          "nl": "Return [[name]]([[flowexecutionid]]) met ([[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]])"
+          "en": "Return to [[flowexecutionid]] the values [[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]",
+          "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[number1]], [[number2]], [[number3]], [[boolean1]], [[boolean2]], [[boolean3]]"
         },
         "args": [
-          {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-              "en": "Type or select a trigger name",
-              "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-              "en": "Triggername",
-              "nl": "Triggernaam"
-            }
-          },
           {
             "type": "number",
             "name": "flowexecutionid",
             "placeholder": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             },
             "required": true
           },
@@ -2817,28 +2877,16 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Return [[name]]([[flowexecutionid]]) with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]])",
-          "nl": "Return [[name]]([[flowexecutionid]]) met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]])"
+          "en": "Return to [[flowexecutionid]] the values [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+          "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]"
         },
         "args": [
-          {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-              "en": "Type or select a trigger name",
-              "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-              "en": "Triggername",
-              "nl": "Triggernaam"
-            }
-          },
           {
             "type": "number",
             "name": "flowexecutionid",
             "placeholder": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             },
             "required": true
           },
@@ -2986,28 +3034,16 @@
           "nl": "Start Flowkaart"
         },
         "titleFormatted": {
-          "en": "Return [[name]]([[flowexecutionid]]) with ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]])",
-          "nl": "Return [[name]]([[flowexecutionid]]) met ([[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]])"
+          "en": "Return to [[flowexecutionid]] the values  [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+          "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]"
         },
         "args": [
-          {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-              "en": "Type or select a trigger name",
-              "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-              "en": "Triggername",
-              "nl": "Triggernaam"
-            }
-          },
           {
             "type": "number",
             "name": "flowexecutionid",
             "placeholder": {
-              "en": "Flow Execution ID",
-              "nl": "Flow Executie ID"
+              "en": "Return ID",
+              "nl": "Return ID"
             },
             "required": true
           },
