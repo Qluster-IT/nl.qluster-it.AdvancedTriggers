@@ -49,5 +49,8 @@
   },
   "1.5.1": {
     "en": "Added: Contribution options: Patreon and GithubSponsors (with PayPal already available)."
+  },
+  "1.5.2": {
+    "en": "Bugfixed: (Automatic) Sequential execution of triggers."
   }
 }

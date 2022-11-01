@@ -48,23 +48,33 @@ class MyApp extends Homey.App {
           if (event) {
             if (!event.debouncers) event.debouncers = [];
             if (args.debounce === 'sequential' && event.promises && event.promises[trigger.id]) {
-              if (event.promises[trigger.id].length > 1) {
-                //  if(event.promises[trigger.id].length) {
-                let debouncerIndex = _.findIndex(event.promises[trigger.id], d => d !== null);
-                let promise = event.promises[trigger.id][debouncerIndex];
-                event.promises[trigger.id][debouncerIndex] = null;
-                promise.then(() => {
+              //if (event.promises[trigger.id].length > 1) {
+                let debouncerIndex = _.findIndex(event.promises[trigger.id], d => !d.isDefered && !d.isLinked && !d.startedLinking);
+                event.promises[trigger.id][debouncerIndex].startedLinking = true;
+                //event.promises[trigger.id][debouncerIndex] = 
+                
+                if(debouncerIndex===0) {
+                  //event.promises[trigger.id][debouncerIndex].resolve();
+                  //defer.resolve(true);
+                  
+                  return Promise.resolve(true);
+                }
+                let debouncerLinkIndex = _.findIndex(event.promises[trigger.id], d => !d.isDefered && !d.isLinked);
+                let _defer = event.promises[trigger.id][debouncerLinkIndex];
+                _defer.isLinked = true;
+                
+                //event.promises[trigger.id][debouncerIndex] = null;
+                _defer.promise.then(() => {
                   //debouncers.shift();
                   defer.resolve(true);
                 }).catch(() => {
                   //debouncers.shift();
                   defer.resolve(true);
                 });
-                //  }
-              } else {
-                //event.promises[trigger.id][0] = null;
-                defer.resolve(true);
-              }
+              // } else {
+              //   //event.promises[trigger.id][0] = null;
+              //   defer.resolve(true);
+              // }
 
             } else {
               const debouncers = event.debouncers;
@@ -206,8 +216,12 @@ class MyApp extends Homey.App {
               promises.push(p);
               if (event && event.promises) {
                 if (!event.promises[triggerCard.id]) event.promises[triggerCard.id] = [];
-                event.promises[triggerCard.id].push(p);
-                p.then(() => { event.promises[triggerCard.id].shift(); }).catch(() => { event.promises[triggerCard.id].shift(); });
+                event.promises[triggerCard.id].push(new Defer(null, p));
+                p.then(() => { 
+                  event.promises[triggerCard.id].shift(); 
+                }).catch(() => { 
+                  event.promises[triggerCard.id].shift(); 
+                });
               }
             }
             let tokens = {};
