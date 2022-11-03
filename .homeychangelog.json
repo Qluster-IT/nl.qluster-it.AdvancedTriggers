@@ -52,5 +52,8 @@
   },
   "1.5.2": {
     "en": "Bugfixed: (Automatic) Sequential execution of triggers."
+  },
+  "1.5.3": {
+    "en": "Bugfixed: Returncards for Sequential execution of triggers."
   }
 }
