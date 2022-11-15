@@ -194,8 +194,9 @@ class MyApp extends Homey.App {
           } else if (action.id.startsWith('action__')) {
             if (!this.returns) this.returns = {};
             if (!this.returns[newArgs.name.name]) this.returns[newArgs.name.name] = { count: 0, list: {} };
-            args.flowexecutionid = flowexecutionid +=1; //this.returns[newArgs.name.name].count += 1;
+            flowexecutionid = args.flowexecutionid = flowexecutionid +=1; //this.returns[newArgs.name.name].count += 1;
             let recievedTokens;
+            const _flowexecutionid = flowexecutionid;
             if (args.waittofinish !== false) {
               this.returns[newArgs.name.name].list[flowexecutionid] = new Defer();
               this.returns[newArgs.name.name].list[flowexecutionid].then(x => { if (recievedTokens === undefined) recievedTokens = x; });
@@ -239,11 +240,12 @@ class MyApp extends Homey.App {
                 .then(x => {
                   let a = recievedTokens;
                   defer.resolve(recievedTokens || tokens);
-                  delete this.returns[newArgs.name.name].list[flowexecutionid];
+                  delete this.returns[newArgs.name.name].list[_flowexecutionid]; 
+                  //let b = _flowexecutionid;
                 })
                 .catch(err => {
                   defer.reject(err);
-                  delete this.returns[newArgs.name.name].list[flowexecutionid];
+                  delete this.returns[newArgs.name.name].list[_flowexecutionid];
                 });
             }
           }
