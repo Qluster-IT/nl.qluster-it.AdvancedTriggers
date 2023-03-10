@@ -17,7 +17,7 @@ class MyApp extends Homey.App {
 
 
     // try {
-    //   if (process.env.DEBUG === '1') require('inspector').open(9222, '0.0.0.0', false);
+    //   if (process.env.DEBUG === '1') require('inspector').open(9213, '0.0.0.0', false);
     // } catch (error) {
 
     // }
