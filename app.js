@@ -16,13 +16,13 @@ class MyApp extends Homey.App {
     this.uniqueId = 0;
 
     if (process.env.DEBUG === '1' || false) {
-			try {
-				require('inspector').waitForDebugger();
-			}
-			catch (error) {
-				require('inspector').open(9146, '0.0.0.0', true);
-			}
-		}
+      try {
+        require('inspector').waitForDebugger();
+      }
+      catch (error) {
+        require('inspector').open(9146, '0.0.0.0', true);
+      }
+    }
     //#region Triggercards
     var triggers = this.triggers = [
       { id: 'trigger_none', deprecated: true },
@@ -50,28 +50,28 @@ class MyApp extends Homey.App {
             if (!event.debouncers) event.debouncers = [];
             if (args.debounce === 'sequential' && event.promises && event.promises[trigger.id]) {
               //if (event.promises[trigger.id].length > 1) {
-                let debouncerIndex = _.findIndex(event.promises[trigger.id], d => !d.isDefered && !d.isLinked && !d.startedLinking);
-                event.promises[trigger.id][debouncerIndex].startedLinking = true;
-                //event.promises[trigger.id][debouncerIndex] = 
-                
-                if(debouncerIndex===0) {
-                  //event.promises[trigger.id][debouncerIndex].resolve();
-                  //defer.resolve(true);
-                  
-                  return Promise.resolve(true);
-                }
-                let debouncerLinkIndex = _.findIndex(event.promises[trigger.id], d => !d.isDefered && !d.isLinked);
-                let _defer = event.promises[trigger.id][debouncerLinkIndex];
-                _defer.isLinked = true;
-                
-                //event.promises[trigger.id][debouncerIndex] = null;
-                _defer.promise.then(() => {
-                  //debouncers.shift();
-                  defer.resolve(true);
-                }).catch(() => {
-                  //debouncers.shift();
-                  defer.resolve(true);
-                });
+              let debouncerIndex = _.findIndex(event.promises[trigger.id], d => !d.isDefered && !d.isLinked && !d.startedLinking);
+              event.promises[trigger.id][debouncerIndex].startedLinking = true;
+              //event.promises[trigger.id][debouncerIndex] = 
+
+              if (debouncerIndex === 0) {
+                //event.promises[trigger.id][debouncerIndex].resolve();
+                //defer.resolve(true);
+
+                return Promise.resolve(true);
+              }
+              let debouncerLinkIndex = _.findIndex(event.promises[trigger.id], d => !d.isDefered && !d.isLinked);
+              let _defer = event.promises[trigger.id][debouncerLinkIndex];
+              _defer.isLinked = true;
+
+              //event.promises[trigger.id][debouncerIndex] = null;
+              _defer.promise.then(() => {
+                //debouncers.shift();
+                defer.resolve(true);
+              }).catch(() => {
+                //debouncers.shift();
+                defer.resolve(true);
+              });
               // } else {
               //   //event.promises[trigger.id][0] = null;
               //   defer.resolve(true);
@@ -195,7 +195,7 @@ class MyApp extends Homey.App {
           } else if (action.id.startsWith('action__')) {
             if (!this.returns) this.returns = {};
             if (!this.returns[newArgs.name.name]) this.returns[newArgs.name.name] = { count: 0, list: {} };
-            flowexecutionid = args.flowexecutionid = flowexecutionid +=1; //this.returns[newArgs.name.name].count += 1;
+            flowexecutionid = args.flowexecutionid = flowexecutionid += 1; //this.returns[newArgs.name.name].count += 1;
             let recievedTokens;
             const _flowexecutionid = flowexecutionid;
             if (args.waittofinish !== false) {
@@ -203,14 +203,17 @@ class MyApp extends Homey.App {
               this.returns[newArgs.name.name].list[flowexecutionid].then(x => { if (recievedTokens === undefined) recievedTokens = x; });
 
             }
-            const event = action.triggerCard.events[newArgs.name.name];
-            if (event && event.debounce === 'sequential') {
-              if (!event.promises) event.promises = [];
-            }
+
             var promises = [];
             var triggerCards = _.filter(this.triggers, x => { return !x.deprecated && x.textCount >= action.triggerCard.textCount && x.numberCount >= action.triggerCard.numberCount && x.booleanCount >= action.triggerCard.booleanCount; });
             for (let i = 0; i < triggerCards.length; i++) {
               const triggerCard = triggerCards[i];
+
+              const event = triggerCard.events[newArgs.name.name];
+              if (event && event.debounce === 'sequential') {
+                if (!event.promises) event.promises = [];
+              }
+
               for (let j = 1; j <= triggerCard.textCount; j++) if (args['text' + j.toString()] === undefined) args['text' + j.toString()] = "";
               for (let j = 1; j <= triggerCard.numberCount; j++) if (args['number' + j.toString()] === undefined) args['number' + j.toString()] = 0;
               for (let j = 1; j <= triggerCard.booleanCount; j++) if (args['boolean' + j.toString()] === undefined) args['boolean' + j.toString()] = false;
@@ -219,10 +222,10 @@ class MyApp extends Homey.App {
               if (event && event.promises) {
                 if (!event.promises[triggerCard.id]) event.promises[triggerCard.id] = [];
                 event.promises[triggerCard.id].push(new Defer(null, p));
-                p.then(() => { 
-                  event.promises[triggerCard.id].shift(); 
-                }).catch(() => { 
-                  event.promises[triggerCard.id].shift(); 
+                p.then(() => {
+                  event.promises[triggerCard.id].shift();
+                }).catch(() => {
+                  event.promises[triggerCard.id].shift();
                 });
               }
             }
@@ -300,9 +303,9 @@ class MyApp extends Homey.App {
           for (let j = 1; j <= 10; j++) if (tokens['boolean' + j.toString()] === undefined) tokens['boolean' + j.toString()] = false;
           let ret;
           //if (args.flowexecutionid && this.returns[args.name.name] && this.returns[args.name.name].list[args.flowexecutionid]) this.returns[args.name.name].list[args.flowexecutionid].resolve(tokens);
-          if (args.flowexecutionid && (ret=_.find(this.returns, r=> Object.keys(r.list).indexOf(args.flowexecutionid.toString())>-1)) &&(ret=ret.list)) ret[args.flowexecutionid.toString()].resolve(tokens);
+          if (args.flowexecutionid && (ret = _.find(this.returns, r => Object.keys(r.list).indexOf(args.flowexecutionid.toString()) > -1)) && (ret = ret.list)) ret[args.flowexecutionid.toString()].resolve(tokens);
           defer.resolve(tokens);
-          
+
 
         } catch (error) {
           console.log('Error: ' + error);
