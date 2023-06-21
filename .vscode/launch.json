@@ -22,7 +22,7 @@
 			"args": [
 				"select",
 				"-n",
-				"Homey Pro van Danee"
+				"Homey Pro van Arie J."
 			]
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "node",
 			"request": "attach",
 			"address": "192.168.1.17",
-			"port": 9213,
+			"port": 9146,
 			"localRoot": "${workspaceFolder}",
 			"remoteRoot": "/"
 		},
@@ -74,7 +74,7 @@
 			"type": "node",
 			"request": "attach",
 			"address": "192.168.1.239",
-			"port": 9213,
+			"port": 9146,
 			"localRoot": "${workspaceFolder}",
 			"remoteRoot": "/app/",
 			"restart": true

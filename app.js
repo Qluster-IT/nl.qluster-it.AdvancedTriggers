@@ -15,13 +15,14 @@ class MyApp extends Homey.App {
     this.lastName = null;
     this.uniqueId = 0;
 
-
-    // try {
-    //   if (process.env.DEBUG === '1') require('inspector').open(9213, '0.0.0.0', false);
-    // } catch (error) {
-
-    // }
-
+    if (process.env.DEBUG === '1' || false) {
+			try {
+				require('inspector').waitForDebugger();
+			}
+			catch (error) {
+				require('inspector').open(9146, '0.0.0.0', true);
+			}
+		}
     //#region Triggercards
     var triggers = this.triggers = [
       { id: 'trigger_none', deprecated: true },
@@ -240,8 +241,7 @@ class MyApp extends Homey.App {
                 .then(x => {
                   let a = recievedTokens;
                   defer.resolve(recievedTokens || tokens);
-                  delete this.returns[newArgs.name.name].list[_flowexecutionid]; 
-                  //let b = _flowexecutionid;
+                  delete this.returns[newArgs.name.name].list[_flowexecutionid];
                 })
                 .catch(err => {
                   defer.reject(err);
