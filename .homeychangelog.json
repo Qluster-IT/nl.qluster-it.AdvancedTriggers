@@ -61,5 +61,8 @@
   },
   "1.5.6": {
     "en": "Resolved: Overloading with Sequential didn't work correct."
+  },
+  "1.5.7": {
+    "en": "Improved: Tags."
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -14,8 +14,8 @@
     "en": "Trigger and action cards with eventname for Advanced Flows"
   },
   "tags": {
-    "en": ["Trigger", "Advanced", "When", "Debounce", "Arguments", "Method", "Function"],
-    "nl": ["Trigger", "Advanced", "Wanneer", "Debounce", "Argumenten", "Methode", "Functie"]
+    "en": ["Trigger", "Advanced", "When", "Debounce", "Arguments", "Method", "Function", "loop"],
+    "nl": ["Trigger", "Advanced", "Wanneer", "Debounce", "Argumenten", "Methode", "Functie", "loop"]
   },
   "category": [
     "tools"
