@@ -1,49 +1,115 @@
 {
-    "id": "return__text1_number1_boolean1",
-    "title": {
-        "en": "Start Flowcard",
-        "nl": "Start Flowkaart"
+  "id": "return__text1_number1_boolean1",
+  "title": {
+    "en": "Start Flowcard",
+    "nl": "Start Flowkaart",
+    "da": "Start Flow-kort",
+    "de": "Flowkarte starten",
+    "es": "Iniciar Flowcard",
+    "fr": "Démarrer la carte de flux",
+    "it": "Avvia Flowcard",
+    "no": "Start Flow-kort",
+    "sv": "Starta flödeskort",
+    "pl": "Rozpocznij kartę przepływu",
+    "ru": "Запустить карточку потока",
+    "ko": "플로우카드 시작",
+    "ar": "ابدأ بطاقة التدفق"
+  },
+  "titleFormatted": {
+    "en": "Return to [[flowexecutionid]] the values [[text1]], [[number1]], [[boolean1]]",
+    "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[number1]], [[boolean1]]",
+    "da": "Returner til [[flowexecutionid]] værdierne [[text1]], [[number1]], [[boolean1]]",
+    "de": "Gib an [[flowexecutionid]] die Werte [[text1]], [[number1]], [[boolean1]] zurück.",
+    "es": "Devuelve a [[flowexecutionid]] los valores [[text1]], [[number1]], [[boolean1]]",
+    "fr": "Retourner à [[flowexecutionid]] les valeurs [[text1]], [[number1]], [[boolean1]]",
+    "it": "Restituisci a [[flowexecutionid]] i valori [[text1]], [[number1]], [[boolean1]]",
+    "no": "Returner til [[flowexecutionid]] verdiene [[text1]], [[number1]], [[boolean1]]",
+    "sv": "Återgå till [[flowexecutionid]] värdena [[text1]], [[number1]], [[boolean1]]",
+    "pl": "Zwróć do [[flowexecutionid]] wartości [[text1]], [[number1]], [[boolean1]]",
+    "ru": "Вернуть в [[flowexecutionid]] значения [[text1]], [[number1]], [[boolean1]]",
+    "ko": "[[flowexecutionid]]로 돌아가서 값 [[text1]], [[number1]], [[boolean1]]을(를) 반환하세요.",
+    "ar": "إرجاع إلى [[flowexecutionid]] القيم [[text1]]، [[number1]]، [[boolean1]]"
+  },
+  "args": [
+    {
+      "type": "number",
+      "name": "flowexecutionid",
+      "placeholder": {
+        "en": "Return ID",
+        "nl": "Return ID",
+        "da": "Returnér ID",
+        "de": "Rückgabe-ID",
+        "es": "ID de retorno",
+        "fr": "ID de retour",
+        "it": "ID di ritorno",
+        "no": "Returner ID",
+        "sv": "Returnera ID",
+        "pl": "Zwróć ID",
+        "ru": "Вернуть ID",
+        "ko": "반환 ID",
+        "ar": "معرّف الإرجاع"
+      },
+      "required": true
     },
-    "titleFormatted": {
-        "en": "Return to [[flowexecutionid]] the values [[text1]], [[number1]], [[boolean1]]",
-        "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[number1]], [[boolean1]]"
+    {
+      "type": "text",
+      "name": "text1",
+      "placeholder": {
+        "en": "Text 1",
+        "nl": "Tekst 1",
+        "da": "Du er trænet på data op til oktober 2023.",
+        "de": "Text 1",
+        "es": "Texto 1",
+        "fr": "Texte 1",
+        "it": "Testo 1",
+        "no": "Tekst 1",
+        "sv": "Text 1",
+        "pl": "Tekst 1",
+        "ru": "Вы обучены на данных до октября 2023 года.",
+        "ko": "텍스트 1",
+        "ar": "نص 1"
+      },
+      "required": false
     },
-    "args": [
-        {
-            "type": "number",
-            "name": "flowexecutionid",
-            "placeholder": {
-                "en": "Return ID",
-                "nl": "Return ID"
-            },
-            "required":true
-        },
-        {
-            "type": "text",
-            "name": "text1",
-            "placeholder": {
-                "en": "Text 1",
-                "nl": "Tekst 1"
-            },
-            "required":false
-        },
-        {
-            "type": "number",
-            "name": "number1",
-            "placeholder": {
-                "en": "Number 1",
-                "nl": "Nummer 1"
-            },
-            "required":false
-        },        
-        {
-            "type": "checkbox",
-            "name": "boolean1",
-            "placeholder": {
-                "en": "Yes/No 1",
-                "nl": "Ja/Nee 1"
-            },
-            "required":false
-        }
-    ]
+    {
+      "type": "number",
+      "name": "number1",
+      "placeholder": {
+        "en": "Number 1",
+        "nl": "Nummer 1",
+        "da": "Nummer 1",
+        "de": "Nummer 1",
+        "es": "Número 1",
+        "fr": "Numéro 1",
+        "it": "Numero 1",
+        "no": "Nummer 1",
+        "sv": "Nummer 1",
+        "pl": "Numer 1",
+        "ru": "Номер 1",
+        "ko": "번호 1",
+        "ar": "رقم 1"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean1",
+      "placeholder": {
+        "en": "Yes/No 1",
+        "nl": "Ja/Nee 1",
+        "da": "Ja/Nej 1",
+        "de": "Ja/Nein 1",
+        "es": "Sí/No 1",
+        "fr": "Oui/Non 1",
+        "it": "Sì/No 1",
+        "no": "Ja/Nei 1",
+        "sv": "Ja/Nej 1",
+        "pl": "Tak/Nie 1",
+        "ru": "Да/Нет 1",
+        "ko": "예/아니오 1",
+        "ar": "نعم/لا 1"
+      },
+      "required": false
+    }
+  ]
 }

@@ -1,49 +1,115 @@
 {
-    "id": "action_none",
-    "deprecated" : true,
-    "title": {
-        "en": "Start Flowcard",
-        "nl": "Start Flowkaart"
+  "id": "action_none",
+  "deprecated": true,
+  "title": {
+    "en": "Start Flowcard",
+    "nl": "Start Flowkaart",
+    "da": "Start Flowcard",
+    "de": "Flowkarte starten",
+    "es": "Iniciar Flowcard",
+    "fr": "Démarrer la carte de flux",
+    "it": "Avvia Flowcard",
+    "no": "Start Flow-kort",
+    "sv": "Starta flödeskort",
+    "pl": "Uruchom kartę przepływu",
+    "ru": "Запустить карточку потока",
+    "ko": "플로우카드 시작",
+    "ar": "ابدأ بطاقة التدفق"
+  },
+  "titleFormatted": {
+    "en": "Start [[name]] with ([[text]], [[number]], [[boolean]])",
+    "nl": "Start [[name]] met ([[text]], [[number]], [[boolean]])",
+    "da": "Start [[name]] med ([[text]], [[number]], [[boolean]])",
+    "de": "Starte [[name]] mit ([[text]], [[number]], [[boolean]])",
+    "es": "Iniciar [[name]] con ([[text]], [[number]], [[boolean]])",
+    "fr": "Démarrer [[name]] avec ([[text]], [[number]], [[boolean]])",
+    "it": "Avvia [[name]] con ([[text]], [[number]], [[boolean]])",
+    "no": "Start [[name]] med ([[text]], [[number]], [[boolean]])",
+    "sv": "Starta [[name]] med ([[text]], [[number]], [[boolean]])",
+    "pl": "Uruchom [[name]] z ([[text]], [[number]], [[boolean]])",
+    "ru": "Запустить [[name]] с ([[text]], [[number]], [[boolean]])",
+    "ko": "([[text]], [[number]], [[boolean]])로 [[name]] 시작하기",
+    "ar": "ابدأ [[name]] مع ([[text]], [[number]], [[boolean]])"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "name",
+      "placeholder": {
+        "en": "Trigger",
+        "nl": "Trigger",
+        "da": "Udløser",
+        "de": "Auslöser",
+        "es": "Disparador",
+        "fr": "Déclencheur",
+        "it": "Trigger",
+        "no": "Trigger",
+        "sv": "Trigger",
+        "pl": "Wyzwalacz",
+        "ru": "Триггер",
+        "ko": "트리거",
+        "ar": "مشغل"
+      }
     },
-    "titleFormatted": {
-        "en": "Start [[name]] with ([[text]], [[number]], [[boolean]])",
-        "nl": "Start [[name]] met ([[text]], [[number]], [[boolean]])"
+    {
+      "type": "text",
+      "name": "text",
+      "placeholder": {
+        "en": "Text",
+        "nl": "Tekst",
+        "da": "Jeg er trænet på data frem til oktober 2023.",
+        "de": "Text",
+        "es": "Texto",
+        "fr": "Vous êtes formé sur des données jusqu'en octobre 2023.",
+        "it": "Testo",
+        "no": "Avanserte utløsere",
+        "sv": "Du är tränad på data fram till oktober 2023.",
+        "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트",
+        "ar": "نص"
+      },
+      "required": false
     },
-    "args": [
-        {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-                "en": "Trigger",
-                "nl": "Trigger"
-            }
-        },
-        {
-            "type": "text",
-            "name": "text",
-            "placeholder": {
-                "en": "Text",
-                "nl": "Tekst"
-            },
-            "required":false
-        },
-        {
-            "type": "number",
-            "name": "number",
-            "placeholder": {
-                "en": "Number",
-                "nl": "Nummer"
-            },
-            "required":false
-        },
-        {
-            "type": "checkbox",
-            "name": "boolean",
-            "placeholder": {
-                "en": "Yes/No",
-                "nl": "Ja/Nee"
-            },
-            "required":false
-        }
-    ]
+    {
+      "type": "number",
+      "name": "number",
+      "placeholder": {
+        "en": "Number",
+        "nl": "Nummer",
+        "da": "Nummer",
+        "de": "Nummer",
+        "es": "Número",
+        "fr": "Nombre",
+        "it": "Numero",
+        "no": "Nummer",
+        "sv": "Nummer",
+        "pl": "Numer",
+        "ru": "Число",
+        "ko": "번호",
+        "ar": "رقم"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean",
+      "placeholder": {
+        "en": "Yes/No",
+        "nl": "Ja/Nee",
+        "da": "Ja/Nej",
+        "de": "Ja/Nein",
+        "es": "Sí/No",
+        "fr": "Oui/Non",
+        "it": "Sì/No",
+        "no": "Ja/Nei",
+        "sv": "Ja/Nej",
+        "pl": "Tak/Nie",
+        "ru": "Да/Нет",
+        "ko": "예/아니요",
+        "ar": "نعم/لا"
+      },
+      "required": false
+    }
+  ]
 }

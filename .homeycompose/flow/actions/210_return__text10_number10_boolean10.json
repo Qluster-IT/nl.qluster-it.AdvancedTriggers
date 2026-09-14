@@ -1,265 +1,655 @@
 {
-    "id": "return__text10_number10_boolean10",
-    "title": {
-        "en": "Start Flowcard",
-        "nl": "Start Flowkaart"
+  "id": "return__text10_number10_boolean10",
+  "title": {
+    "en": "Start Flowcard",
+    "nl": "Start Flowkaart",
+    "da": "Start Flow-kort",
+    "de": "Flowkarte starten",
+    "es": "Iniciar Flowcard",
+    "fr": "Démarrer la carte de flux",
+    "it": "Avvia Flowcard",
+    "no": "Start Flow-kort",
+    "sv": "Starta flödeskort",
+    "pl": "Uruchom kartę przepływu",
+    "ru": "Запустить карточку потока",
+    "ko": "플로우카드 시작",
+    "ar": "ابدأ بطاقة التدفق"
+  },
+  "titleFormatted": {
+    "en": "Return to [[flowexecutionid]] the values  [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "da": "Returner til [[flowexecutionid]] værdierne [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "de": "Gib an [[flowexecutionid]] die Werte [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]] zurück.",
+    "es": "Devuelve a [[flowexecutionid]] los valores [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "fr": "Retourner à [[flowexecutionid]] les valeurs [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "it": "Restituisci a [[flowexecutionid]] i valori [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "no": "Returner til [[flowexecutionid]] verdiene [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "sv": "Återvänd till [[flowexecutionid]] värdena [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "pl": "Zwróć do [[flowexecutionid]] wartości [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "ru": "Вернуть в [[flowexecutionid]] значения [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
+    "ko": "[[flowexecutionid]]로 돌아가서 값 [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]을(를) 반환하세요.",
+    "ar": "إرجاع إلى [[flowexecutionid]] القيم [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]"
+  },
+  "args": [
+    {
+      "type": "number",
+      "name": "flowexecutionid",
+      "placeholder": {
+        "en": "Return ID",
+        "nl": "Return ID",
+        "da": "Returnér ID",
+        "de": "Rückgabe-ID",
+        "es": "ID de retorno",
+        "fr": "ID de retour",
+        "it": "ID di ritorno",
+        "no": "Returner ID",
+        "sv": "Returnera ID",
+        "pl": "Zwróć ID",
+        "ru": "Вернуть ID",
+        "ko": "ID 반환",
+        "ar": "معرّف الإرجاع"
+      },
+      "required": true
     },
-    "titleFormatted": {
-        "en": "Return to [[flowexecutionid]] the values  [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]",
-        "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[text6]], [[text7]], [[text8]], [[text9]], [[text10]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[number6]], [[number7]], [[number8]], [[number9]], [[number10]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]], [[boolean6]], [[boolean7]], [[boolean8]], [[boolean9]], [[boolean10]]"
+    {
+      "type": "text",
+      "name": "text1",
+      "placeholder": {
+        "en": "Text 1",
+        "nl": "Tekst 1",
+        "da": "Du er trænet på data op til oktober 2023.",
+        "de": "Text 1",
+        "es": "Texto 1",
+        "fr": "Texte 1",
+        "it": "Testo 1",
+        "no": "Tekst 1",
+        "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
+        "pl": "Tekst 1",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 1",
+        "ar": "النص 1"
+      },
+      "required": false
     },
-    "args": [
-        {
-            "type": "number",
-            "name": "flowexecutionid",
-            "placeholder": {
-                "en": "Return ID",
-                "nl": "Return ID"
-            },
-            "required":true
-        },
-        {
-            "type": "text",
-            "name": "text1",
-            "placeholder": {
-                "en": "Text 1",
-                "nl": "Tekst 1"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text2",
-            "placeholder": {
-                "en": "Text 2",
-                "nl": "Tekst 2"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text3",
-            "placeholder": {
-                "en": "Text 3",
-                "nl": "Tekst 3"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text4",
-            "placeholder": {
-                "en": "Text 4",
-                "nl": "Tekst 4"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text5",
-            "placeholder": {
-                "en": "Text 5",
-                "nl": "Tekst 5"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text6",
-            "placeholder": {
-                "en": "Text 6",
-                "nl": "Tekst 6"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text7",
-            "placeholder": {
-                "en": "Text 7",
-                "nl": "Tekst 7"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text8",
-            "placeholder": {
-                "en": "Text 8",
-                "nl": "Tekst 8"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text9",
-            "placeholder": {
-                "en": "Text 9",
-                "nl": "Tekst 9"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text10",
-            "placeholder": {
-                "en": "Text 10",
-                "nl": "Tekst 10"
-            },
-            "required":false
-        },
-        {
-            "type": "number",
-            "name": "number1",
-            "placeholder": {
-                "en": "Number 1",
-                "nl": "Nummer 1"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number2",
-            "placeholder": {
-                "en": "Number 2",
-                "nl": "Nummer 2"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number3",
-            "placeholder": {
-                "en": "Number 3",
-                "nl": "Nummer 3"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number4",
-            "placeholder": {
-                "en": "Number 4",
-                "nl": "Nummer 4"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number5",
-            "placeholder": {
-                "en": "Number 5",
-                "nl": "Nummer 5"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number6",
-            "placeholder": {
-                "en": "Number 6",
-                "nl": "Nummer 6"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number7",
-            "placeholder": {
-                "en": "Number 7",
-                "nl": "Nummer 7"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number8",
-            "placeholder": {
-                "en": "Number 8",
-                "nl": "Nummer 8"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number9",
-            "placeholder": {
-                "en": "Number 9",
-                "nl": "Nummer 9"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number10",
-            "placeholder": {
-                "en": "Number 10",
-                "nl": "Nummer 10"
-            },
-            "required":false
-        },
-        {
-            "type": "checkbox",
-            "name": "boolean1",
-            "placeholder": {
-                "en": "Yes/No 1",
-                "nl": "Ja/Nee 1"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean2",
-            "placeholder": {
-                "en": "Yes/No 2",
-                "nl": "Ja/Nee 2"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean3",
-            "placeholder": {
-                "en": "Yes/No 3",
-                "nl": "Ja/Nee 3"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean4",
-            "placeholder": {
-                "en": "Yes/No 4",
-                "nl": "Ja/Nee 4"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean5",
-            "placeholder": {
-                "en": "Yes/No 5",
-                "nl": "Ja/Nee 5"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean6",
-            "placeholder": {
-                "en": "Yes/No 6",
-                "nl": "Ja/Nee 6"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean7",
-            "placeholder": {
-                "en": "Yes/No 7",
-                "nl": "Ja/Nee 7"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean8",
-            "placeholder": {
-                "en": "Yes/No 8",
-                "nl": "Ja/Nee 8"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean9",
-            "placeholder": {
-                "en": "Yes/No 9",
-                "nl": "Ja/Nee 9"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean10",
-            "placeholder": {
-                "en": "Yes/No 10",
-                "nl": "Ja/Nee 10"
-            },
-            "required":false
-        }
-    ]
+    {
+      "type": "text",
+      "name": "text2",
+      "placeholder": {
+        "en": "Text 2",
+        "nl": "Tekst 2",
+        "da": "Du er trænet på data frem til oktober 2023.",
+        "de": "Text 2",
+        "es": "Texto 2",
+        "fr": "Texte 2",
+        "it": "Testo 2",
+        "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
+        "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
+        "pl": "Tekst 2",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 2",
+        "ar": "النص 2"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text3",
+      "placeholder": {
+        "en": "Text 3",
+        "nl": "Tekst 3",
+        "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+        "de": "Text 3",
+        "es": "Texto 3",
+        "fr": "Texte 3",
+        "it": "Testo 3",
+        "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
+        "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
+        "pl": "Tekst 3",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 3",
+        "ar": "النص 3"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text4",
+      "placeholder": {
+        "en": "Text 4",
+        "nl": "Tekst 4",
+        "da": "Du er trænet på data op til oktober 2023.",
+        "de": "Text 4",
+        "es": "Texto 4",
+        "fr": "Texte 4",
+        "it": "Testo 4",
+        "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger oversatt?",
+        "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
+        "pl": "Przepraszam, ale nie mogę pomóc w tej prośbie bez dodatkowego kontekstu. Czy możesz podać więcej informacji?",
+        "ru": "Вы обучены на данных до октября 2023 года.",
+        "ko": "텍스트 4",
+        "ar": "النص 4"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text5",
+      "placeholder": {
+        "en": "Text 5",
+        "nl": "Tekst 5",
+        "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+        "de": "Text 5",
+        "es": "Texto 5",
+        "fr": "Texte 5",
+        "it": "Testo 5",
+        "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
+        "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
+        "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem bez dodatkowego kontekstu lub treści. Czy możesz podać więcej informacji?",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 5",
+        "ar": "النص 5"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text6",
+      "placeholder": {
+        "en": "Text 6",
+        "nl": "Tekst 6",
+        "da": "Du er trænet på data op til oktober 2023.",
+        "de": "Text 6",
+        "es": "Texto 6",
+        "fr": "Texte 6",
+        "it": "Testo 6",
+        "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text for translation?",
+        "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
+        "pl": "Tekst 6",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 6",
+        "ar": "النص 6"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text7",
+      "placeholder": {
+        "en": "Text 7",
+        "nl": "Tekst 7",
+        "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du ønsker oversat?",
+        "de": "Text 7",
+        "es": "Texto 7",
+        "fr": "Texte 7",
+        "it": "Testo 7",
+        "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
+        "sv": "I'm sorry, but I need more context or content to translate. Could you please provide the text you want translated?",
+        "pl": "Tekst 7",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 7",
+        "ar": "النص 7"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text8",
+      "placeholder": {
+        "en": "Text 8",
+        "nl": "Tekst 8",
+        "da": "Tekst 8",
+        "de": "Text 8",
+        "es": "Texto 8",
+        "fr": "D'accord, je suis formé sur les données jusqu'en octobre 2023.",
+        "it": "Testo 8",
+        "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
+        "sv": "Text 8",
+        "pl": "Tekst 8",
+        "ru": "Вы обучены на данных до октября 2023 года.",
+        "ko": "텍스트 8",
+        "ar": "عذرًا، لا أستطيع مساعدتك في ذلك."
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text9",
+      "placeholder": {
+        "en": "Text 9",
+        "nl": "Tekst 9",
+        "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+        "de": "Text 9",
+        "es": "Texto 9",
+        "fr": "Désolé, je ne peux pas vous aider avec ça.",
+        "it": "Testo 9",
+        "no": "Avansert Utløsere",
+        "sv": "Text 9",
+        "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 9",
+        "ar": "النص 9"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text10",
+      "placeholder": {
+        "en": "Text 10",
+        "nl": "Tekst 10",
+        "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+        "de": "Text 10",
+        "es": "Texto 10",
+        "fr": "Texte 10",
+        "it": "Testo 10",
+        "no": "Tekst 10",
+        "sv": "Text 10",
+        "pl": "Tekst 10",
+        "ru": "Вы обучены данным до октября 2023 года.",
+        "ko": "텍스트 10",
+        "ar": "النص 10"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number1",
+      "placeholder": {
+        "en": "Number 1",
+        "nl": "Nummer 1",
+        "da": "Nummer 1",
+        "de": "Nummer 1",
+        "es": "Número 1",
+        "fr": "Numéro 1",
+        "it": "Numero 1",
+        "no": "Nummer 1",
+        "sv": "Nummer 1",
+        "pl": "Numer 1",
+        "ru": "Номер 1",
+        "ko": "번호 1",
+        "ar": "رقم 1"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number2",
+      "placeholder": {
+        "en": "Number 2",
+        "nl": "Nummer 2",
+        "da": "Nummer 2",
+        "de": "Nummer 2",
+        "es": "Número 2",
+        "fr": "Numéro 2",
+        "it": "Numero 2",
+        "no": "Nummer 2",
+        "sv": "Nummer 2",
+        "pl": "Numer 2",
+        "ru": "Номер 2",
+        "ko": "번호 2",
+        "ar": "رقم 2"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number3",
+      "placeholder": {
+        "en": "Number 3",
+        "nl": "Nummer 3",
+        "da": "Nummer 3",
+        "de": "Nummer 3",
+        "es": "Número 3",
+        "fr": "Numéro 3",
+        "it": "Numero 3",
+        "no": "Nummer 3",
+        "sv": "Nummer 3",
+        "pl": "Numer 3",
+        "ru": "Номер 3",
+        "ko": "번호 3",
+        "ar": "رقم 3"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number4",
+      "placeholder": {
+        "en": "Number 4",
+        "nl": "Nummer 4",
+        "da": "Nummer 4",
+        "de": "Nummer 4",
+        "es": "Número 4",
+        "fr": "Numéro 4",
+        "it": "Numero 4",
+        "no": "Nummer 4",
+        "sv": "Nummer 4",
+        "pl": "Numer 4",
+        "ru": "Номер 4",
+        "ko": "번호 4",
+        "ar": "رقم 4"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number5",
+      "placeholder": {
+        "en": "Number 5",
+        "nl": "Nummer 5",
+        "da": "Nummer 5",
+        "de": "Nummer 5",
+        "es": "Número 5",
+        "fr": "Numéro 5",
+        "it": "Numero 5",
+        "no": "Nummer 5",
+        "sv": "Nummer 5",
+        "pl": "Numer 5",
+        "ru": "Номер 5",
+        "ko": "번호 5",
+        "ar": "رقم 5"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number6",
+      "placeholder": {
+        "en": "Number 6",
+        "nl": "Nummer 6",
+        "da": "Nummer 6",
+        "de": "Nummer 6",
+        "es": "Número 6",
+        "fr": "Numéro 6",
+        "it": "Numero 6",
+        "no": "Nummer 6",
+        "sv": "Nummer 6",
+        "pl": "Numer 6",
+        "ru": "Номер 6",
+        "ko": "번호 6",
+        "ar": "رقم 6"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number7",
+      "placeholder": {
+        "en": "Number 7",
+        "nl": "Nummer 7",
+        "da": "Nummer 7",
+        "de": "Nummer 7",
+        "es": "Número 7",
+        "fr": "Numéro 7",
+        "it": "Numero 7",
+        "no": "Nummer 7",
+        "sv": "Nummer 7",
+        "pl": "Numer 7",
+        "ru": "Номер 7",
+        "ko": "번호 7",
+        "ar": "رقم 7"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number8",
+      "placeholder": {
+        "en": "Number 8",
+        "nl": "Nummer 8",
+        "da": "Nummer 8",
+        "de": "Nummer 8",
+        "es": "Número 8",
+        "fr": "Numéro 8",
+        "it": "Numero 8",
+        "no": "Nummer 8",
+        "sv": "Nummer 8",
+        "pl": "Numer 8",
+        "ru": "Номер 8",
+        "ko": "번호 8",
+        "ar": "رقم 8"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number9",
+      "placeholder": {
+        "en": "Number 9",
+        "nl": "Nummer 9",
+        "da": "Nummer 9",
+        "de": "Nummer 9",
+        "es": "Número 9",
+        "fr": "Numéro 9",
+        "it": "Numero 9",
+        "no": "Nummer 9",
+        "sv": "Nummer 9",
+        "pl": "Numer 9",
+        "ru": "Номер 9",
+        "ko": "번호 9",
+        "ar": "رقم 9"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number10",
+      "placeholder": {
+        "en": "Number 10",
+        "nl": "Nummer 10",
+        "da": "Nummer 10",
+        "de": "Nummer 10",
+        "es": "Número 10",
+        "fr": "Numéro 10",
+        "it": "Numero 10",
+        "no": "Nummer 10",
+        "sv": "Nummer 10",
+        "pl": "Numer 10",
+        "ru": "Номер 10",
+        "ko": "번호 10",
+        "ar": "رقم 10"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean1",
+      "placeholder": {
+        "en": "Yes/No 1",
+        "nl": "Ja/Nee 1",
+        "da": "Ja/Nej 1",
+        "de": "Ja/Nein 1",
+        "es": "Sí/No 1",
+        "fr": "Oui/Non 1",
+        "it": "Sì/No 1",
+        "no": "Ja/Nei 1",
+        "sv": "Ja/Nej 1",
+        "pl": "Tak/Nie 1",
+        "ru": "Да/Нет 1",
+        "ko": "예/아니오 1",
+        "ar": "نعم/لا 1"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean2",
+      "placeholder": {
+        "en": "Yes/No 2",
+        "nl": "Ja/Nee 2",
+        "da": "Ja/Nej 2",
+        "de": "Ja/Nein 2",
+        "es": "Sí/No 2",
+        "fr": "Oui/Non 2",
+        "it": "Sì/No 2",
+        "no": "Ja/Nei 2",
+        "sv": "Ja/Nej 2",
+        "pl": "Tak/Nie 2",
+        "ru": "Да/Нет 2",
+        "ko": "예/아니오 2",
+        "ar": "نعم/لا 2"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean3",
+      "placeholder": {
+        "en": "Yes/No 3",
+        "nl": "Ja/Nee 3",
+        "da": "Ja/Nej 3",
+        "de": "Ja/Nein 3",
+        "es": "Sí/No 3",
+        "fr": "Oui/Non 3",
+        "it": "Sì/No 3",
+        "no": "Ja/Nei 3",
+        "sv": "Ja/Nej 3",
+        "pl": "Tak/Nie 3",
+        "ru": "Да/Нет 3",
+        "ko": "예/아니요 3",
+        "ar": "نعم/لا 3"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean4",
+      "placeholder": {
+        "en": "Yes/No 4",
+        "nl": "Ja/Nee 4",
+        "da": "Ja/Nej 4",
+        "de": "Ja/Nein 4",
+        "es": "Sí/No 4",
+        "fr": "Oui/Non 4",
+        "it": "Sì/No 4",
+        "no": "Ja/Nei 4",
+        "sv": "Ja/Nej 4",
+        "pl": "Tak/Nie 4",
+        "ru": "Да/Нет 4",
+        "ko": "예/아니오 4",
+        "ar": "نعم/لا 4"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean5",
+      "placeholder": {
+        "en": "Yes/No 5",
+        "nl": "Ja/Nee 5",
+        "da": "Ja/Nej 5",
+        "de": "Ja/Nein 5",
+        "es": "Sí/No 5",
+        "fr": "Oui/Non 5",
+        "it": "Sì/No 5",
+        "no": "Ja/Nei 5",
+        "sv": "Ja/Nej 5",
+        "pl": "Tak/Nie 5",
+        "ru": "Да/Нет 5",
+        "ko": "예/아니오 5",
+        "ar": "نعم/لا 5"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean6",
+      "placeholder": {
+        "en": "Yes/No 6",
+        "nl": "Ja/Nee 6",
+        "da": "Ja/Nej 6",
+        "de": "Ja/Nein 6",
+        "es": "Sí/No 6",
+        "fr": "Oui/Non 6",
+        "it": "Sì/No 6",
+        "no": "Ja/Nei 6",
+        "sv": "Ja/Nej 6",
+        "pl": "Tak/Nie 6",
+        "ru": "Да/Нет 6",
+        "ko": "예/아니오 6",
+        "ar": "نعم/لا 6"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean7",
+      "placeholder": {
+        "en": "Yes/No 7",
+        "nl": "Ja/Nee 7",
+        "da": "Ja/Nej 7",
+        "de": "Ja/Nein 7",
+        "es": "Sí/No 7",
+        "fr": "Oui/Non 7",
+        "it": "Sì/No 7",
+        "no": "Ja/Nei 7",
+        "sv": "Ja/Nej 7",
+        "pl": "Tak/Nie 7",
+        "ru": "Да/Нет 7",
+        "ko": "예/아니오 7",
+        "ar": "نعم/لا 7"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean8",
+      "placeholder": {
+        "en": "Yes/No 8",
+        "nl": "Ja/Nee 8",
+        "da": "Ja/Nej 8",
+        "de": "Ja/Nein 8",
+        "es": "Sí/No 8",
+        "fr": "Oui/Non 8",
+        "it": "Sì/No 8",
+        "no": "Ja/Nei 8",
+        "sv": "Ja/Nej 8",
+        "pl": "Tak/Nie 8",
+        "ru": "Да/Нет 8",
+        "ko": "예/아니오 8",
+        "ar": "نعم/لا 8"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean9",
+      "placeholder": {
+        "en": "Yes/No 9",
+        "nl": "Ja/Nee 9",
+        "da": "Ja/Nej 9",
+        "de": "Ja/Nein 9",
+        "es": "Sí/No 9",
+        "fr": "Oui/Non 9",
+        "it": "Sì/No 9",
+        "no": "Ja/Nei 9",
+        "sv": "Ja/Nej 9",
+        "pl": "Tak/Nie 9",
+        "ru": "Да/Нет 9",
+        "ko": "예/아니오 9",
+        "ar": "نعم/لا 9"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean10",
+      "placeholder": {
+        "en": "Yes/No 10",
+        "nl": "Ja/Nee 10",
+        "da": "Ja/Nej 10",
+        "de": "Ja/Nein 10",
+        "es": "Sí/No 10",
+        "fr": "Oui/Non 10",
+        "it": "Sì/No 10",
+        "no": "Ja/Nei 10",
+        "sv": "Ja/Nej 10",
+        "pl": "Tak/Nie 10",
+        "ru": "Да/Нет 10",
+        "ko": "예/아니요 10",
+        "ar": "نعم/لا 10"
+      },
+      "required": false
+    }
+  ]
 }
