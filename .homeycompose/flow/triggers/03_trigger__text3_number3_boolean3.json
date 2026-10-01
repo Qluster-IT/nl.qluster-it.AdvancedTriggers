@@ -327,17 +327,17 @@
       "title": {
         "en": "Text 1",
         "nl": "Tekst 1",
-        "da": "Du er trænet på data op til oktober 2023.",
+        "da": "Tekst",
         "de": "Text 1",
         "es": "Texto 1",
-        "fr": "Texte 1",
+        "fr": "Texte",
         "it": "Testo 1",
         "no": "Tekst 1",
-        "sv": "Du är tränad på data fram till oktober 2023.",
-        "pl": "Tekst 1",
-        "ru": "Вы обучены данным до октября 2023 года.",
+        "sv": "Text 1",
+        "pl": "Tekst",
+        "ru": "Текст 1",
         "ko": "텍스트 1",
-        "ar": "النص 1"
+        "ar": "نص 1"
       }
     },
     {
@@ -346,17 +346,17 @@
       "title": {
         "en": "Text 2",
         "nl": "Tekst 2",
-        "da": "Jeg er trænet på data op til oktober 2023.",
+        "da": "Tekst",
         "de": "Text 2",
         "es": "Texto 2",
-        "fr": "Texte 2",
+        "fr": "Texte",
         "it": "Testo 2",
-        "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-        "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-        "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem.",
-        "ru": "Вы обучены данным до октября 2023 года.",
-        "ko": "고급 트리거",
-        "ar": "آسف، لا أستطيع مساعدتك في ذلك."
+        "no": "Tekst 2",
+        "sv": "Text 2",
+        "pl": "Tekst",
+        "ru": "Текст 2",
+        "ko": "텍스트 2",
+        "ar": "نص 2"
       }
     },
     {
@@ -365,17 +365,17 @@
       "title": {
         "en": "Text 3",
         "nl": "Tekst 3",
-        "da": "Du er trænet på data op til oktober 2023.",
+        "da": "Tekst",
         "de": "Text 3",
         "es": "Texto 3",
-        "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+        "fr": "Texte",
         "it": "Testo 3",
         "no": "Tekst 3",
-        "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-        "pl": "Tekst 3",
-        "ru": "Вы обучены данным до октября 2023 года.",
+        "sv": "Text 3",
+        "pl": "Tekst",
+        "ru": "Текст 3",
         "ko": "텍스트 3",
-        "ar": "النص 3"
+        "ar": "نص 3"
       }
     },
     {

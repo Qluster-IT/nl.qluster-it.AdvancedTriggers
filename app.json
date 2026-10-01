@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -348,15 +348,15 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikasjoner om hva \"Text 1\" inneholder?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             }
@@ -730,17 +730,17 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
-              "ar": "النص 1"
+              "ar": "نص 1"
             }
           },
           {
@@ -749,17 +749,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Jeg er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem.",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "고급 트리거",
-              "ar": "آسف، لا أستطيع مساعدتك في ذلك."
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             }
           },
           {
@@ -768,17 +768,17 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 3",
               "no": "Tekst 3",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             }
           },
           {
@@ -1226,15 +1226,15 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
               "sv": "Text 1",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             }
@@ -1245,17 +1245,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du ønsker oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem.",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "죄송하지만, 번역할 텍스트가 제공되지 않았습니다. 번역할 텍스트를 제공해 주시면 도와드리겠습니다!",
-              "ar": "آسف، أحتاج إلى النص الذي ترغب في ترجمته. من فضلك قدم النص المطلوب ترجمته."
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             }
           },
           {
@@ -1264,17 +1264,17 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
               "no": "Tekst 3",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             }
           },
           {
@@ -1283,17 +1283,17 @@
             "title": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 4",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             }
           },
           {
@@ -1302,17 +1302,17 @@
             "title": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Texte 5",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem bez dodatkowego kontekstu lub treści. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "عذرًا، أحتاج إلى النص الخامس لأتمكن من ترجمته. هل يمكنك تقديمه لي؟"
+              "ar": "نص 5"
             }
           },
           {
@@ -1836,17 +1836,17 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "I'm sorry, but I need more information or context about \"Text 1\" to provide an accurate translation. Could you please provide the text you want translated?",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
-              "ar": "النص 1"
+              "ar": "نص 1"
             }
           },
           {
@@ -1855,17 +1855,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Avancerede Udløsere",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need the text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę przetłumaczyć tekstu bez jego treści. Czy możesz podać tekst, który chcesz przetłumaczyć?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
               "ko": "텍스트 2",
-              "ar": "النص 2"
+              "ar": "نص 2"
             }
           },
           {
@@ -1874,17 +1874,17 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du ønsker oversatt?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             }
           },
           {
@@ -1893,17 +1893,17 @@
             "title": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
-              "de": "Text 4:",
+              "da": "Tekst",
+              "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć tekst. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 4",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             }
           },
           {
@@ -1912,17 +1912,17 @@
             "title": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Désolé, je n'ai pas le texte 5. Pourriez-vous me fournir le texte que vous souhaitez traduire ?",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "عذرًا، لا أستطيع مساعدتك في ذلك."
+              "ar": "نص 5"
             }
           },
           {
@@ -1931,17 +1931,17 @@
             "title": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             }
           },
           {
@@ -1950,17 +1950,17 @@
             "title": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Tekst 7",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Texte 7",
+              "fr": "Texte",
               "it": "Testo 7",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, but I need more context or content from \"Text 7\" to provide an accurate translation. Could you please provide the text you need translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 7",
+              "sv": "Text 7",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             }
           },
           {
@@ -1969,17 +1969,17 @@
             "title": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "D'accord, pourriez-vous fournir le texte que vous souhaitez traduire ?",
+              "fr": "Texte",
               "it": "Testo 8",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du ønsker å oversette?",
+              "no": "Tekst 8",
               "sv": "Text 8",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć tekst. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "النص 8"
+              "ar": "نص 8"
             }
           },
           {
@@ -1988,17 +1988,17 @@
             "title": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Tekst 9",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "Texte 9",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Przepraszam, ale nie mogę pomóc w tej prośbie.",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             }
           },
           {
@@ -2007,17 +2007,17 @@
             "title": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 10",
-              "no": "Avanserte utløsere",
+              "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Przepraszam, ale nie mogę pomóc bez dodatkowego kontekstu. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             }
           },
           {
@@ -2463,15 +2463,15 @@
             "title": {
               "en": "Text",
               "nl": "Tekst",
-              "da": "Avancerede Udløsere",
+              "da": "Tekst",
               "de": "Text",
               "es": "Texto",
-              "fr": "Vous êtes formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo",
-              "no": "Vennligst gi meg teksten du ønsker å oversette.",
+              "no": "Tekst",
               "sv": "Text",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст",
               "ko": "텍스트",
               "ar": "نص"
             }
@@ -2627,14 +2627,14 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
               "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
@@ -2709,15 +2709,15 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
-              "no": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             }
@@ -2728,17 +2728,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data frem til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 2",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "고급 트리거",
-              "ar": "النص 2"
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             }
           },
           {
@@ -2747,15 +2747,15 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
               "ar": "نص 3"
             }
@@ -2766,17 +2766,17 @@
             "title": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
               "no": "Tekst 4",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 4",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             }
           },
           {
@@ -2785,17 +2785,17 @@
             "title": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Danish?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Texte 5",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             }
           },
           {
@@ -2804,17 +2804,17 @@
             "title": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Danish?",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             }
           },
           {
@@ -2823,17 +2823,17 @@
             "title": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du ønsker oversat?",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Texte 7",
+              "fr": "Texte",
               "it": "Testo 7",
               "no": "Tekst 7",
               "sv": "Text 7",
-              "pl": "Tekst 7",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             }
           },
           {
@@ -2842,17 +2842,17 @@
             "title": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "D'accord, pourriez-vous fournir le texte que vous souhaitez traduire ?",
+              "fr": "Texte",
               "it": "Testo 8",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 8",
+              "sv": "Text 8",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "عذرًا، أحتاج إلى النص الذي ترغب في ترجمته. من فضلك قدم النص المطلوب ترجمته."
+              "ar": "نص 8"
             }
           },
           {
@@ -2861,17 +2861,17 @@
             "title": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Tekst 9",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "Texte 9",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "Avanserte utløsere",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             }
           },
           {
@@ -2880,17 +2880,17 @@
             "title": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 10",
               "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Tekst 10",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             }
           },
           {
@@ -3384,15 +3384,15 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
-              "no": "I'm sorry, but I need more information or context to provide a translation. Could you please provide the text you want translated?",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             },
@@ -3404,17 +3404,17 @@
             "placeholder": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Avancerede Udløsere",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć. Czy możesz podać więcej informacji?",
-              "ru": "Извините, я не могу помочь с этим запросом.",
-              "ko": "고급 트리거",
-              "ar": "النص 2"
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             },
             "required": false
           },
@@ -3424,17 +3424,17 @@
             "placeholder": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             },
             "required": false
           },
@@ -3586,14 +3586,14 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "I'm sorry, but I need more information or context about \"Text 1\" to provide an accurate translation. Could you please provide the text you want translated?",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du ønsker å oversette?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 1",
+              "no": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
               "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
@@ -3605,17 +3605,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
               "ko": "텍스트 2",
-              "ar": "آسف، أحتاج إلى النص الذي ترغب في ترجمته. من فضلك قدم النص المطلوب ترجمته."
+              "ar": "نص 2"
             }
           },
           {
@@ -3624,17 +3624,17 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem bez dodatkowego kontekstu lub treści. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             }
           },
           {
@@ -3643,17 +3643,17 @@
             "title": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
               "no": "Tekst 4",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 4",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             }
           },
           {
@@ -3662,17 +3662,17 @@
             "title": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Tekst 5",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Texte 5",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale nie mogę pomóc bez dodatkowego kontekstu lub treści do przetłumaczenia. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             }
           },
           {
@@ -3681,17 +3681,17 @@
             "title": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Swedish?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             }
           },
           {
@@ -3700,17 +3700,17 @@
             "title": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Texte 7",
+              "fr": "Texte",
               "it": "Testo 7",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, but I need more context or content from \"Text 7\" to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 7",
+              "sv": "Text 7",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             }
           },
           {
@@ -3719,17 +3719,17 @@
             "title": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "D'accord, pourriez-vous fournir le texte que vous souhaitez traduire ?",
+              "fr": "Texte",
               "it": "Testo 8",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 8",
-              "ru": "Извините, я не могу помочь с этим запросом.",
+              "no": "Tekst 8",
+              "sv": "Text 8",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "عذرًا، أحتاج إلى النص الكامل للترجمة. يرجى تقديم النص الذي ترغب في ترجمته."
+              "ar": "نص 8"
             }
           },
           {
@@ -3738,17 +3738,17 @@
             "title": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Tekst 9",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "Texte 9",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "Avanserte utløsere",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Przepraszam, ale nie mogę pomóc w tej prośbie.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             }
           },
           {
@@ -3757,17 +3757,17 @@
             "title": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 10",
-              "no": "Avanserte utløsere",
+              "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Tekst 10",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             }
           },
           {
@@ -4261,14 +4261,14 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
               "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
@@ -4281,17 +4281,17 @@
             "placeholder": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du ønsker oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "고급 트리거",
-              "ar": "عذرًا، لا يوجد نص محدد لتتم ترجمته. هل يمكنك توفير النص الذي ترغب في ترجمته؟"
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             },
             "required": false
           },
@@ -4301,17 +4301,17 @@
             "placeholder": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             },
             "required": false
           },
@@ -4321,17 +4321,17 @@
             "placeholder": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
               "no": "Tekst 4",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 4",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "المحفزات المتقدمة"
+              "ar": "نص 4"
             },
             "required": false
           },
@@ -4341,17 +4341,17 @@
             "placeholder": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Texte 5",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "عذرًا، أحتاج إلى النص الخامس لأتمكن من ترجمته. هل يمكنك تقديمه لي؟"
+              "ar": "نص 5"
             },
             "required": false
           },
@@ -4583,15 +4583,15 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             }
@@ -4602,17 +4602,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Jeg er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 2",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "죄송하지만, 번역할 텍스트가 제공되지 않았습니다. 번역할 내용을 입력해 주세요.",
-              "ar": "آسف، لا أستطيع مساعدتك في ذلك."
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             }
           },
           {
@@ -4621,17 +4621,17 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
               "no": "Tekst 3",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             }
           },
           {
@@ -4640,17 +4640,17 @@
             "title": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 4",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger oversatt?",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 4",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 4",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             }
           },
           {
@@ -4659,17 +4659,17 @@
             "title": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Texte 5",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             }
           },
           {
@@ -4678,17 +4678,17 @@
             "title": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             }
           },
           {
@@ -4697,17 +4697,17 @@
             "title": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Texte 7",
+              "fr": "Texte",
               "it": "Testo 7",
-              "no": "I'm sorry, but I need more context or content from \"Text 7\" to provide a translation. Could you please provide the text you need translated?",
-              "sv": "I'm sorry, but I need more context or content from \"Text 7\" to provide an accurate translation. Could you please provide the text you need translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 7",
+              "sv": "Text 7",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             }
           },
           {
@@ -4716,17 +4716,17 @@
             "title": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "Texte 8",
+              "fr": "Texte",
               "it": "Testo 8",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 8",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 8",
+              "sv": "Text 8",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "عذرًا، أحتاج إلى النص الذي ترغب في ترجمته. يرجى تقديم النص المطلوب ترجمته."
+              "ar": "نص 8"
             }
           },
           {
@@ -4735,17 +4735,17 @@
             "title": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Tekst 9",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "D'accord, je suis prêt à vous aider. Veuillez fournir le texte que vous souhaitez traduire.",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "Avanserte utløsere",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             }
           },
           {
@@ -4754,17 +4754,17 @@
             "title": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 10",
               "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Przepraszam, potrzebuję więcej kontekstu, aby móc przetłumaczyć tekst. Czy możesz podać więcej informacji lub pełny tekst do przetłumaczenia?",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             }
           },
           {
@@ -5258,14 +5258,14 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "I'm sorry, but I need more information to assist you. Could you please provide the text you want translated?",
-              "pl": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
               "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
@@ -5278,17 +5278,17 @@
             "placeholder": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "고급 트리거",
-              "ar": "النص 2"
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             },
             "required": false
           },
@@ -5298,17 +5298,17 @@
             "placeholder": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig den tekst, du ønsker oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Vous êtes formé sur les données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             },
             "required": false
           },
@@ -5318,17 +5318,17 @@
             "placeholder": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
               "no": "Tekst 4",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Swedish?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć tekst. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             },
             "required": false
           },
@@ -5338,17 +5338,17 @@
             "placeholder": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             },
             "required": false
           },
@@ -5358,17 +5358,17 @@
             "placeholder": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             },
             "required": false
           },
@@ -5378,17 +5378,17 @@
             "placeholder": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Texte 7",
+              "fr": "Texte",
               "it": "Testo 7",
               "no": "Tekst 7",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 7",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             },
             "required": false
           },
@@ -5398,17 +5398,17 @@
             "placeholder": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "D'accord, pourriez-vous fournir le texte 8 que vous souhaitez traduire ?",
+              "fr": "Texte",
               "it": "Testo 8",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need more context or content from \"Text 8\" to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 8",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 8",
+              "sv": "Text 8",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "عذرًا، لا أستطيع مساعدتك في ذلك."
+              "ar": "نص 8"
             },
             "required": false
           },
@@ -5418,17 +5418,17 @@
             "placeholder": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Tekst 9",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "Texte 9",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "Avansert Utløsere",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Tekst 9",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             },
             "required": false
           },
@@ -5438,17 +5438,17 @@
             "placeholder": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Texte 10",
+              "fr": "Texte",
               "it": "Testo 10",
               "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Przepraszam, ale nie mogę przetłumaczyć tekstu bez jego treści. Czy możesz podać tekst, który chcesz przetłumaczyć?",
+              "pl": "Tekst",
               "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             },
             "required": false
           },
@@ -5880,15 +5880,15 @@
             "title": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
-              "no": "I'm sorry, but I need more information or context to provide a translation. Could you please provide the text you would like translated?",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 1",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             }
@@ -5899,17 +5899,17 @@
             "title": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data frem til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę przetłumaczyć tekstu bez jego treści. Czy możesz podać tekst, który chcesz przetłumaczyć?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
               "ko": "텍스트 2",
-              "ar": "النص 2"
+              "ar": "نص 2"
             }
           },
           {
@@ -5918,17 +5918,17 @@
             "title": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Извините, я не могу помочь с этим запросом.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             }
           },
           {
@@ -5937,17 +5937,17 @@
             "title": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger oversatt?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 4",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 4",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             }
           },
           {
@@ -5956,17 +5956,17 @@
             "title": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Désolé, je ne peux pas vous aider avec ça.",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu lub treści, aby móc przetłumaczyć tekst. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             }
           },
           {
@@ -5975,17 +5975,17 @@
             "title": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             }
           },
           {
@@ -5994,17 +5994,17 @@
             "title": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Je suis formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 7",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
+              "no": "Tekst 7",
               "sv": "Text 7",
-              "pl": "Tekst 7",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             }
           },
           {
@@ -6013,17 +6013,17 @@
             "title": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "D'accord, pourriez-vous fournir le texte que vous souhaitez traduire ?",
+              "fr": "Texte",
               "it": "Testo 8",
               "no": "Tekst 8",
               "sv": "Text 8",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem.",
-              "ru": "Извините, я не могу помочь с этим запросом.",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "عذرًا، أحتاج إلى النص الذي ترغب في ترجمته. من فضلك قدم النص المطلوب ترجمته."
+              "ar": "نص 8"
             }
           },
           {
@@ -6032,17 +6032,17 @@
             "title": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Tekst 9",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "Texte 9",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "Avanserte utløsere",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             }
           },
           {
@@ -6051,17 +6051,17 @@
             "title": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 10",
               "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Przepraszam, ale potrzebuję więcej kontekstu, aby móc przetłumaczyć tekst. Czy możesz podać więcej szczegółów lub pełny tekst do przetłumaczenia?",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             }
           },
           {
@@ -6505,15 +6505,15 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
               "sv": "Text 1",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             },
@@ -6620,15 +6620,15 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             },
@@ -6640,17 +6640,17 @@
             "placeholder": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data op til oktober 2023.",
-              "de": "Erweiterte Auslöser",
+              "da": "Tekst",
+              "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text you need translated into Norwegian?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 2",
-              "ru": "Вы обучены данным до октября 2023 года.",
-              "ko": "고급 트리거",
-              "ar": "عذرًا، لا يوجد نص محدد لترجمته. هل يمكنك توفير النص الذي ترغب في ترجمته؟"
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             },
             "required": false
           },
@@ -6660,17 +6660,17 @@
             "placeholder": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
               "no": "Tekst 3",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             },
             "required": false
           },
@@ -6855,15 +6855,15 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "I'm sorry, but I need more context or content to translate. Could you please provide the text you want translated?",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
               "ar": "نص 1"
             },
@@ -6875,17 +6875,17 @@
             "placeholder": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Avancerede Udløsere",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Déclencheurs avancés",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem.",
-              "ru": "Вы обучены на данных до октября 2023 года.",
-              "ko": "고급 트리거",
-              "ar": "عذرًا، أحتاج إلى النص الذي ترغب في ترجمته. من فضلك قدم النص المطلوب ترجمته."
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
+              "ko": "텍스트 2",
+              "ar": "نص 2"
             },
             "required": false
           },
@@ -6895,17 +6895,17 @@
             "placeholder": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             },
             "required": false
           },
@@ -6915,17 +6915,17 @@
             "placeholder": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Tekst 4",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
               "no": "Tekst 4",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem bez dodatkowego kontekstu lub treści do przetłumaczenia. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "عذرًا، لا يوجد نص محدد لترجمته. يرجى تقديم النص الذي ترغب في ترجمته."
+              "ar": "نص 4"
             },
             "required": false
           },
@@ -6935,17 +6935,17 @@
             "placeholder": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Tekst 5",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Désolé, je ne peux pas vous aider avec ça.",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             },
             "required": false
           },
@@ -7210,17 +7210,17 @@
             "placeholder": {
               "en": "Text 1",
               "nl": "Tekst 1",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 1",
               "es": "Texto 1",
-              "fr": "Texte 1",
+              "fr": "Texte",
               "it": "Testo 1",
               "no": "Tekst 1",
-              "sv": "I'm sorry, but I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 1",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "sv": "Text 1",
+              "pl": "Tekst",
+              "ru": "Текст 1",
               "ko": "텍스트 1",
-              "ar": "النص 1"
+              "ar": "نص 1"
             },
             "required": false
           },
@@ -7230,17 +7230,17 @@
             "placeholder": {
               "en": "Text 2",
               "nl": "Tekst 2",
-              "da": "Du er trænet på data frem til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 2",
               "es": "Texto 2",
-              "fr": "Texte 2",
+              "fr": "Texte",
               "it": "Testo 2",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, but I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 2",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 2",
+              "sv": "Text 2",
+              "pl": "Tekst",
+              "ru": "Текст 2",
               "ko": "텍스트 2",
-              "ar": "النص 2"
+              "ar": "نص 2"
             },
             "required": false
           },
@@ -7250,17 +7250,17 @@
             "placeholder": {
               "en": "Text 3",
               "nl": "Tekst 3",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 3",
               "es": "Texto 3",
-              "fr": "Texte 3",
+              "fr": "Texte",
               "it": "Testo 3",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg med oversettelsen. Kan du gi meg teksten du vil ha oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Tekst 3",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 3",
+              "sv": "Text 3",
+              "pl": "Tekst",
+              "ru": "Текст 3",
               "ko": "텍스트 3",
-              "ar": "النص 3"
+              "ar": "نص 3"
             },
             "required": false
           },
@@ -7270,17 +7270,17 @@
             "placeholder": {
               "en": "Text 4",
               "nl": "Tekst 4",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 4",
               "es": "Texto 4",
-              "fr": "Texte 4",
+              "fr": "Texte",
               "it": "Testo 4",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale nie mogę pomóc w tej prośbie bez dodatkowego kontekstu. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "no": "Tekst 4",
+              "sv": "Text 4",
+              "pl": "Tekst",
+              "ru": "Текст 4",
               "ko": "텍스트 4",
-              "ar": "النص 4"
+              "ar": "نص 4"
             },
             "required": false
           },
@@ -7290,17 +7290,17 @@
             "placeholder": {
               "en": "Text 5",
               "nl": "Tekst 5",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 5",
               "es": "Texto 5",
-              "fr": "Texte 5",
+              "fr": "Texte",
               "it": "Testo 5",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikk tekst du ønsker oversatt?",
-              "sv": "I'm sorry, I need more context or content to provide a translation. Could you please provide the text you want translated?",
-              "pl": "Przepraszam, ale nie mogę pomóc z tym zadaniem bez dodatkowego kontekstu lub treści. Czy możesz podać więcej informacji?",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 5",
+              "sv": "Text 5",
+              "pl": "Tekst",
+              "ru": "Текст 5",
               "ko": "텍스트 5",
-              "ar": "النص 5"
+              "ar": "نص 5"
             },
             "required": false
           },
@@ -7310,17 +7310,17 @@
             "placeholder": {
               "en": "Text 6",
               "nl": "Tekst 6",
-              "da": "Du er trænet på data op til oktober 2023.",
+              "da": "Tekst",
               "de": "Text 6",
               "es": "Texto 6",
-              "fr": "Texte 6",
+              "fr": "Texte",
               "it": "Testo 6",
-              "no": "I'm sorry, but I need the specific text you want translated. Could you please provide the text for translation?",
-              "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-              "pl": "Tekst 6",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 6",
+              "sv": "Text 6",
+              "pl": "Tekst",
+              "ru": "Текст 6",
               "ko": "텍스트 6",
-              "ar": "النص 6"
+              "ar": "نص 6"
             },
             "required": false
           },
@@ -7330,17 +7330,17 @@
             "placeholder": {
               "en": "Text 7",
               "nl": "Tekst 7",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du ønsker oversat?",
+              "da": "Tekst",
               "de": "Text 7",
               "es": "Texto 7",
-              "fr": "Texte 7",
+              "fr": "Texte",
               "it": "Testo 7",
-              "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
-              "sv": "I'm sorry, but I need more context or content to translate. Could you please provide the text you want translated?",
-              "pl": "Tekst 7",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst 7",
+              "sv": "Text 7",
+              "pl": "Tekst",
+              "ru": "Текст 7",
               "ko": "텍스트 7",
-              "ar": "النص 7"
+              "ar": "نص 7"
             },
             "required": false
           },
@@ -7350,17 +7350,17 @@
             "placeholder": {
               "en": "Text 8",
               "nl": "Tekst 8",
-              "da": "Tekst 8",
+              "da": "Tekst",
               "de": "Text 8",
               "es": "Texto 8",
-              "fr": "D'accord, je suis formé sur les données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo 8",
-              "no": "Beklager, jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifisere hva du trenger hjelp med?",
+              "no": "Tekst 8",
               "sv": "Text 8",
-              "pl": "Tekst 8",
-              "ru": "Вы обучены на данных до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 8",
               "ko": "텍스트 8",
-              "ar": "عذرًا، لا أستطيع مساعدتك في ذلك."
+              "ar": "نص 8"
             },
             "required": false
           },
@@ -7370,17 +7370,17 @@
             "placeholder": {
               "en": "Text 9",
               "nl": "Tekst 9",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 9",
               "es": "Texto 9",
-              "fr": "Désolé, je ne peux pas vous aider avec ça.",
+              "fr": "Texte",
               "it": "Testo 9",
-              "no": "Avansert Utløsere",
+              "no": "Tekst 9",
               "sv": "Text 9",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 9",
               "ko": "텍스트 9",
-              "ar": "النص 9"
+              "ar": "نص 9"
             },
             "required": false
           },
@@ -7390,17 +7390,17 @@
             "placeholder": {
               "en": "Text 10",
               "nl": "Tekst 10",
-              "da": "Beklager, men jeg har brug for mere information for at kunne hjælpe dig. Kan du give mig teksten, du vil have oversat?",
+              "da": "Tekst",
               "de": "Text 10",
               "es": "Texto 10",
-              "fr": "Texte 10",
+              "fr": "Texte",
               "it": "Testo 10",
               "no": "Tekst 10",
               "sv": "Text 10",
-              "pl": "Tekst 10",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "pl": "Tekst",
+              "ru": "Текст 10",
               "ko": "텍스트 10",
-              "ar": "النص 10"
+              "ar": "نص 10"
             },
             "required": false
           },
@@ -7865,15 +7865,15 @@
             "placeholder": {
               "en": "Text",
               "nl": "Tekst",
-              "da": "Jeg er trænet på data frem til oktober 2023.",
+              "da": "Tekst",
               "de": "Text",
               "es": "Texto",
-              "fr": "Vous êtes formé sur des données jusqu'en octobre 2023.",
+              "fr": "Texte",
               "it": "Testo",
-              "no": "Avanserte utløsere",
-              "sv": "Du är tränad på data fram till oktober 2023.",
-              "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-              "ru": "Вы обучены данным до октября 2023 года.",
+              "no": "Tekst",
+              "sv": "Text",
+              "pl": "Tekst",
+              "ru": "Текст",
               "ko": "텍스트",
               "ar": "نص"
             },

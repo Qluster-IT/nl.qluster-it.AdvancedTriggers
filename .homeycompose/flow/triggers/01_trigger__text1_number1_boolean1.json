@@ -254,15 +254,15 @@
       "title": {
         "en": "Text 1",
         "nl": "Tekst 1",
-        "da": "Du er trænet på data op til oktober 2023.",
+        "da": "Tekst",
         "de": "Text 1",
         "es": "Texto 1",
-        "fr": "Texte 1",
+        "fr": "Texte",
         "it": "Testo 1",
-        "no": "Beklager, men jeg trenger mer informasjon for å kunne hjelpe deg. Kan du gi meg mer kontekst eller spesifikasjoner om hva \"Text 1\" inneholder?",
-        "sv": "I'm sorry, I need the specific text you want translated. Could you please provide it?",
-        "pl": "Tekst 1",
-        "ru": "Вы обучены данным до октября 2023 года.",
+        "no": "Tekst 1",
+        "sv": "Text 1",
+        "pl": "Tekst",
+        "ru": "Текст 1",
         "ko": "텍스트 1",
         "ar": "نص 1"
       }

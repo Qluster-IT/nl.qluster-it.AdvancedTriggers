@@ -59,15 +59,15 @@
       "title": {
         "en": "Text",
         "nl": "Tekst",
-        "da": "Avancerede Udløsere",
+        "da": "Tekst",
         "de": "Text",
         "es": "Texto",
-        "fr": "Vous êtes formé sur des données jusqu'en octobre 2023.",
+        "fr": "Texte",
         "it": "Testo",
-        "no": "Vennligst gi meg teksten du ønsker å oversette.",
+        "no": "Tekst",
         "sv": "Text",
-        "pl": "Jesteś przeszkolony na danych do października 2023 roku.",
-        "ru": "Вы обучены данным до октября 2023 года.",
+        "pl": "Tekst",
+        "ru": "Текст",
         "ko": "텍스트",
         "ar": "نص"
       }

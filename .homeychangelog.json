@@ -343,5 +343,20 @@
     "ru": "Переведено: Переведено на все поддерживаемые языки.",
     "ko": "번역됨: 모든 지원 언어로 번역되었습니다.",
     "ar": "مترجم: مترجم إلى جميع اللغات المدعومة."
+  },
+  "1.6.1": {
+    "en": "Resolved: Resolved errors in the translation of Text arguments and tokens.",
+    "nl": "Opgelost: Fouten in de vertaling van Tekstargumenten en tokens opgelost.",
+    "da": "Løst: Rettede fejl i oversættelsen af tekstargumenter og tokens.",
+    "de": "Behoben: Fehler in der Übersetzung von Textargumenten und Tokens behoben.",
+    "es": "Resuelto: Se resolvieron errores en la traducción de argumentos de texto y tokens.",
+    "fr": "Résolu : Erreurs résolues dans la traduction des arguments de texte et des jetons.",
+    "it": "Risolto: Risolti errori nella traduzione degli argomenti di testo e dei token.",
+    "no": "Løst: Løste feil i oversettelsen av tekstargumenter og -token.",
+    "sv": "Löst: Åtgärdade fel i översättningen av textargument och tokens.",
+    "pl": "Rozwiązano: Usunięto błędy w tłumaczeniu argumentów tekstowych i tokenów.",
+    "ru": "Исправлено: Исправлены ошибки в переводе текстовых аргументов и токенов.",
+    "ko": "해결됨: 텍스트 인수 및 토큰의 번역 오류가 해결되었습니다.",
+    "ar": "تم الحل: تم تصحيح الأخطاء في ترجمة الحجج النصية والرموز."
   }
 }
