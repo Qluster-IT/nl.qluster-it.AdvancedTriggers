@@ -1,235 +1,610 @@
 {
-    "id": "trigger__text5_number5_boolean5",
-    "title": {
-        "en": "This Flowcard started",
-        "nl": "Deze Flowkaart is gestart"
+  "id": "trigger__text5_number5_boolean5",
+  "title": {
+    "en": "This Flowcard started",
+    "nl": "Deze Flowkaart is gestart",
+    "da": "Dette Flowkort startede",
+    "de": "Diese Flow-Karte wurde gestartet",
+    "es": "Esta tarjeta de flujo comenzó",
+    "fr": "Cette carte de flux a commencé",
+    "it": "Questa scheda di flusso è iniziata",
+    "no": "Dette Flowkortet startet",
+    "sv": "Detta flödeskort startade",
+    "pl": "Ta karta przepływu została uruchomiona",
+    "ru": "Эта карточка потока запущена",
+    "ko": "이 플로우카드가 시작되었습니다.",
+    "ar": "بدأت بطاقة التدفق هذه"
+  },
+  "titleFormatted": {
+    "en": "[[name]] started (5 texts, 5 numbers, 5 yes/no's), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "nl": "[[name]] is gestart (5 teksten, 5 nummers, 5 ja/nee's), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "da": "[[name]] startede (5 tekster, 5 tal, 5 ja/nej'er), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "de": "[[name]] gestartet (5 Texte, 5 Zahlen, 5 Ja/Nein), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "es": "[[name]] iniciado (5 textos, 5 números, 5 sí/no), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "fr": "[[name]] a démarré (5 textes, 5 chiffres, 5 oui/non), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "it": "[[name]] avviato (5 testi, 5 numeri, 5 sì/no), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "no": "[[name]] startet (5 tekster, 5 tall, 5 ja/nei), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "sv": "[[name]] startade (5 texter, 5 siffror, 5 ja/nej), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "pl": "[[name]] rozpoczęto (5 tekstów, 5 liczb, 5 tak/nie), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "ru": "[[name]] запущен (5 текстов, 5 чисел, 5 да/нет), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "ko": "[[name]] 시작됨 (텍스트 5개, 숫자 5개, 예/아니오 5개), [[overloadable]], [[debounce]] [[debounce_ms]]",
+    "ar": "[[name]] بدأ (5 نصوص، 5 أرقام، 5 نعم/لا)، [[overloadable]]، [[debounce]] [[debounce_ms]]"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "name",
+      "placeholder": {
+        "en": "Type or select a trigger name",
+        "nl": "Type of kies een trigger naam",
+        "da": "Skriv eller vælg et triggernavn",
+        "de": "Geben Sie einen Auslösernamen ein oder wählen Sie ihn aus",
+        "es": "Escribe o selecciona un nombre de activador",
+        "fr": "Tapez ou sélectionnez un nom de déclencheur",
+        "it": "Digita o seleziona un nome per il trigger",
+        "no": "Skriv inn eller velg et triggernavn",
+        "sv": "Skriv eller välj ett triggernamn",
+        "pl": "Wpisz lub wybierz nazwę wyzwalacza",
+        "ru": "Введите или выберите название триггера",
+        "ko": "트리거 이름을 입력하거나 선택하세요.",
+        "ar": "اكتب أو اختر اسم الزناد"
+      },
+      "title": {
+        "en": "Triggername",
+        "nl": "Triggernaam",
+        "da": "Triggernavn",
+        "de": "Triggername",
+        "es": "Nombre del disparador",
+        "fr": "Nom du déclencheur",
+        "it": "Nome del trigger",
+        "no": "Triggernavn",
+        "sv": "Triggernamn",
+        "pl": "Nazwa wyzwalacza",
+        "ru": "Имя триггера",
+        "ko": "트리거 이름",
+        "ar": "اسم المشغل"
+      }
     },
-    "titleFormatted": {
-        "en": "[[name]] started (5 texts, 5 numbers, 5 yes/no's), [[overloadable]], [[debounce]] [[debounce_ms]]",
-        "nl": "[[name]] is gestart (5 teksten, 5 nummers, 5 ja/nee's), [[overloadable]], [[debounce]] [[debounce_ms]]"
+    {
+      "type": "dropdown",
+      "name": "overloadable",
+      "required": false,
+      "placeholder": {
+        "en": "Overloading",
+        "nl": "Overloading",
+        "da": "Overbelastning",
+        "de": "Überlastung",
+        "es": "Sobrecarga",
+        "fr": "Surcharge",
+        "it": "Sovraccarico",
+        "no": "Overbelastning",
+        "sv": "Överbelastning",
+        "pl": "Przeciążenie",
+        "ru": "Перегрузка",
+        "ko": "과부하",
+        "ar": "التحميل الزائد"
+      },
+      "title": {
+        "en": "Overloadable",
+        "nl": "Overloadable",
+        "da": "Overbelastbar",
+        "de": "Überladbar",
+        "es": "Sobrecargable",
+        "fr": "Surchargeable",
+        "it": "Sovraccaricabile",
+        "no": "Overbelastbar",
+        "sv": "Överbelastningsbar",
+        "pl": "Przeciążalny",
+        "ru": "Перегружаемый",
+        "ko": "오버로드 가능",
+        "ar": "قابل للتحميل الزائد"
+      },
+      "values": [
+        {
+          "id": "false",
+          "label": {
+            "en": "Don't use overloading",
+            "nl": "Gebruik geen overloading",
+            "da": "Brug ikke overbelastning",
+            "de": "Verwenden Sie keine Überlastung",
+            "es": "No uses sobrecarga",
+            "fr": "N'utilisez pas de surcharge",
+            "it": "Non utilizzare il sovraccarico",
+            "no": "Ikke bruk overbelastning",
+            "sv": "Använd inte överbelastning",
+            "pl": "Nie używaj przeciążenia",
+            "ru": "Не используйте перегрузку",
+            "ko": "과부하를 사용하지 마세요.",
+            "ar": "لا تستخدم التحميل الزائد"
+          }
+        },
+        {
+          "id": "true",
+          "label": {
+            "en": "Use overloading",
+            "nl": "Gebruik overloading",
+            "da": "Brug overbelastning",
+            "de": "Überladung verwenden",
+            "es": "Usar sobrecarga",
+            "fr": "Utiliser la surcharge",
+            "it": "Usa il sovraccarico",
+            "no": "Bruk overbelastning",
+            "sv": "Använd överbelastning",
+            "pl": "Użyj przeciążania",
+            "ru": "Используйте перегрузку",
+            "ko": "오버로딩 사용하기",
+            "ar": "استخدم التحميل الزائد"
+          }
+        }
+      ]
     },
-    "args": [
+    {
+      "type": "dropdown",
+      "name": "debounce",
+      "required": false,
+      "placeholder": {
+        "en": "Default execution",
+        "nl": "Standaard uitvoering",
+        "da": "Standard udførelse",
+        "de": "Standardausführung",
+        "es": "Ejecución predeterminada",
+        "fr": "Exécution par défaut",
+        "it": "Esecuzione predefinita",
+        "no": "Standardutførelse",
+        "sv": "Standardutförande",
+        "pl": "Domyślne wykonanie",
+        "ru": "Выполнение по умолчанию",
+        "ko": "기본 실행",
+        "ar": "التنفيذ الافتراضي"
+      },
+      "title": {
+        "en": "Execution",
+        "nl": "Uitvoering",
+        "da": "Udførelse",
+        "de": "Ausführung",
+        "es": "Ejecución",
+        "fr": "Exécution",
+        "it": "Esecuzione",
+        "no": "Utførelse",
+        "sv": "Utförande",
+        "pl": "Wykonanie",
+        "ru": "Выполнение",
+        "ko": "실행",
+        "ar": "تنفيذ"
+      },
+      "values": [
         {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-                "en": "Type or select a trigger name",
-                "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-                "en": "Triggername",
-                "nl": "Triggernaam"
-            }
+          "id": "none",
+          "label": {
+            "en": "Default execution",
+            "nl": "Standaard uitvoering",
+            "da": "Standard udførelse",
+            "de": "Standardausführung",
+            "es": "Ejecución predeterminada",
+            "fr": "Exécution par défaut",
+            "it": "Esecuzione predefinita",
+            "no": "Standardutførelse",
+            "sv": "Standardutförande",
+            "pl": "Domyślne wykonanie",
+            "ru": "Выполнение по умолчанию",
+            "ko": "기본 실행",
+            "ar": "التنفيذ الافتراضي"
+          }
         },
         {
-            "type": "dropdown",
-            "name": "overloadable",
-            "required": false,
-            "placeholder": {
-                "en": "Overloading",
-                "nl": "Overloading"
-            },
-            "title": {
-                "en": "Overloadable",
-                "nl": "Overloadable"
-            },
-            "values": [
-                {
-                    "id": "false",
-                    "label": {
-                        "en": "Don't use overloading",                        
-                        "nl": "Gebruik geen overloading"
-                    }
-                },
-                {
-                    "id": "true",
-                    "label": {
-                        "en": "Use overloading",                        
-                        "nl": "Gebruik overloading"
-                    }
-                }
-            ]
+          "id": "finish",
+          "label": {
+            "en": "Use debounce (execute last one waiting after each [number of] ms)",
+            "nl": "Gebruik debounce (eindig met laatste wachtend na elke [aantal] ms)",
+            "da": "Brug debounce (udfør den sidste, der venter efter hver [antal] ms)",
+            "de": "Verwende Debounce (führe den letzten aus, der nach jeweils [Anzahl] ms wartet)",
+            "es": "Usar debounce (ejecutar el último en espera después de cada [número de] ms)",
+            "fr": "Utiliser le debounce (exécuter la dernière action en attente après chaque [nombre de] ms)",
+            "it": "Usa debounce (esegui l'ultimo in attesa dopo ogni [numero di] ms)",
+            "no": "Bruk debounce (utfør den siste som venter etter hver [antall] ms)",
+            "sv": "Använd debounce (utför den sista som väntar efter varje [antal] ms)",
+            "pl": "Użyj opóźnienia (wykonaj ostatnią czekającą po każdej [liczbie] ms)",
+            "ru": "Использовать дебаунс (выполнить последний ожидающий после каждого [количества] мс)",
+            "ko": "디바운스 사용 (각 [숫자] ms 후에 대기 중인 마지막 실행)",
+            "ar": "استخدم إزالة الارتداد (تنفيذ الأخير المنتظر بعد كل [عدد] من المللي ثانية)"
+          }
         },
         {
-            "type": "dropdown",
-            "name": "debounce",
-            "required": false,
-            "placeholder": {
-                "en": "Default execution",
-                "nl": "Standaard uitvoering"
-            },
-            "title": {
-                "en": "Execution",
-                "nl": "Uitvoering"
-            },
-            "values": [
-                {
-                    "id": "none",
-                    "label": {
-                        "en": "Default execution",
-                        "nl": "Standaard uitvoering"
-                    }
-                },
-                {
-                    "id": "finish",
-                    "label": {
-                        "en": "Use debounce (execute last one waiting after each [number of] ms)",
-                        "nl": "Gebruik debounce (eindig met laatste wachtend na elke [aantal] ms)"
-                    }
-                },
-                {
-                    "id": "executestart",
-                    "label": {
-                        "en": "Use debounce (execute at start, then allow execution after each [number of] ms)",
-                        "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms)"
-                    }
-                },
-                {
-                    "id": "executestart_finish",
-                    "label": {
-                        "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
-                        "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
-                    }
-                },
-                {
-                    "id": "sequential",
-                    "label": {
-                        "en": "Sequential (execute each one, after the previous one has finished)",
-                        "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
-                    }
-                }
-            ]
+          "id": "executestart",
+          "label": {
+            "en": "Use debounce (execute at start, then allow execution after each [number of] ms)",
+            "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms)",
+            "da": "Brug debounce (udfør ved start, og tillad derefter udførelse efter hver [antal] ms)",
+            "de": "Verwende Debounce (führe am Anfang aus, dann erlaube die Ausführung nach jeweils [Anzahl] ms)",
+            "es": "Usar debounce (ejecutar al inicio, luego permitir la ejecución después de cada [número de] ms)",
+            "fr": "Utiliser le debounce (exécuter au début, puis permettre l'exécution après chaque [nombre de] ms)",
+            "it": "Usa debounce (esegui all'inizio, poi consenti l'esecuzione dopo ogni [numero di] ms)",
+            "no": "Bruk debounce (utfør ved start, deretter tillat utførelse etter hver [antall] ms)",
+            "sv": "Använd debounce (utför vid start, tillåt sedan utförande efter varje [antal] ms)",
+            "pl": "Użyj debounce (wykonaj na początku, a następnie pozwól na wykonanie po każdych [liczba] ms)",
+            "ru": "Использовать дебаунс (выполнить в начале, затем разрешить выполнение после каждых [количество] мс)",
+            "ko": "디바운스 사용 (시작 시 실행, 이후 [숫자] ms마다 실행 허용)",
+            "ar": "استخدم إزالة الارتداد (تنفيذ في البداية، ثم السماح بالتنفيذ بعد كل [عدد] من المللي ثانية)"
+          }
         },
         {
-            "type": "number",
-            "name": "debounce_ms",
-            "required": false,
-            "placeholder": {
-                "en": "Debounce (milliseconds)",
-                "nl": "Debounce (Milliseconden)"
-            },
-            "title": {
-                "en": "Debounce (ms)",
-                "nl": "Debounce (ms)"
-            }
+          "id": "executestart_finish",
+          "label": {
+            "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
+            "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)",
+            "da": "Brug debounce (udfør ved start, tillad derefter udførelse efter hver [antal] ms, afslut med den sidste, der venter)",
+            "de": "Verwende Debounce (führe am Anfang aus, dann erlaube die Ausführung nach jeweils [Anzahl] ms, beende mit dem letzten, der wartet)",
+            "es": "Usar debounce (ejecutar al inicio, luego permitir la ejecución después de cada [número de] ms, finalizar con el último en espera)",
+            "fr": "Utiliser le debounce (exécuter au début, puis permettre l'exécution après chaque [nombre de] ms, terminer avec le dernier en attente)",
+            "it": "Usa debounce (esegui all'inizio, poi consenti l'esecuzione dopo ogni [numero di] ms, termina con l'ultimo in attesa)",
+            "no": "Bruk debounce (utfør ved start, deretter tillat utførelse etter hver [antall] ms, avslutt med den siste som venter)",
+            "sv": "Använd debounce (utför vid start, tillåt sedan utförande efter varje [antal] ms, avsluta med den sista som väntar)",
+            "pl": "Użyj debounce (wykonaj na początku, następnie pozwól na wykonanie po każdych [liczba] ms, zakończ ostatnim oczekującym)",
+            "ru": "Используйте дебаунс (выполните в начале, затем разрешите выполнение после каждого [количества] мс, завершите последним, ожидающим выполнения)",
+            "ko": "디바운스 사용 (시작 시 실행, 이후 [숫자] ms마다 실행 허용, 마지막으로 대기 중인 것 실행)",
+            "ar": "استخدم إزالة الارتداد (تنفيذ في البداية، ثم السماح بالتنفيذ بعد كل [عدد] من المللي ثانية، والانتهاء بآخر واحد ينتظر)"
+          }
+        },
+        {
+          "id": "sequential",
+          "label": {
+            "en": "Sequential (execute each one, after the previous one has finished)",
+            "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)",
+            "da": "Sekventiel (udfør hver enkelt, efter den forrige er afsluttet)",
+            "de": "Sequenziell (führe jeden aus, nachdem der vorherige abgeschlossen ist)",
+            "es": "Secuencial (ejecutar cada uno, después de que el anterior haya terminado)",
+            "fr": "Séquentiel (exécutez chaque action, après que la précédente soit terminée)",
+            "it": "Sequenziale (esegui ciascuno, dopo che il precedente è terminato)",
+            "no": "Sekvensiell (utfør hver enkelt, etter at den forrige er ferdig)",
+            "sv": "Sekventiell (utför varje steg, efter att det föregående har avslutats)",
+            "pl": "Sekwencyjnie (wykonaj każde z nich, po zakończeniu poprzedniego)",
+            "ru": "Последовательно (выполнять каждое действие после завершения предыдущего)",
+            "ko": "순차적 (이전 작업이 완료된 후에 각각 실행)",
+            "ar": "تسلسلي (نفذ كل واحد بعد أن ينتهي السابق)"
+          }
         }
-    ],
-    "tokens": [
-        {
-            "type": "number",
-            "name": "flowexecutionid",
-            "title": {
-                "en": "Return ID",
-                "nl": "Return ID"
-            }
-        },
-        {
-            "type": "string",
-            "name": "text1",
-            "title": {
-                "en": "Text 1",                
-                "nl": "Tekst 1"
-            }
-        },{
-            "type": "string",
-            "name": "text2",
-            "title": {
-                "en": "Text 2",                
-                "nl": "Tekst 2"
-            }
-        },{
-            "type": "string",
-            "name": "text3",
-            "title": {
-                "en": "Text 3",                
-                "nl": "Tekst 3"
-            }
-        },{
-            "type": "string",
-            "name": "text4",
-            "title": {
-                "en": "Text 4",                
-                "nl": "Tekst 4"
-            }
-        },{
-            "type": "string",
-            "name": "text5",
-            "title": {
-                "en": "Text 5",                
-                "nl": "Tekst 5"
-            }
-        },       
-        {
-            "type": "number",
-            "name": "number1",
-            "title": {
-                "en": "Number 1",                
-                "nl": "Nummer 1"
-            }
-        },{
-            "type": "number",
-            "name": "number2",
-            "title": {
-                "en": "Number 2",                
-                "nl": "Nummer 2"
-            }
-        },{
-            "type": "number",
-            "name": "number3",
-            "title": {
-                "en": "Number 3",                
-                "nl": "Nummer 3"
-            }
-        },{
-            "type": "number",
-            "name": "number4",
-            "title": {
-                "en": "Number 4",                
-                "nl": "Nummer 4"
-            }
-        },{
-            "type": "number",
-            "name": "number5",
-            "title": {
-                "en": "Number 5",                
-                "nl": "Nummer 5"
-            }
-        },
-        {
-            "type": "boolean",
-            "name": "boolean1",
-            "title": {
-                "en": "Yes/No 1",                
-                "nl": "Ja/Nee 1"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean2",
-            "title": {
-                "en": "Yes/No 2",                
-                "nl": "Ja/Nee 2"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean3",
-            "title": {
-                "en": "Yes/No 3",                
-                "nl": "Ja/Nee 3"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean4",
-            "title": {
-                "en": "Yes/No 4",                
-                "nl": "Ja/Nee 4"
-            }
-        },{
-            "type": "boolean",
-            "name": "boolean5",
-            "title": {
-                "en": "Yes/No 5",                
-                "nl": "Ja/Nee 5"
-            }
-        }
-    ] 
+      ]
+    },
+    {
+      "type": "number",
+      "name": "debounce_ms",
+      "required": false,
+      "placeholder": {
+        "en": "Debounce (milliseconds)",
+        "nl": "Debounce (Milliseconden)",
+        "da": "Debounce (millisekunder)",
+        "de": "Entprellung (Millisekunden)",
+        "es": "Antirrebote (milisegundos)",
+        "fr": "Délai de stabilisation (millisecondes)",
+        "it": "Debounce (millisecondi)",
+        "no": "Debounce (millisekunder)",
+        "sv": "Debounce (millisekunder)",
+        "pl": "Debounce (milisekundy)",
+        "ru": "Задержка (миллисекунды)",
+        "ko": "디바운스 (밀리초)",
+        "ar": "إزالة الارتداد (مللي ثانية)"
+      },
+      "title": {
+        "en": "Debounce (ms)",
+        "nl": "Debounce (ms)",
+        "da": "Debounce (ms)",
+        "de": "Entprellung (ms)",
+        "es": "Debounce (ms)",
+        "fr": "Anti-rebond (ms)",
+        "it": "Debounce (ms)",
+        "no": "Debounce (ms)",
+        "sv": "Debounce (ms)",
+        "pl": "Opóźnienie (ms)",
+        "ru": "Задержка (мс)",
+        "ko": "디바운스 (ms)",
+        "ar": "إزالة الارتداد (مللي ثانية)"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "number",
+      "name": "flowexecutionid",
+      "title": {
+        "en": "Return ID",
+        "nl": "Return ID",
+        "da": "Returnér ID",
+        "de": "Rückgabe-ID",
+        "es": "ID de retorno",
+        "fr": "ID de retour",
+        "it": "ID di ritorno",
+        "no": "Returner ID",
+        "sv": "Returnera ID",
+        "pl": "Zwróć ID",
+        "ru": "Вернуть ID",
+        "ko": "반환 ID",
+        "ar": "معرّف الإرجاع"
+      }
+    },
+    {
+      "type": "string",
+      "name": "text1",
+      "title": {
+        "en": "Text 1",
+        "nl": "Tekst 1",
+        "da": "Tekst",
+        "de": "Text 1",
+        "es": "Texto 1",
+        "fr": "Texte",
+        "it": "Testo 1",
+        "no": "Tekst 1",
+        "sv": "Text 1",
+        "pl": "Tekst",
+        "ru": "Текст 1",
+        "ko": "텍스트 1",
+        "ar": "نص 1"
+      }
+    },
+    {
+      "type": "string",
+      "name": "text2",
+      "title": {
+        "en": "Text 2",
+        "nl": "Tekst 2",
+        "da": "Tekst",
+        "de": "Text 2",
+        "es": "Texto 2",
+        "fr": "Texte",
+        "it": "Testo 2",
+        "no": "Tekst 2",
+        "sv": "Text 2",
+        "pl": "Tekst",
+        "ru": "Текст 2",
+        "ko": "텍스트 2",
+        "ar": "نص 2"
+      }
+    },
+    {
+      "type": "string",
+      "name": "text3",
+      "title": {
+        "en": "Text 3",
+        "nl": "Tekst 3",
+        "da": "Tekst",
+        "de": "Text 3",
+        "es": "Texto 3",
+        "fr": "Texte",
+        "it": "Testo 3",
+        "no": "Tekst 3",
+        "sv": "Text 3",
+        "pl": "Tekst",
+        "ru": "Текст 3",
+        "ko": "텍스트 3",
+        "ar": "نص 3"
+      }
+    },
+    {
+      "type": "string",
+      "name": "text4",
+      "title": {
+        "en": "Text 4",
+        "nl": "Tekst 4",
+        "da": "Tekst",
+        "de": "Text 4",
+        "es": "Texto 4",
+        "fr": "Texte",
+        "it": "Testo 4",
+        "no": "Tekst 4",
+        "sv": "Text 4",
+        "pl": "Tekst",
+        "ru": "Текст 4",
+        "ko": "텍스트 4",
+        "ar": "نص 4"
+      }
+    },
+    {
+      "type": "string",
+      "name": "text5",
+      "title": {
+        "en": "Text 5",
+        "nl": "Tekst 5",
+        "da": "Tekst",
+        "de": "Text 5",
+        "es": "Texto 5",
+        "fr": "Texte",
+        "it": "Testo 5",
+        "no": "Tekst 5",
+        "sv": "Text 5",
+        "pl": "Tekst",
+        "ru": "Текст 5",
+        "ko": "텍스트 5",
+        "ar": "نص 5"
+      }
+    },
+    {
+      "type": "number",
+      "name": "number1",
+      "title": {
+        "en": "Number 1",
+        "nl": "Nummer 1",
+        "da": "Nummer 1",
+        "de": "Nummer 1",
+        "es": "Número 1",
+        "fr": "Numéro 1",
+        "it": "Numero 1",
+        "no": "Nummer 1",
+        "sv": "Nummer 1",
+        "pl": "Numer 1",
+        "ru": "Номер 1",
+        "ko": "번호 1",
+        "ar": "رقم 1"
+      }
+    },
+    {
+      "type": "number",
+      "name": "number2",
+      "title": {
+        "en": "Number 2",
+        "nl": "Nummer 2",
+        "da": "Nummer 2",
+        "de": "Nummer 2",
+        "es": "Número 2",
+        "fr": "Numéro 2",
+        "it": "Numero 2",
+        "no": "Nummer 2",
+        "sv": "Nummer 2",
+        "pl": "Numer 2",
+        "ru": "Номер 2",
+        "ko": "번호 2",
+        "ar": "رقم 2"
+      }
+    },
+    {
+      "type": "number",
+      "name": "number3",
+      "title": {
+        "en": "Number 3",
+        "nl": "Nummer 3",
+        "da": "Nummer 3",
+        "de": "Nummer 3",
+        "es": "Número 3",
+        "fr": "Numéro 3",
+        "it": "Numero 3",
+        "no": "Nummer 3",
+        "sv": "Nummer 3",
+        "pl": "Numer 3",
+        "ru": "Номер 3",
+        "ko": "번호 3",
+        "ar": "رقم 3"
+      }
+    },
+    {
+      "type": "number",
+      "name": "number4",
+      "title": {
+        "en": "Number 4",
+        "nl": "Nummer 4",
+        "da": "Nummer 4",
+        "de": "Nummer 4",
+        "es": "Número 4",
+        "fr": "Numéro 4",
+        "it": "Numero 4",
+        "no": "Nummer 4",
+        "sv": "Nummer 4",
+        "pl": "Numer 4",
+        "ru": "Номер 4",
+        "ko": "번호 4",
+        "ar": "رقم 4"
+      }
+    },
+    {
+      "type": "number",
+      "name": "number5",
+      "title": {
+        "en": "Number 5",
+        "nl": "Nummer 5",
+        "da": "Nummer 5",
+        "de": "Nummer 5",
+        "es": "Número 5",
+        "fr": "Numéro 5",
+        "it": "Numero 5",
+        "no": "Nummer 5",
+        "sv": "Nummer 5",
+        "pl": "Numer 5",
+        "ru": "Номер 5",
+        "ko": "번호 5",
+        "ar": "رقم 5"
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "boolean1",
+      "title": {
+        "en": "Yes/No 1",
+        "nl": "Ja/Nee 1",
+        "da": "Ja/Nej 1",
+        "de": "Ja/Nein 1",
+        "es": "Sí/No 1",
+        "fr": "Oui/Non 1",
+        "it": "Sì/No 1",
+        "no": "Ja/Nei 1",
+        "sv": "Ja/Nej 1",
+        "pl": "Tak/Nie 1",
+        "ru": "Да/Нет 1",
+        "ko": "예/아니오 1",
+        "ar": "نعم/لا 1"
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "boolean2",
+      "title": {
+        "en": "Yes/No 2",
+        "nl": "Ja/Nee 2",
+        "da": "Ja/Nej 2",
+        "de": "Ja/Nein 2",
+        "es": "Sí/No 2",
+        "fr": "Oui/Non 2",
+        "it": "Sì/No 2",
+        "no": "Ja/Nei 2",
+        "sv": "Ja/Nej 2",
+        "pl": "Tak/Nie 2",
+        "ru": "Да/Нет 2",
+        "ko": "예/아니오 2",
+        "ar": "نعم/لا 2"
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "boolean3",
+      "title": {
+        "en": "Yes/No 3",
+        "nl": "Ja/Nee 3",
+        "da": "Ja/Nej 3",
+        "de": "Ja/Nein 3",
+        "es": "Sí/No 3",
+        "fr": "Oui/Non 3",
+        "it": "Sì/No 3",
+        "no": "Ja/Nei 3",
+        "sv": "Ja/Nej 3",
+        "pl": "Tak/Nie 3",
+        "ru": "Да/Нет 3",
+        "ko": "예/아니오 3",
+        "ar": "نعم/لا 3"
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "boolean4",
+      "title": {
+        "en": "Yes/No 4",
+        "nl": "Ja/Nee 4",
+        "da": "Ja/Nej 4",
+        "de": "Ja/Nein 4",
+        "es": "Sí/No 4",
+        "fr": "Oui/Non 4",
+        "it": "Sì/No 4",
+        "no": "Ja/Nei 4",
+        "sv": "Ja/Nej 4",
+        "pl": "Tak/Nie 4",
+        "ru": "Да/Нет 4",
+        "ko": "예/아니오 4",
+        "ar": "نعم/لا 4"
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "boolean5",
+      "title": {
+        "en": "Yes/No 5",
+        "nl": "Ja/Nee 5",
+        "da": "Ja/Nej 5",
+        "de": "Ja/Nein 5",
+        "es": "Sí/No 5",
+        "fr": "Oui/Non 5",
+        "it": "Sì/No 5",
+        "no": "Ja/Nei 5",
+        "sv": "Ja/Nej 5",
+        "pl": "Tak/Nie 5",
+        "ru": "Да/Нет 5",
+        "ko": "예/아니오 5",
+        "ar": "نعم/لا 5"
+      }
+    }
+  ]
 }

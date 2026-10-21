@@ -1,6 +1,6 @@
 {
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.5.5",
+  "version": "1.6.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -8,14 +8,56 @@
     "local"
   ],
   "name": {
-    "en": "Advanced Triggers"
+    "en": "Advanced Triggers",
+    "nl": "Geavanceerde Triggers",
+    "da": "Avancerede Udløsere",
+    "de": "Erweiterte Auslöser",
+    "es": "Disparadores Avanzados",
+    "fr": "Déclencheurs Avancés",
+    "it": "Trigger avanzati",
+    "no": "Avanserte utløsere",
+    "sv": "Avancerade utlösare",
+    "pl": "Zaawansowane Wyzwalacze",
+    "ru": "Расширенные триггеры",
+    "ko": "고급 트리거",
+    "ar": "المحفزات المتقدمة"
   },
   "description": {
-    "en": "Trigger and action cards with eventname for Advanced Flows"
+    "en": "Trigger and action cards with eventname for Advanced Flows",
+    "nl": "Trigger- en actiecategorieën met gebeurtenisnaam voor Geavanceerde Flows",
+    "da": "Trigger- og handlingskort med eventnavn til Avancerede Flows",
+    "de": "Auslöser- und Aktionskarten mit Ereignisnamen für erweiterte Flows",
+    "es": "Tarjetas de activación y acción con nombre de evento para Flujos Avanzados",
+    "fr": "Cartes de déclenchement et d'action avec nom d'événement pour Flows Avancés",
+    "it": "Schede di trigger e azione con nome evento per Flussi Avanzati",
+    "no": "Utløser- og handlingskort med hendelsesnavn for Avanserte Flyter",
+    "sv": "Trigger- och åtgärdskort med händelsenamn för avancerade flöden",
+    "pl": "Karty wyzwalaczy i akcji z nazwą zdarzenia dla Zaawansowanych Przepływów",
+    "ru": "Карты триггеров и действий с названием события для Расширенных потоков",
+    "ko": "이벤트 이름이 포함된 트리거 및 액션 카드로 고급 흐름 만들기",
+    "ar": "بطاقات التفعيل والعمل مع اسم الحدث لتدفقات متقدمة"
   },
   "tags": {
-    "en": ["Trigger", "Advanced", "When", "Debounce", "Arguments", "Method", "Function"],
-    "nl": ["Trigger", "Advanced", "Wanneer", "Debounce", "Argumenten", "Methode", "Functie"]
+    "en": [
+      "Trigger",
+      "Advanced",
+      "When",
+      "Debounce",
+      "Arguments",
+      "Method",
+      "Function",
+      "loop"
+    ],
+    "nl": [
+      "Trigger",
+      "Advanced",
+      "Wanneer",
+      "Debounce",
+      "Argumenten",
+      "Methode",
+      "Functie",
+      "loop"
+    ]
   },
   "category": [
     "tools"
@@ -30,20 +72,19 @@
     "url": "https://bitbucket.org/QlusterIT/nl.qluster-it.advancedtriggers/issues"
   },
   "homeyCommunityTopicId": 65651,
-
-	"contributing": {
-		"donate": {
-			"paypal": {
-				"username": "QlusterIT"
-			},
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "QlusterIT"
+      },
       "patreon": {
-				"username": "QlusterIT"
-			},
+        "username": "QlusterIT"
+      },
       "githubSponsors": {
         "username": "XeroxQ"
       }
-		}
-	},
+    }
+  },
   "author": {
     "name": "Arie J. Godschalk",
     "email": "arie@qluster-it.nl"

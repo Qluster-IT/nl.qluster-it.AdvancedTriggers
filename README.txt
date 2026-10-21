@@ -7,11 +7,16 @@ Or add and actioncard (Then), set the name, and select it in the triggercard (Wh
 
 You can use overloading, meaning: A 5-Argument-When card can be selected and triggered with a 1-Argument-Then card.
 
+You can also queue flows, so the will execute after one-another.
+
+There are also flowcards to return values, so you can make methods that can be re-used, keeping logic in separate re-usable flows.
+
 Debounce can be set on triggers (When cards): meaning you can manage how many times and in what way flows get executed within a certain periode.
 - Execute last one waiting after each [number of] ms.
 - Execute at start, then allow execution after each [number of] ms.
 - Execute at start, then allow execution after each [number of] ms, finish with last one waiting.
 
 (Please note the extra delays during testing in Advanced Flows.)
+
 
 These cards execute almost instantly, as suppose to the default Start-A-Flow cards half a second delay.

@@ -1,145 +1,355 @@
 {
-    "id": "return__text5_number5_boolean5",
-    "title": {
-        "en": "Start Flowcard",
-        "nl": "Start Flowkaart"
+  "id": "return__text5_number5_boolean5",
+  "title": {
+    "en": "Start Flowcard",
+    "nl": "Start Flowkaart",
+    "da": "Start Flow-kort",
+    "de": "Flowkarte starten",
+    "es": "Iniciar Flowcard",
+    "fr": "Démarrer la carte de flux",
+    "it": "Avvia Flowcard",
+    "no": "Start Flow-kort",
+    "sv": "Starta flödeskort",
+    "pl": "Rozpocznij kartę przepływu",
+    "ru": "Запустить карточку потока",
+    "ko": "플로우카드 시작",
+    "ar": "ابدأ بطاقة التدفق"
+  },
+  "titleFormatted": {
+    "en": "Return to [[flowexecutionid]] the values [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "da": "Returner til [[flowexecutionid]] værdierne [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "de": "Gib an [[flowexecutionid]] die Werte [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]] zurück.",
+    "es": "Devuelve a [[flowexecutionid]] los valores [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "fr": "Retourner à [[flowexecutionid]] les valeurs [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "it": "Restituisci a [[flowexecutionid]] i valori [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "no": "Returner til [[flowexecutionid]] verdiene [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "sv": "Återgå till [[flowexecutionid]] med värdena [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "pl": "Zwróć do [[flowexecutionid]] wartości [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "ru": "Вернуть в [[flowexecutionid]] значения [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
+    "ko": "[[flowexecutionid]]로 [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]] 값을 반환합니다.",
+    "ar": "إرجاع إلى [[flowexecutionid]] القيم [[text1]]، [[text2]]، [[text3]]، [[text4]]، [[text5]]، [[number1]]، [[number2]]، [[number3]]، [[number4]]، [[number5]]، [[boolean1]]، [[boolean2]]، [[boolean3]]، [[boolean4]]، [[boolean5]]"
+  },
+  "args": [
+    {
+      "type": "number",
+      "name": "flowexecutionid",
+      "placeholder": {
+        "en": "Return ID",
+        "nl": "Return ID",
+        "da": "Returnér ID",
+        "de": "Rückgabe-ID",
+        "es": "ID de retorno",
+        "fr": "ID de retour",
+        "it": "ID di ritorno",
+        "no": "Returner ID",
+        "sv": "Returnera ID",
+        "pl": "Zwróć ID",
+        "ru": "Вернуть ID",
+        "ko": "ID 반환",
+        "ar": "معرّف الإرجاع"
+      },
+      "required": true
     },
-    "titleFormatted": {
-        "en": "Return to [[flowexecutionid]] the values [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]",
-        "nl": "Return naar [[flowexecutionid]] de waarden [[text1]], [[text2]], [[text3]], [[text4]], [[text5]], [[number1]], [[number2]], [[number3]], [[number4]], [[number5]], [[boolean1]], [[boolean2]], [[boolean3]], [[boolean4]], [[boolean5]]"
+    {
+      "type": "text",
+      "name": "text1",
+      "placeholder": {
+        "en": "Text 1",
+        "nl": "Tekst 1",
+        "da": "Tekst",
+        "de": "Text 1",
+        "es": "Texto 1",
+        "fr": "Texte",
+        "it": "Testo 1",
+        "no": "Tekst 1",
+        "sv": "Text 1",
+        "pl": "Tekst",
+        "ru": "Текст 1",
+        "ko": "텍스트 1",
+        "ar": "نص 1"
+      },
+      "required": false
     },
-    "args": [
-        {
-            "type": "number",
-            "name": "flowexecutionid",
-            "placeholder": {
-                "en": "Return ID",
-                "nl": "Return ID"
-            },
-            "required":true
-        },
-        {
-            "type": "text",
-            "name": "text1",
-            "placeholder": {
-                "en": "Text 1",
-                "nl": "Tekst 1"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text2",
-            "placeholder": {
-                "en": "Text 2",
-                "nl": "Tekst 2"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text3",
-            "placeholder": {
-                "en": "Text 3",
-                "nl": "Tekst 3"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text4",
-            "placeholder": {
-                "en": "Text 4",
-                "nl": "Tekst 4"
-            },
-            "required":false
-        },{
-            "type": "text",
-            "name": "text5",
-            "placeholder": {
-                "en": "Text 5",
-                "nl": "Tekst 5"
-            },
-            "required":false
-        },
-        {
-            "type": "number",
-            "name": "number1",
-            "placeholder": {
-                "en": "Number 1",
-                "nl": "Nummer 1"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number2",
-            "placeholder": {
-                "en": "Number 2",
-                "nl": "Nummer 2"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number3",
-            "placeholder": {
-                "en": "Number 3",
-                "nl": "Nummer 3"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number4",
-            "placeholder": {
-                "en": "Number 4",
-                "nl": "Nummer 4"
-            },
-            "required":false
-        },{
-            "type": "number",
-            "name": "number5",
-            "placeholder": {
-                "en": "Number 5",
-                "nl": "Nummer 5"
-            },
-            "required":false
-        },
-        {
-            "type": "checkbox",
-            "name": "boolean1",
-            "placeholder": {
-                "en": "Yes/No 1",
-                "nl": "Ja/Nee 1"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean2",
-            "placeholder": {
-                "en": "Yes/No 2",
-                "nl": "Ja/Nee 2"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean3",
-            "placeholder": {
-                "en": "Yes/No 3",
-                "nl": "Ja/Nee 3"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean4",
-            "placeholder": {
-                "en": "Yes/No 4",
-                "nl": "Ja/Nee 4"
-            },
-            "required":false
-        },{
-            "type": "checkbox",
-            "name": "boolean5",
-            "placeholder": {
-                "en": "Yes/No 5",
-                "nl": "Ja/Nee 5"
-            },
-            "required":false
-        }
-    ]
+    {
+      "type": "text",
+      "name": "text2",
+      "placeholder": {
+        "en": "Text 2",
+        "nl": "Tekst 2",
+        "da": "Tekst",
+        "de": "Text 2",
+        "es": "Texto 2",
+        "fr": "Texte",
+        "it": "Testo 2",
+        "no": "Tekst 2",
+        "sv": "Text 2",
+        "pl": "Tekst",
+        "ru": "Текст 2",
+        "ko": "텍스트 2",
+        "ar": "نص 2"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text3",
+      "placeholder": {
+        "en": "Text 3",
+        "nl": "Tekst 3",
+        "da": "Tekst",
+        "de": "Text 3",
+        "es": "Texto 3",
+        "fr": "Texte",
+        "it": "Testo 3",
+        "no": "Tekst 3",
+        "sv": "Text 3",
+        "pl": "Tekst",
+        "ru": "Текст 3",
+        "ko": "텍스트 3",
+        "ar": "نص 3"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text4",
+      "placeholder": {
+        "en": "Text 4",
+        "nl": "Tekst 4",
+        "da": "Tekst",
+        "de": "Text 4",
+        "es": "Texto 4",
+        "fr": "Texte",
+        "it": "Testo 4",
+        "no": "Tekst 4",
+        "sv": "Text 4",
+        "pl": "Tekst",
+        "ru": "Текст 4",
+        "ko": "텍스트 4",
+        "ar": "نص 4"
+      },
+      "required": false
+    },
+    {
+      "type": "text",
+      "name": "text5",
+      "placeholder": {
+        "en": "Text 5",
+        "nl": "Tekst 5",
+        "da": "Tekst",
+        "de": "Text 5",
+        "es": "Texto 5",
+        "fr": "Texte",
+        "it": "Testo 5",
+        "no": "Tekst 5",
+        "sv": "Text 5",
+        "pl": "Tekst",
+        "ru": "Текст 5",
+        "ko": "텍스트 5",
+        "ar": "نص 5"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number1",
+      "placeholder": {
+        "en": "Number 1",
+        "nl": "Nummer 1",
+        "da": "Nummer 1",
+        "de": "Nummer 1",
+        "es": "Número 1",
+        "fr": "Numéro 1",
+        "it": "Numero 1",
+        "no": "Nummer 1",
+        "sv": "Nummer 1",
+        "pl": "Numer 1",
+        "ru": "Номер 1",
+        "ko": "번호 1",
+        "ar": "رقم 1"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number2",
+      "placeholder": {
+        "en": "Number 2",
+        "nl": "Nummer 2",
+        "da": "Nummer 2",
+        "de": "Nummer 2",
+        "es": "Número 2",
+        "fr": "Numéro 2",
+        "it": "Numero 2",
+        "no": "Nummer 2",
+        "sv": "Nummer 2",
+        "pl": "Numer 2",
+        "ru": "Номер 2",
+        "ko": "번호 2",
+        "ar": "رقم 2"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number3",
+      "placeholder": {
+        "en": "Number 3",
+        "nl": "Nummer 3",
+        "da": "Nummer 3",
+        "de": "Nummer 3",
+        "es": "Número 3",
+        "fr": "Numéro 3",
+        "it": "Numero 3",
+        "no": "Nummer 3",
+        "sv": "Nummer 3",
+        "pl": "Numer 3",
+        "ru": "Номер 3",
+        "ko": "번호 3",
+        "ar": "رقم 3"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number4",
+      "placeholder": {
+        "en": "Number 4",
+        "nl": "Nummer 4",
+        "da": "Nummer 4",
+        "de": "Nummer 4",
+        "es": "Número 4",
+        "fr": "Numéro 4",
+        "it": "Numero 4",
+        "no": "Nummer 4",
+        "sv": "Nummer 4",
+        "pl": "Numer 4",
+        "ru": "Номер 4",
+        "ko": "번호 4",
+        "ar": "رقم 4"
+      },
+      "required": false
+    },
+    {
+      "type": "number",
+      "name": "number5",
+      "placeholder": {
+        "en": "Number 5",
+        "nl": "Nummer 5",
+        "da": "Nummer 5",
+        "de": "Nummer 5",
+        "es": "Número 5",
+        "fr": "Numéro 5",
+        "it": "Numero 5",
+        "no": "Nummer 5",
+        "sv": "Nummer 5",
+        "pl": "Numer 5",
+        "ru": "Номер 5",
+        "ko": "번호 5",
+        "ar": "رقم 5"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean1",
+      "placeholder": {
+        "en": "Yes/No 1",
+        "nl": "Ja/Nee 1",
+        "da": "Ja/Nej 1",
+        "de": "Ja/Nein 1",
+        "es": "Sí/No 1",
+        "fr": "Oui/Non 1",
+        "it": "Sì/No 1",
+        "no": "Ja/Nei 1",
+        "sv": "Ja/Nej 1",
+        "pl": "Tak/Nie 1",
+        "ru": "Да/Нет 1",
+        "ko": "예/아니오 1",
+        "ar": "نعم/لا 1"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean2",
+      "placeholder": {
+        "en": "Yes/No 2",
+        "nl": "Ja/Nee 2",
+        "da": "Ja/Nej 2",
+        "de": "Ja/Nein 2",
+        "es": "Sí/No 2",
+        "fr": "Oui/Non 2",
+        "it": "Sì/No 2",
+        "no": "Ja/Nei 2",
+        "sv": "Ja/Nej 2",
+        "pl": "Tak/Nie 2",
+        "ru": "Да/Нет 2",
+        "ko": "예/아니오 2",
+        "ar": "نعم/لا 2"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean3",
+      "placeholder": {
+        "en": "Yes/No 3",
+        "nl": "Ja/Nee 3",
+        "da": "Ja/Nej 3",
+        "de": "Ja/Nein 3",
+        "es": "Sí/No 3",
+        "fr": "Oui/Non 3",
+        "it": "Sì/No 3",
+        "no": "Ja/Nei 3",
+        "sv": "Ja/Nej 3",
+        "pl": "Tak/Nie 3",
+        "ru": "Да/Нет 3",
+        "ko": "예/아니요 3",
+        "ar": "نعم/لا 3"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean4",
+      "placeholder": {
+        "en": "Yes/No 4",
+        "nl": "Ja/Nee 4",
+        "da": "Ja/Nej 4",
+        "de": "Ja/Nein 4",
+        "es": "Sí/No 4",
+        "fr": "Oui/Non 4",
+        "it": "Sì/No 4",
+        "no": "Ja/Nei 4",
+        "sv": "Ja/Nej 4",
+        "pl": "Tak/Nie 4",
+        "ru": "Да/Нет 4",
+        "ko": "예/아니오 4",
+        "ar": "نعم/لا 4"
+      },
+      "required": false
+    },
+    {
+      "type": "checkbox",
+      "name": "boolean5",
+      "placeholder": {
+        "en": "Yes/No 5",
+        "nl": "Ja/Nee 5",
+        "da": "Ja/Nej 5",
+        "de": "Ja/Nein 5",
+        "es": "Sí/No 5",
+        "fr": "Oui/Non 5",
+        "it": "Sì/No 5",
+        "no": "Ja/Nei 5",
+        "sv": "Ja/Nej 5",
+        "pl": "Tak/Nie 5",
+        "ru": "Да/Нет 5",
+        "ko": "예/아니오 5",
+        "ar": "نعم/لا 5"
+      },
+      "required": false
+    }
+  ]
 }

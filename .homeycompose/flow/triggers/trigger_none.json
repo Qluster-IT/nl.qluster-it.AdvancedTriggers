@@ -1,48 +1,114 @@
 {
-    "id": "trigger_none",
-    "deprecated" : true,
-    "title": {
-        "en": "This Flowcard started",
-        "nl": "Deze Flowkaart is gestart"
+  "id": "trigger_none",
+  "deprecated": true,
+  "title": {
+    "en": "This Flowcard started",
+    "nl": "Deze Flowkaart is gestart",
+    "da": "Dette Flowkort startede",
+    "de": "Diese Flowkarte wurde gestartet",
+    "es": "Esta tarjeta de flujo comenzó",
+    "fr": "Cette carte de flux a commencé",
+    "it": "Questa scheda di flusso è iniziata",
+    "no": "Dette Flowkortet startet",
+    "sv": "Detta flödeskort startade",
+    "pl": "Ta karta przepływu się rozpoczęła",
+    "ru": "Эта карточка потока запущена",
+    "ko": "이 플로우카드가 시작되었습니다.",
+    "ar": "بدأت بطاقة التدفق هذه"
+  },
+  "titleFormatted": {
+    "en": "[[name]] started",
+    "nl": "[[name]] is gestart",
+    "da": "[[name]] startede",
+    "de": "[[name]] hat begonnen",
+    "es": "[[name]] comenzó",
+    "fr": "[[name]] a démarré",
+    "it": "[[name]] ha iniziato",
+    "no": "[[name]] startet",
+    "sv": "[[name]] startade",
+    "pl": "[[name]] rozpoczął",
+    "ru": "[[name]] начал",
+    "ko": "[[name]] 시작했습니다.",
+    "ar": "[[name]] بدأ"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "name",
+      "placeholder": {
+        "en": "Trigger name",
+        "nl": "Trigger naam",
+        "da": "Trigger-navn",
+        "de": "Auslösername",
+        "es": "Nombre del disparador",
+        "fr": "Nom du déclencheur",
+        "it": "Nome del trigger",
+        "no": "Trigger-navn",
+        "sv": "Trigger-namn",
+        "pl": "Nazwa wyzwalacza",
+        "ru": "Название триггера",
+        "ko": "트리거 이름",
+        "ar": "اسم المشغل"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "string",
+      "name": "text",
+      "title": {
+        "en": "Text",
+        "nl": "Tekst",
+        "da": "Tekst",
+        "de": "Text",
+        "es": "Texto",
+        "fr": "Texte",
+        "it": "Testo",
+        "no": "Tekst",
+        "sv": "Text",
+        "pl": "Tekst",
+        "ru": "Текст",
+        "ko": "텍스트",
+        "ar": "نص"
+      }
     },
-    "titleFormatted": {
-        "en": "[[name]] started",
-        "nl": "[[name]] is gestart"
+    {
+      "type": "number",
+      "name": "number",
+      "title": {
+        "en": "Number",
+        "nl": "Nummer",
+        "da": "Nummer",
+        "de": "Nummer",
+        "es": "Número",
+        "fr": "Nombre",
+        "it": "Numero",
+        "no": "Nummer",
+        "sv": "Nummer",
+        "pl": "Numer",
+        "ru": "Номер",
+        "ko": "번호",
+        "ar": "رقم"
+      }
     },
-    "args": [
-        {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-                "en": "Trigger name",
-                "nl": "Trigger naam"
-            }
-        }
-    ],
-    "tokens": [
-        {
-            "type": "string",
-            "name": "text",
-            "title": {
-                "en": "Text",                
-                "nl": "Tekst"
-            }
-        },        
-        {
-            "type": "number",
-            "name": "number",
-            "title": {
-                "en": "Number",                
-                "nl": "Nummer"
-            }
-        },        
-        {
-            "type": "boolean",
-            "name": "boolean",
-            "title": {
-                "en": "Yes/No",                
-                "nl": "Ja/Nee"
-            }
-        }
-    ] 
+    {
+      "type": "boolean",
+      "name": "boolean",
+      "title": {
+        "en": "Yes/No",
+        "nl": "Ja/Nee",
+        "da": "Ja/Nej",
+        "de": "Ja/Nein",
+        "es": "Sí/No",
+        "fr": "Oui/Non",
+        "it": "Sì/No",
+        "no": "Ja/Nei",
+        "sv": "Ja/Nej",
+        "pl": "Tak/Nie",
+        "ru": "Да/Нет",
+        "ko": "예/아니요",
+        "ar": "نعم/لا"
+      }
+    }
+  ]
 }

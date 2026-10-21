@@ -1,122 +1,309 @@
 {
-    "id": "trigger__text1_number1_boolean1",
-    "title": {
-        "en": "This Flowcard started",
-        "nl": "Deze Flowkaart is gestart"
+  "id": "trigger__text1_number1_boolean1",
+  "title": {
+    "en": "This Flowcard started",
+    "nl": "Deze Flowkaart is gestart",
+    "da": "Dette Flowkort startede",
+    "de": "Diese Flowkarte wurde gestartet",
+    "es": "Esta tarjeta de flujo comenzó",
+    "fr": "Cette carte de flux a commencé",
+    "it": "Questa scheda di flusso è iniziata",
+    "no": "Dette Flowkortet startet",
+    "sv": "Detta flödeskort startade",
+    "pl": "Ta karta przepływu została uruchomiona",
+    "ru": "Эта карточка потока запущена",
+    "ko": "이 플로우카드가 시작되었습니다.",
+    "ar": "تم بدء بطاقة التدفق هذه"
+  },
+  "titleFormatted": {
+    "en": "[[name]] started (1 text, 1 number, 1 yes/no), [[debounce]] [[debounce_ms]]",
+    "nl": "[[name]] is gestart (1 tekst, 1 nummer, 1 ja/nee), [[debounce]] [[debounce_ms]]",
+    "da": "[[name]] startede (1 tekst, 1 tal, 1 ja/nej), [[debounce]] [[debounce_ms]]",
+    "de": "[[name]] gestartet (1 Text, 1 Zahl, 1 Ja/Nein), [[debounce]] [[debounce_ms]]",
+    "es": "[[name]] comenzó (1 texto, 1 número, 1 sí/no), [[debounce]] [[debounce_ms]]",
+    "fr": "[[name]] a démarré (1 texte, 1 nombre, 1 oui/non), [[debounce]] [[debounce_ms]]",
+    "it": "[[name]] avviato (1 testo, 1 numero, 1 sì/no), [[debounce]] [[debounce_ms]]",
+    "no": "[[name]] startet (1 tekst, 1 tall, 1 ja/nei), [[debounce]] [[debounce_ms]]",
+    "sv": "[[name]] startade (1 text, 1 nummer, 1 ja/nej), [[debounce]] [[debounce_ms]]",
+    "pl": "[[name]] rozpoczęto (1 tekst, 1 liczba, 1 tak/nie), [[debounce]] [[debounce_ms]]",
+    "ru": "[[name]] запущен (1 текст, 1 число, 1 да/нет), [[debounce]] [[debounce_ms]]",
+    "ko": "[[name]] 시작됨 (텍스트 1개, 숫자 1개, 예/아니오 1개), [[debounce]] [[debounce_ms]]",
+    "ar": "[[name]] بدأ (1 نص، 1 رقم، 1 نعم/لا)، [[debounce]] [[debounce_ms]]"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "name",
+      "placeholder": {
+        "en": "Type or select a trigger name",
+        "nl": "Type of kies een trigger naam",
+        "da": "Skriv eller vælg et triggernavn",
+        "de": "Geben Sie einen Auslösernamen ein oder wählen Sie ihn aus",
+        "es": "Escribe o selecciona un nombre de activador",
+        "fr": "Tapez ou sélectionnez un nom de déclencheur",
+        "it": "Digita o seleziona un nome di trigger",
+        "no": "Skriv inn eller velg et triggernavn",
+        "sv": "Skriv eller välj ett triggernamn",
+        "pl": "Wpisz lub wybierz nazwę wyzwalacza",
+        "ru": "Введите или выберите название триггера",
+        "ko": "트리거 이름을 입력하거나 선택하세요.",
+        "ar": "اكتب أو اختر اسم الزناد"
+      },
+      "title": {
+        "en": "Triggername",
+        "nl": "Triggernaam",
+        "da": "Triggernavn",
+        "de": "Triggername",
+        "es": "Nombre del disparador",
+        "fr": "Nom du déclencheur",
+        "it": "Nome del trigger",
+        "no": "Triggernavn",
+        "sv": "Triggernamn",
+        "pl": "Nazwa wyzwalacza",
+        "ru": "Имя триггера",
+        "ko": "트리거 이름",
+        "ar": "اسم المشغل"
+      }
     },
-    "titleFormatted": {
-        "en": "[[name]] started (1 text, 1 number, 1 yes/no), [[debounce]] [[debounce_ms]]",
-        "nl": "[[name]] is gestart (1 tekst, 1 nummer, 1 ja/nee), [[debounce]] [[debounce_ms]]"
+    {
+      "type": "dropdown",
+      "name": "debounce",
+      "required": false,
+      "placeholder": {
+        "en": "Default execution",
+        "nl": "Standaard uitvoering",
+        "da": "Standard udførelse",
+        "de": "Standardausführung",
+        "es": "Ejecución predeterminada",
+        "fr": "Exécution par défaut",
+        "it": "Esecuzione predefinita",
+        "no": "Standardutførelse",
+        "sv": "Standardutförande",
+        "pl": "Domyślne wykonanie",
+        "ru": "Выполнение по умолчанию",
+        "ko": "기본 실행",
+        "ar": "التنفيذ الافتراضي"
+      },
+      "title": {
+        "en": "Execution",
+        "nl": "Uitvoering",
+        "da": "Udførelse",
+        "de": "Ausführung",
+        "es": "Ejecución",
+        "fr": "Exécution",
+        "it": "Esecuzione",
+        "no": "Utførelse",
+        "sv": "Utförande",
+        "pl": "Wykonanie",
+        "ru": "Выполнение",
+        "ko": "실행",
+        "ar": "التنفيذ"
+      },
+      "values": [
+        {
+          "id": "none",
+          "label": {
+            "en": "Default execution",
+            "nl": "Standaard uitvoering",
+            "da": "Standard udførelse",
+            "de": "Standardausführung",
+            "es": "Ejecución predeterminada",
+            "fr": "Exécution par défaut",
+            "it": "Esecuzione predefinita",
+            "no": "Standardutførelse",
+            "sv": "Standardutförande",
+            "pl": "Domyślne wykonanie",
+            "ru": "Выполнение по умолчанию",
+            "ko": "기본 실행",
+            "ar": "التنفيذ الافتراضي"
+          }
+        },
+        {
+          "id": "finish",
+          "label": {
+            "en": "Use debounce (execute last one waiting after each [number of] ms)",
+            "nl": "Gebruik debounce (eindig met laatste wachtend na elke [aantal] ms)",
+            "da": "Brug debounce (udfør den sidste, der venter efter hver [antal] ms)",
+            "de": "Verwende Debounce (führe die letzte aus, die nach jeweils [Anzahl] ms wartet)",
+            "es": "Usar debounce (ejecutar el último que espera después de cada [número de] ms)",
+            "fr": "Utiliser le debounce (exécuter la dernière action en attente après chaque [nombre de] ms)",
+            "it": "Usa debounce (esegui l'ultimo in attesa dopo ogni [numero di] ms)",
+            "no": "Bruk debounce (utfør den siste som venter etter hver [antall] ms)",
+            "sv": "Använd debounce (utför den sista som väntar efter varje [antal] ms)",
+            "pl": "Użyj opóźnienia (wykonaj ostatnią czekającą po każdej [liczbie] ms)",
+            "ru": "Использовать дебаунс (выполнить последний, ожидая после каждого [количества] мс)",
+            "ko": "디바운스 사용 (각 [숫자] ms 후에 대기 중인 마지막 실행)",
+            "ar": "استخدم إزالة الارتداد (تنفيذ الأخير المنتظر بعد كل [عدد] من المللي ثانية)"
+          }
+        },
+        {
+          "id": "executestart",
+          "label": {
+            "en": "Use debounce (execute at start, then allow execution after each [number of] ms)",
+            "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms)",
+            "da": "Brug debounce (udfør ved start, og tillad derefter udførelse efter hver [antal] ms)",
+            "de": "Verwende Debounce (führe am Anfang aus, dann erlaube die Ausführung nach jeweils [Anzahl] ms)",
+            "es": "Usar debounce (ejecutar al inicio, luego permitir la ejecución después de cada [número de] ms)",
+            "fr": "Utiliser le debounce (exécuter au début, puis permettre l'exécution après chaque [nombre de] ms)",
+            "it": "Usa debounce (esegui all'inizio, poi consenti l'esecuzione dopo ogni [numero di] ms)",
+            "no": "Bruk debounce (utfør ved start, deretter tillat utførelse etter hver [antall] ms)",
+            "sv": "Använd debounce (utför vid start, tillåt sedan utförande efter varje [antal] ms)",
+            "pl": "Użyj debounce (wykonaj na początku, a następnie pozwól na wykonanie po każdych [liczba] ms)",
+            "ru": "Использовать дебаунс (выполнить в начале, затем разрешить выполнение после каждых [количество] мс)",
+            "ko": "디바운스 사용 (시작 시 실행, 이후 [숫자] ms마다 실행 허용)",
+            "ar": "استخدم إزالة الارتداد (تنفيذ في البداية، ثم السماح بالتنفيذ بعد كل [عدد] من المللي ثانية)"
+          }
+        },
+        {
+          "id": "executestart_finish",
+          "label": {
+            "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
+            "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)",
+            "da": "Brug debounce (udfør ved start, tillad derefter udførelse efter hver [antal] ms, afslut med den sidste, der venter)",
+            "de": "Verwende Debounce (führe am Anfang aus, dann erlaube Ausführung nach jeweils [Anzahl] ms, beende mit dem letzten, der wartet)",
+            "es": "Usar debounce (ejecutar al inicio, luego permitir la ejecución después de cada [número de] ms, finalizar con el último esperando)",
+            "fr": "Utiliser le debounce (exécuter au début, puis permettre l'exécution après chaque [nombre de] ms, terminer avec le dernier en attente)",
+            "it": "Usa debounce (esegui all'inizio, poi consenti l'esecuzione dopo ogni [numero di] ms, termina con l'ultimo in attesa)",
+            "no": "Bruk debounce (utfør ved start, deretter tillat utførelse etter hver [antall] ms, avslutt med den siste som venter)",
+            "sv": "Använd debounce (utför vid start, tillåt sedan utförande efter varje [antal] ms, avsluta med den sista som väntar)",
+            "pl": "Użyj debounce (wykonaj na początku, następnie pozwól na wykonanie po każdych [liczba] ms, zakończ ostatnim oczekującym)",
+            "ru": "Используйте дебаунс (выполните в начале, затем разрешите выполнение после каждого [количества] мс, завершите последним, ожидающим выполнения)",
+            "ko": "디바운스 사용 (시작 시 실행, 그 후 [숫자] ms마다 실행 허용, 마지막으로 대기 중인 것 실행)",
+            "ar": "استخدم إزالة الارتداد (تنفيذ في البداية، ثم السماح بالتنفيذ بعد كل [عدد] من المللي ثانية، والانتهاء بآخر واحد ينتظر)"
+          }
+        },
+        {
+          "id": "sequential",
+          "label": {
+            "en": "Sequential (execute each one, after the previous one has finished)",
+            "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)",
+            "da": "Sekventiel (udfør hver enkelt, efter den forrige er afsluttet)",
+            "de": "Sequenziell (führe jeden aus, nachdem der vorherige abgeschlossen ist)",
+            "es": "Secuencial (ejecuta cada uno, después de que el anterior haya terminado)",
+            "fr": "Séquentiel (exécutez chaque action, après que la précédente soit terminée)",
+            "it": "Sequenziale (esegui ciascuno, dopo che il precedente è terminato)",
+            "no": "Sekvensiell (utfør hver enkelt, etter at den forrige er ferdig)",
+            "sv": "Sekventiell (utför varje en, efter att den föregående har avslutats)",
+            "pl": "Sekwencyjnie (wykonaj każde z nich, po zakończeniu poprzedniego)",
+            "ru": "Последовательно (выполнять каждое действие после завершения предыдущего)",
+            "ko": "순차적 (이전 작업이 완료된 후에 각각 실행)",
+            "ar": "تسلسلي (نفذ كل واحد بعد أن ينتهي السابق)"
+          }
+        }
+      ]
     },
-    "args": [
-        {
-            "type": "autocomplete",
-            "name": "name",
-            "placeholder": {
-                "en": "Type or select a trigger name",
-                "nl": "Type of kies een trigger naam"
-            },
-            "title": {
-                "en": "Triggername",
-                "nl": "Triggernaam"
-            }
-        },
-        {
-            "type": "dropdown",
-            "name": "debounce",
-            "required": false,
-            "placeholder": {
-                "en": "Default execution",
-                "nl": "Standaard uitvoering"
-            },
-            "title": {
-                "en": "Execution",
-                "nl": "Uitvoering"
-            },
-            "values": [
-                {
-                    "id": "none",
-                    "label": {
-                        "en": "Default execution",
-                        "nl": "Standaard uitvoering"
-                    }
-                },
-                {
-                    "id": "finish",
-                    "label": {
-                        "en": "Use debounce (execute last one waiting after each [number of] ms)",
-                        "nl": "Gebruik debounce (eindig met laatste wachtend na elke [aantal] ms)"
-                    }
-                },
-                {
-                    "id": "executestart",
-                    "label": {
-                        "en": "Use debounce (execute at start, then allow execution after each [number of] ms)",
-                        "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms)"
-                    }
-                },
-                {
-                    "id": "executestart_finish",
-                    "label": {
-                        "en": "Use debounce (execute at start, then allow execution after each [number of] ms, finish with last one waiting)",
-                        "nl": "Gebruik debounce (uitvoeren bij start, dan uitvoering toestaan na elke [aantal] ms, eindig met laatste wachtend)"
-                    }
-                },
-                {
-                    "id": "sequential",
-                    "label": {
-                        "en": "Sequential (execute each one, after the previous one has finished)",
-                        "nl": "Sequentieel (voer ze allemaal uit, nadat de vorige is afgelopen)"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "number",
-            "name": "debounce_ms",
-            "required": false,
-            "placeholder": {
-                "en": "Debounce (milliseconds)",
-                "nl": "Debounce (Milliseconden)"
-            },
-            "title": {
-                "en": "Debounce (ms)",
-                "nl": "Debounce (ms)"
-            }
-        }
-    ],
-    "tokens": [
-        {
-            "type": "number",
-            "name": "flowexecutionid",
-            "title": {
-                "en": "Return ID",
-                "nl": "Return ID"
-            }
-        },
-        {
-            "type": "string",
-            "name": "text1",
-            "title": {
-                "en": "Text 1",
-                "nl": "Tekst 1"
-            }
-        },
-        {
-            "type": "number",
-            "name": "number1",
-            "title": {
-                "en": "Number 1",
-                "nl": "Nummer 1"
-            }
-        },
-        {
-            "type": "boolean",
-            "name": "boolean1",
-            "title": {
-                "en": "Yes/No 1",
-                "nl": "Ja/Nee 1"
-            }
-        }
-    ]
+    {
+      "type": "number",
+      "name": "debounce_ms",
+      "required": false,
+      "placeholder": {
+        "en": "Debounce (milliseconds)",
+        "nl": "Debounce (Milliseconden)",
+        "da": "Debounce (millisekunder)",
+        "de": "Entprellung (Millisekunden)",
+        "es": "Debounce (milisegundos)",
+        "fr": "Délai de stabilisation (millisecondes)",
+        "it": "Debounce (millisecondi)",
+        "no": "Debounce (millisekunder)",
+        "sv": "Debounce (millisekunder)",
+        "pl": "Debounce (milisekundy)",
+        "ru": "Задержка (миллисекунды)",
+        "ko": "디바운스 (밀리초)",
+        "ar": "إزالة الارتداد (مللي ثانية)"
+      },
+      "title": {
+        "en": "Debounce (ms)",
+        "nl": "Debounce (ms)",
+        "da": "Debounce (ms)",
+        "de": "Entprellung (ms)",
+        "es": "Debounce (ms)",
+        "fr": "Débounce (ms)",
+        "it": "Debounce (ms)",
+        "no": "Debounce (ms)",
+        "sv": "Debounce (ms)",
+        "pl": "Opóźnienie (ms)",
+        "ru": "Задержка (мс)",
+        "ko": "디바운스 (밀리초)",
+        "ar": "إزالة الارتداد (مللي ثانية)"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "number",
+      "name": "flowexecutionid",
+      "title": {
+        "en": "Return ID",
+        "nl": "Return ID",
+        "da": "Returnér ID",
+        "de": "Rückgabe-ID",
+        "es": "ID de retorno",
+        "fr": "ID de retour",
+        "it": "ID di ritorno",
+        "no": "Returner ID",
+        "sv": "Returnera ID",
+        "pl": "Zwróć ID",
+        "ru": "Вернуть ID",
+        "ko": "반환 ID",
+        "ar": "إرجاع المعرف"
+      }
+    },
+    {
+      "type": "string",
+      "name": "text1",
+      "title": {
+        "en": "Text 1",
+        "nl": "Tekst 1",
+        "da": "Tekst",
+        "de": "Text 1",
+        "es": "Texto 1",
+        "fr": "Texte",
+        "it": "Testo 1",
+        "no": "Tekst 1",
+        "sv": "Text 1",
+        "pl": "Tekst",
+        "ru": "Текст 1",
+        "ko": "텍스트 1",
+        "ar": "نص 1"
+      }
+    },
+    {
+      "type": "number",
+      "name": "number1",
+      "title": {
+        "en": "Number 1",
+        "nl": "Nummer 1",
+        "da": "Nummer 1",
+        "de": "Nummer 1",
+        "es": "Número 1",
+        "fr": "Numéro 1",
+        "it": "Numero 1",
+        "no": "Nummer 1",
+        "sv": "Nummer 1",
+        "pl": "Numer 1",
+        "ru": "Номер 1",
+        "ko": "번호 1",
+        "ar": "رقم 1"
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "boolean1",
+      "title": {
+        "en": "Yes/No 1",
+        "nl": "Ja/Nee 1",
+        "da": "Ja/Nej 1",
+        "de": "Ja/Nein 1",
+        "es": "Sí/No 1",
+        "fr": "Oui/Non 1",
+        "it": "Sì/No 1",
+        "no": "Ja/Nei 1",
+        "sv": "Ja/Nej 1",
+        "pl": "Tak/Nie 1",
+        "ru": "Да/Нет 1",
+        "ko": "예/아니오 1",
+        "ar": "نعم/لا 1"
+      }
+    }
+  ]
 }
