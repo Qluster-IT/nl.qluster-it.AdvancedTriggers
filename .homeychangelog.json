@@ -359,7 +359,7 @@
     "ko": "해결됨: 텍스트 인수 및 토큰의 번역 오류가 해결되었습니다.",
     "ar": "تم الحل: تم تصحيح الأخطاء في ترجمة الحجج النصية والرموز."
   },
-  "1.6.2": {
+  "1.6.3": {
     "en": "Changed sourcecode and issues from Bitbucket to GitHub.",
     "nl": "Broncode en problemen verplaatst van Bitbucket naar GitHub.",
     "da": "Ændrede kildekode og problemer fra Bitbucket til GitHub.",

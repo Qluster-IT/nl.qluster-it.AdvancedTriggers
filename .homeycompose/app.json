@@ -1,6 +1,6 @@
 {
   "id": "nl.qluster-it.AdvancedTriggers",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#0082FA",
@@ -67,9 +67,9 @@
     "small": "/assets/images/small.png",
     "large": "/assets/images/large.png"
   },
-  "source": "https://bitbucket.org/QlusterIT/nl.qluster-it.advancedtriggers/",
+  "source": "https://github.com/Qluster-IT/nl.qluster-it.AdvancedTriggers/",
   "bugs": {
-    "url": "https://bitbucket.org/QlusterIT/nl.qluster-it.advancedtriggers/issues"
+    "url": "https://github.com/Qluster-IT/nl.qluster-it.AdvancedTriggers/issues"
   },
   "homeyCommunityTopicId": 65651,
   "contributing": {
