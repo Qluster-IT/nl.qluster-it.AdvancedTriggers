@@ -17,10 +17,9 @@ jobs:
       ISSUE_NODE_ID: ${{ github.event.issue.node_id }}
 
     steps:
-      - name: Zoek gekoppeld Project Item via GraphQL
+      - name: Zoek gekoppeld Project en Item via GraphQL
         id: item_info
         run: |
-          # Vraag de projectItems op die direct aan dit specifieke issue gekoppeld zijn
           RESPONSE=$(gh api graphql -f query='
             query($issueId: ID!) {
               node(id: $issueId) {
@@ -30,6 +29,7 @@ jobs:
                       id
                       isArchived
                       project {
+                        id
                         number
                         owner {
                           ... on Organization { login }
@@ -43,29 +43,33 @@ jobs:
             }
           ' -f issueId="$ISSUE_NODE_ID")
 
-          # Filter het item dat hoort bij het juiste projectnummer en de juiste owner
+          # Filter de data voor het juiste project
           ITEM_DATA=$(echo "$RESPONSE" | jq -r --argjson num "${{ env.PROJECT_NUMBER }}" --arg owner "${{ env.PROJECT_OWNER }}" \
             '.data.node.projectItems.nodes[] | select(.project.number == $num and (.project.owner.login | ascii_downcase) == ($owner | ascii_downcase))')
 
           ITEM_ID=$(echo "$ITEM_DATA" | jq -r '.id // empty')
+          PROJECT_ID=$(echo "$ITEM_DATA" | jq -r '.project.id // empty')
           IS_ARCHIVED=$(echo "$ITEM_DATA" | jq -r '.isArchived // false')
 
           echo "Gevonden Item ID: $ITEM_ID"
+          echo "Gevonden Project ID: $PROJECT_ID"
           echo "Is gearchiveerd: $IS_ARCHIVED"
 
           echo "item_id=$ITEM_ID" >> $GITHUB_OUTPUT
+          echo "project_id=$PROJECT_ID" >> $GITHUB_OUTPUT
           echo "is_archived=$IS_ARCHIVED" >> $GITHUB_OUTPUT
 
       - name: Unarchive het projectitem
         if: steps.item_info.outputs.item_id != '' && steps.item_info.outputs.is_archived == 'true'
         run: |
+          # We sturen nu verplicht projectId én itemId mee, en vragen 'item { id }' op als return
           gh api graphql -f query='
-            mutation($itemId: ID!) {
-              unarchiveProjectV2Item(input: {itemId: $itemId}) {
-                projectV2Item { id }
+            mutation($projectId: ID!, $itemId: ID!) {
+              unarchiveProjectV2Item(input: {projectId: $projectId, itemId: $itemId}) {
+                item { id }
               }
             }
-          ' -f itemId="${{ steps.item_info.outputs.item_id }}"
+          ' -f projectId="${{ steps.item_info.outputs.project_id }}" -f itemId="${{ steps.item_info.outputs.item_id }}"
 
       - name: Zet status op Ready
         if: steps.item_info.outputs.item_id != ''
