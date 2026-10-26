@@ -1,0 +1,45 @@
+name: Project Item Unarchiveren en Status naar Ready
+
+on:
+  issues:
+    types: [reopened]
+  pull_request:
+    types: [reopened]
+
+jobs:
+  unarchive-and-move:
+    runs-on: ubuntu-latest
+    env:
+      # Pas dit aan naar jouw situatie:
+      PROJECT_URL: "https://github.com/orgs/Qluster-IT/projects/1"
+      GITHUB_TOKEN: ${{ secrets.PAT }}
+      ISSUE_NODE_ID: ${{ github.event.issue.node_id }}
+
+    steps:
+      - name: Haal item info op uit het project
+        id: item_info
+        run: |
+          # Zoek het projectitem dat gekoppeld is aan dit issue
+          ITEM_DATA=$(gh project item-list "$PROJECT_URL" --format json | jq -r --arg id "$ISSUE_NODE_ID" '.items[] | select(.content.id == $id)')
+          ITEM_ID=$(echo "$ITEM_DATA" | jq -r '.id // empty')
+          IS_ARCHIVED=$(echo "$ITEM_DATA" | jq -r '.isArchived // false')
+          
+          echo "item_id=$ITEM_ID" >> $GITHUB_OUTPUT
+          echo "is_archived=$IS_ARCHIVED" >> $GITHUB_OUTPUT
+
+      - name: Unarchive het projectitem
+        if: steps.item_info.outputs.item_id != '' && steps.item_info.outputs.is_archived == 'true'
+        run: |
+          gh api graphql -f query='
+            mutation($itemId: ID!) {
+              unarchiveProjectV2Item(input: {itemId: $itemId}) {
+                projectV2Item { id }
+              }
+            }
+          ' -f itemId="${{ steps.item_info.outputs.item_id }}"
+
+      - name: Zet status op Ready
+        if: steps.item_info.outputs.item_id != ''
+        run: |
+          # Wijzig het Status-veld van het item naar 'Ready'
+          gh project item-edit --url "$PROJECT_URL" --id "${{ steps.item_info.outputs.item_id }}" --field "Status" --value "Ready"
