@@ -1,4 +1,4 @@
-name: Add bugs to bugs project
+name: Add issues/PRs to project
 
 on:
   issues:
@@ -10,12 +10,10 @@ on:
 
 jobs:
   add-to-project:
-    name: Add issue to project
+    name: Add issue/PR to project
     runs-on: ubuntu-latest
     steps:
       - uses: actions/add-to-project@v2
         with:
-          # You can target a project in a different organization
-          # to the issue
           project-url: https://github.com/orgs/Qluster-IT/projects/1
           github-token: ${{ secrets.PAT }}
