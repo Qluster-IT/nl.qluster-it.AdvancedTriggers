@@ -4,11 +4,9 @@ on:
   issues:
     types:
       - opened
-      - reopened
   pull_request:
     types:
       - opened
-      - reopened
 jobs:
   add-to-project:
     name: Add issue/PR to project
