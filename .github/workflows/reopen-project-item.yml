@@ -10,8 +10,9 @@ jobs:
   unarchive-and-move:
     runs-on: ubuntu-latest
     env:
-      # Pas dit aan naar jouw situatie:
-      PROJECT_URL: "https://github.com/orgs/Qluster-IT/projects/1"
+      # Hier splitsen we de URL op om de CLI-fout te voorkomen
+      PROJECT_OWNER: "Qluster-IT"
+      PROJECT_NUMBER: 1
       GITHUB_TOKEN: ${{ secrets.PAT }}
       ISSUE_NODE_ID: ${{ github.event.issue.node_id }}
 
@@ -19,8 +20,8 @@ jobs:
       - name: Haal item info op uit het project
         id: item_info
         run: |
-          # Zoek het projectitem dat gekoppeld is aan dit issue
-          ITEM_DATA=$(gh project item-list "$PROJECT_URL" --format json | jq -r --arg id "$ISSUE_NODE_ID" '.items[] | select(.content.id == $id)')
+          # We gebruiken nu --owner en het losse projectnummer
+          ITEM_DATA=$(gh project item-list ${{ env.PROJECT_NUMBER }} --owner "${{ env.PROJECT_OWNER }}" --format json | jq -r --arg id "$ISSUE_NODE_ID" '.items[] | select(.content.id == $id)')
           ITEM_ID=$(echo "$ITEM_DATA" | jq -r '.id // empty')
           IS_ARCHIVED=$(echo "$ITEM_DATA" | jq -r '.isArchived // false')
           
@@ -41,5 +42,5 @@ jobs:
       - name: Zet status op Ready
         if: steps.item_info.outputs.item_id != ''
         run: |
-          # Wijzig het Status-veld van het item naar 'Ready'
-          gh project item-edit --url "$PROJECT_URL" --id "${{ steps.item_info.outputs.item_id }}" --field "Status" --value "Ready"
+          # Ook hier gebruiken we nu het projectnummer en de owner in plaats van de URL string
+          gh project item-edit ${{ env.PROJECT_NUMBER }} --owner "${{ env.PROJECT_OWNER }}" --id "${{ steps.item_info.outputs.item_id }}" --field "Status" --value "Ready"
