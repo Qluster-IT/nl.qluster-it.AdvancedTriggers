@@ -77,6 +77,6 @@ jobs:
           # We gebruiken nu de URL van het issue in plaats van de --id vlag
           gh project item-edit ${{ env.PROJECT_NUMBER }} \
             --owner "${{ env.PROJECT_OWNER }}" \
-            --url "https://github.com{{ env.PROJECT_OWNER }}/${{ github.event.repository.name }}/issues/${{ github.event.issue.number }}" \
+            --url "https://github.com/{{ env.PROJECT_OWNER }}/${{ github.event.repository.name }}/issues/${{ github.event.issue.number }}" \
             --field "Status" \
             --value "Ready"
