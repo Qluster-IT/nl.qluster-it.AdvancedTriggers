@@ -17,14 +17,42 @@ jobs:
       ISSUE_NODE_ID: ${{ github.event.issue.node_id }}
 
     steps:
-      - name: Haal item info op uit het project
+      - name: Zoek gekoppeld Project Item via GraphQL
         id: item_info
         run: |
-          # We gebruiken nu --owner en het losse projectnummer
-          ITEM_DATA=$(gh project item-list ${{ env.PROJECT_NUMBER }} --owner "${{ env.PROJECT_OWNER }}" --format json | jq -r --arg id "$ISSUE_NODE_ID" '.items[] | select(.content.id == $id)')
+          # Vraag de projectItems op die direct aan dit specifieke issue gekoppeld zijn
+          RESPONSE=$(gh api graphql -f query='
+            query($issueId: ID!) {
+              node(id: $issueId) {
+                ... on Issue {
+                  projectItems(first: 10) {
+                    nodes {
+                      id
+                      isArchived
+                      project {
+                        number
+                        owner {
+                          ... on Organization { login }
+                          ... on User { login }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ' -f issueId="$ISSUE_NODE_ID")
+
+          # Filter het item dat hoort bij het juiste projectnummer en de juiste owner
+          ITEM_DATA=$(echo "$RESPONSE" | jq -r --argjson num "${{ env.PROJECT_NUMBER }}" --arg owner "${{ env.PROJECT_OWNER }}" \
+            '.data.node.projectItems.nodes[] | select(.project.number == $num and (.project.owner.login | ascii_downcase) == ($owner | ascii_downcase))')
+
           ITEM_ID=$(echo "$ITEM_DATA" | jq -r '.id // empty')
           IS_ARCHIVED=$(echo "$ITEM_DATA" | jq -r '.isArchived // false')
-          
+
+          echo "Gevonden Item ID: $ITEM_ID"
+          echo "Is gearchiveerd: $IS_ARCHIVED"
+
           echo "item_id=$ITEM_ID" >> $GITHUB_OUTPUT
           echo "is_archived=$IS_ARCHIVED" >> $GITHUB_OUTPUT
 
@@ -42,5 +70,4 @@ jobs:
       - name: Zet status op Ready
         if: steps.item_info.outputs.item_id != ''
         run: |
-          # Ook hier gebruiken we nu het projectnummer en de owner in plaats van de URL string
           gh project item-edit ${{ env.PROJECT_NUMBER }} --owner "${{ env.PROJECT_OWNER }}" --id "${{ steps.item_info.outputs.item_id }}" --field "Status" --value "Ready"
